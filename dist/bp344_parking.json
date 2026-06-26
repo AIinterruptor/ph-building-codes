@@ -1,0 +1,95 @@
+{
+  "code": "BP 344",
+  "section": "Accessibility — Parking",
+  "source": "BP 344 IRR (2024 Revised)",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "BP344-PK001",
+      "section": "IRR, Sec. Parking",
+      "description": "PWD parking slot width (standard + access aisle)",
+      "value": 3700,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "2400mm slot + 1300mm access aisle"
+    },
+    {
+      "id": "BP344-PK002",
+      "section": "IRR, Sec. Parking",
+      "description": "PWD parking slot length",
+      "value": 6000,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-PK003",
+      "section": "IRR, Sec. Parking",
+      "description": "Standard parking slot width",
+      "value": 2500,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Per NBCP standard"
+    },
+    {
+      "id": "BP344-PK004",
+      "section": "IRR, Sec. Parking",
+      "description": "Standard parking slot length",
+      "value": 5000,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Per NBCP standard"
+    },
+    {
+      "id": "BP344-PK005",
+      "section": "IRR, Sec. Parking",
+      "description": "Shared access aisle width between two PWD slots",
+      "value": 1500,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Can be shared between two adjacent PWD slots"
+    },
+    {
+      "id": "BP344-PK006",
+      "section": "IRR, Sec. Parking",
+      "description": "Minimum PWD parking slots per 50 regular slots",
+      "value": 1,
+      "unit": "slot",
+      "applies_to": [
+        "all"
+      ],
+      "formula": "max(1, ceil(total_slots / 50))",
+      "notes": "1 per 50 regular slots, or 2% of total — whichever is greater"
+    },
+    {
+      "id": "BP344-PK007",
+      "section": "IRR, Sec. Parking",
+      "description": "PWD parking as percentage of total (minimum)",
+      "value": 2,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Whichever is greater: 1 per 50 or 2%"
+    },
+    {
+      "id": "BP344-PK008",
+      "section": "IRR, Sec. Parking",
+      "description": "PWD parking location requirement",
+      "value": "nearest to accessible main entrance",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ]
+    }
+  ]
+}

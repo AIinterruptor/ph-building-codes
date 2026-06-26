@@ -1,0 +1,334 @@
+{
+  "code": "PD 1096",
+  "section": "Rule VIII — Light and Ventilation",
+  "source": "2004 Revised IRR of PD 1096",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "NBCP-VIII-H001",
+      "section": "Rule VIII, Sec. 806",
+      "description": "Minimum ceiling height — habitable rooms with artificial ventilation",
+      "value": 2.4,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "ventilation_type": "artificial"
+      }
+    },
+    {
+      "id": "NBCP-VIII-H002",
+      "section": "Rule VIII, Sec. 806",
+      "description": "Minimum ceiling height — first storey with natural ventilation",
+      "value": 2.7,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storey": 1,
+        "ventilation_type": "natural"
+      }
+    },
+    {
+      "id": "NBCP-VIII-H003",
+      "section": "Rule VIII, Sec. 806",
+      "description": "Minimum ceiling height — second storey",
+      "value": 2.4,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storey": 2
+      }
+    },
+    {
+      "id": "NBCP-VIII-H004",
+      "section": "Rule VIII, Sec. 806",
+      "description": "Minimum ceiling height — third storey and above",
+      "value": 2.1,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storey_min": 3
+      }
+    },
+    {
+      "id": "NBCP-VIII-H005",
+      "section": "Rule VIII, Sec. 806",
+      "description": "Minimum clear height above and below mezzanine",
+      "value": 1.8,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "floor_type": "mezzanine"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A001",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum floor area for habitable room",
+      "value": 6.0,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "habitable"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A002",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum least dimension for habitable room",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "habitable"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A003",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum floor area for kitchen",
+      "value": 3.0,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "kitchen"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A004",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum least dimension for kitchen",
+      "value": 1.5,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "kitchen"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A005",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum floor area for bath/toilet",
+      "value": 1.2,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "bath_toilet"
+      }
+    },
+    {
+      "id": "NBCP-VIII-A006",
+      "section": "Rule VIII, Sec. 807",
+      "description": "Minimum least dimension for bath/toilet",
+      "value": 0.9,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "bath_toilet"
+      }
+    },
+    {
+      "id": "NBCP-VIII-R001",
+      "section": "Rule VIII, Sec. 808",
+      "description": "Minimum window opening for rooms (percentage of floor area)",
+      "value": 10,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "ventilation_type": "natural",
+        "room_type": "habitable"
+      },
+      "notes": "Not less than 1.0 sqm absolute minimum"
+    },
+    {
+      "id": "NBCP-VIII-R002",
+      "section": "Rule VIII, Sec. 808",
+      "description": "Absolute minimum window opening area",
+      "value": 1.0,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "ventilation_type": "natural",
+        "room_type": "habitable"
+      }
+    },
+    {
+      "id": "NBCP-VIII-R003",
+      "section": "Rule VIII, Sec. 808",
+      "description": "Minimum window opening for toilet/bath/laundry (fraction of floor area)",
+      "value": 5,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "bath_toilet_laundry"
+      },
+      "notes": "1/20 of floor area; not less than 240 sq.mm"
+    },
+    {
+      "id": "NBCP-VIII-R004",
+      "section": "Rule VIII, Sec. 808",
+      "description": "Absolute minimum window opening for toilet/bath",
+      "value": 240,
+      "unit": "sqmm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "room_type": "bath_toilet_laundry"
+      }
+    },
+    {
+      "id": "NBCP-VIII-D001",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Minimum court/yard horizontal dimension",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-D002",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Minimum court width for 1-2 storey buildings",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storeys_max": 2
+      }
+    },
+    {
+      "id": "NBCP-VIII-D003",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Court width increase per additional storey above 2",
+      "value": 300,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storeys_min": 3,
+        "storeys_max": 14
+      },
+      "formula": "court_width = 2.0 + (storeys - 2) × 0.3",
+      "notes": "Up to 14 storeys"
+    },
+    {
+      "id": "NBCP-VIII-D004",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Minimum court width for rowhouse/quadruplex",
+      "value": 1.5,
+      "unit": "m",
+      "applies_to": [
+        "R-3"
+      ],
+      "conditions": {
+        "building_type": "rowhouse/quadruplex"
+      }
+    },
+    {
+      "id": "NBCP-VIII-D005",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Minimum court area for rowhouse/quadruplex",
+      "value": 3.0,
+      "unit": "sqm",
+      "applies_to": [
+        "R-3"
+      ],
+      "conditions": {
+        "building_type": "rowhouse/quadruplex"
+      }
+    },
+    {
+      "id": "NBCP-VIII-D010",
+      "section": "Rule VIII, Sec. 805",
+      "description": "Maximum separation fence height",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-D011",
+      "section": "Rule VIII, Sec. 809",
+      "description": "Minimum passageway width to public space",
+      "value": 1.2,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Building must adjoin or have access to public space on at least 1 side"
+    },
+    {
+      "id": "NBCP-VIII-D012",
+      "section": "Rule VIII, Sec. 808",
+      "description": "Minimum eave/canopy clearance from property line",
+      "value": 750,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "NBCP-III-X001",
+      "section": "Rule III, Sec. 304.4",
+      "description": "Maximum excavation depth without permit",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "NBCP-III-X002",
+      "section": "Rule III, Sec. 304.4",
+      "description": "Maximum excavation volume without permit",
+      "value": 50.0,
+      "unit": "cum",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "NBCP-III-X003",
+      "section": "Rule III, Sec. 304.4",
+      "description": "Maximum open excavation duration",
+      "value": 120,
+      "unit": "days",
+      "applies_to": [
+        "all"
+      ]
+    }
+  ]
+}

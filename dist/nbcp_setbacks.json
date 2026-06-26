@@ -1,0 +1,437 @@
+{
+  "code": "PD 1096",
+  "section": "Rule VIII — Light and Ventilation",
+  "tables": [
+    "VIII.2",
+    "VIII.3"
+  ],
+  "source": "2004 Revised IRR of PD 1096",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "NBCP-VIII-S001",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 front setback",
+      "value": 4.5,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "conditions": {
+        "building_type": "single-detached",
+        "height_max_m": 10.0
+      },
+      "notes": "For low-density residential zoning"
+    },
+    {
+      "id": "NBCP-VIII-S002",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 side setback (each side)",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "conditions": {
+        "building_type": "single-detached",
+        "height_max_m": 10.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S003",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 rear setback",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "conditions": {
+        "building_type": "single-detached",
+        "height_max_m": 10.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S004",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 maximum building height (deck roof)",
+      "value": 10.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "conditions": {
+        "roof_type": "deck"
+      }
+    },
+    {
+      "id": "NBCP-VIII-S005",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 maximum building height (regular roof)",
+      "value": 9.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "conditions": {
+        "roof_type": "regular"
+      }
+    },
+    {
+      "id": "NBCP-VIII-S006",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-1 roof eave minimum clearance from property line",
+      "value": 0.75,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "notes": "Farthest point of roof from side/rear property lines"
+    },
+    {
+      "id": "NBCP-VIII-S010",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-2 front setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "R-2"
+      ],
+      "conditions": {
+        "building_type": "duplex/single-attached",
+        "height_max_m": 10.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S011",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-2 side setback (exposed side)",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-2"
+      ],
+      "conditions": {
+        "building_type": "duplex/single-attached",
+        "height_max_m": 10.0
+      },
+      "notes": "One side may abut party wall"
+    },
+    {
+      "id": "NBCP-VIII-S012",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-2 rear setback",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-2"
+      ],
+      "conditions": {
+        "building_type": "duplex/single-attached",
+        "height_max_m": 10.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S013",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-2 maximum building height",
+      "value": 10.0,
+      "unit": "m",
+      "applies_to": [
+        "R-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S020",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-3 front setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "R-3"
+      ],
+      "conditions": {
+        "building_type": "rowhouse/townhouse"
+      }
+    },
+    {
+      "id": "NBCP-VIII-S021",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-3 side setback (end units only)",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-3"
+      ],
+      "conditions": {
+        "building_type": "rowhouse/townhouse"
+      },
+      "notes": "Interior units may abut on both sides with firewall"
+    },
+    {
+      "id": "NBCP-VIII-S022",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-3 rear setback",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "R-3"
+      ],
+      "conditions": {
+        "building_type": "rowhouse/townhouse"
+      }
+    },
+    {
+      "id": "NBCP-VIII-S023",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-3 firewall minimum fire resistance rating",
+      "value": 2,
+      "unit": "hours",
+      "applies_to": [
+        "R-3"
+      ],
+      "notes": "Required when abutting on sides; minimum 400mm above roof"
+    },
+    {
+      "id": "NBCP-VIII-S024",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "R-3 firewall minimum height clearance above roof",
+      "value": 400,
+      "unit": "mm",
+      "applies_to": [
+        "R-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S030",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "Front setback for buildings up to 7.5m height",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1",
+        "R-2",
+        "R-3"
+      ],
+      "conditions": {
+        "height_max_m": 7.5
+      },
+      "notes": "Minimum front yard depth for low-rise"
+    },
+    {
+      "id": "NBCP-VIII-S031",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "Front setback for buildings 7.5m to 15m height",
+      "value": 4.5,
+      "unit": "m",
+      "applies_to": [
+        "R-1",
+        "R-2",
+        "R-3"
+      ],
+      "conditions": {
+        "height_min_m": 7.5,
+        "height_max_m": 15.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S032",
+      "section": "Rule VIII, Table VIII.2",
+      "description": "Front setback for buildings over 15m height",
+      "value": 6.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1",
+        "R-2",
+        "R-3",
+        "R-4",
+        "R-5"
+      ],
+      "conditions": {
+        "height_min_m": 15.0
+      }
+    },
+    {
+      "id": "NBCP-VIII-S040",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-1 front setback (neighborhood commercial)",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "C-1"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S041",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-1 side setback",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "C-1"
+      ],
+      "notes": "May abut with firewall on one side"
+    },
+    {
+      "id": "NBCP-VIII-S042",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-1 rear setback",
+      "value": 2.0,
+      "unit": "m",
+      "applies_to": [
+        "C-1"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S043",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-2 front setback (community commercial)",
+      "value": 5.0,
+      "unit": "m",
+      "applies_to": [
+        "C-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S044",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-2 side setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "C-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S045",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-2 rear setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "C-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S046",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-3 front setback (general commercial / CBD)",
+      "value": 8.0,
+      "unit": "m",
+      "applies_to": [
+        "C-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S047",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-3 side setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "C-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S048",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "C-3 rear setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "C-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S050",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-1 front setback (light industrial)",
+      "value": 5.0,
+      "unit": "m",
+      "applies_to": [
+        "I-1"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S051",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-1 side setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "I-1"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S052",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-1 rear setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "I-1"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S053",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-2 front setback (medium/heavy industrial)",
+      "value": 8.0,
+      "unit": "m",
+      "applies_to": [
+        "I-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S054",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-2 side setback",
+      "value": 5.0,
+      "unit": "m",
+      "applies_to": [
+        "I-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S055",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "I-2 rear setback",
+      "value": 5.0,
+      "unit": "m",
+      "applies_to": [
+        "I-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S060",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "Institutional front setback",
+      "value": 6.0,
+      "unit": "m",
+      "applies_to": [
+        "INST"
+      ],
+      "notes": "Schools, hospitals, government buildings"
+    },
+    {
+      "id": "NBCP-VIII-S061",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "Institutional side setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "INST"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-S062",
+      "section": "Rule VIII, Table VIII.3",
+      "description": "Institutional rear setback",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "INST"
+      ]
+    }
+  ]
+}

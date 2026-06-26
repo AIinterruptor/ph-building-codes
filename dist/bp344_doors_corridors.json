@@ -1,0 +1,183 @@
+{
+  "code": "BP 344",
+  "section": "Accessibility — Doors and Corridors",
+  "source": "BP 344 IRR (2024 Revised)",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "BP344-DC001",
+      "section": "IRR, Sec. Doors",
+      "description": "Accessible door minimum clear width",
+      "value": 900,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC002",
+      "section": "IRR, Sec. Doors",
+      "description": "Maximum threshold height (beveled)",
+      "value": 12,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Must be beveled; flush threshold preferred"
+    },
+    {
+      "id": "BP344-DC003",
+      "section": "IRR, Sec. Doors",
+      "description": "Door swing clearance on latch side",
+      "value": 900,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Clear space on pull/latch side for wheelchair approach"
+    },
+    {
+      "id": "BP344-DC004",
+      "section": "IRR, Sec. Doors",
+      "description": "Door handle height range",
+      "value_min": 900,
+      "value_max": 1100,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Lever-type handles required; knobs not permitted on accessible doors"
+    },
+    {
+      "id": "BP344-DC005",
+      "section": "IRR, Sec. Doors",
+      "description": "Automatic door sensor detection zone",
+      "value": 1500,
+      "unit": "mm",
+      "applies_to": [
+        "automatic_doors"
+      ],
+      "notes": "Detection zone must cover wheelchair approach height"
+    },
+    {
+      "id": "BP344-DC010",
+      "section": "IRR, Sec. Corridors",
+      "description": "Minimum accessible corridor width",
+      "value": 1200,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC011",
+      "section": "IRR, Sec. Corridors",
+      "description": "Wheelchair turning space diameter",
+      "value": 1500,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Required at dead ends, direction changes, and accessible rooms"
+    },
+    {
+      "id": "BP344-DC012",
+      "section": "IRR, Sec. Corridors",
+      "description": "Wheelchair transfer/turning space (when toilet not directly accessible)",
+      "value": 1800,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "1800mm × 1800mm turning space required"
+    },
+    {
+      "id": "BP344-DC013",
+      "section": "IRR, Sec. Corridors",
+      "description": "Minimum headroom clearance in corridors",
+      "value": 2000,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "No protruding objects below 2000mm in circulation path"
+    },
+    {
+      "id": "BP344-DC020",
+      "section": "IRR, Sec. Stairs",
+      "description": "Minimum stair width",
+      "value": 1125,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "occupant_load_min": 50
+      },
+      "notes": "Per NBCP Rule XI for occupant load > 50"
+    },
+    {
+      "id": "BP344-DC021",
+      "section": "IRR, Sec. Stairs",
+      "description": "Handrail height on stairs",
+      "value_min": 800,
+      "value_max": 900,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC022",
+      "section": "IRR, Sec. Stairs",
+      "description": "Handrail extension beyond stair run",
+      "value": 300,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Must extend 300mm beyond top and bottom of stairs"
+    },
+    {
+      "id": "BP344-DC030",
+      "section": "IRR, Sec. Elevators",
+      "description": "Minimum elevator car clear width",
+      "value": 1100,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC031",
+      "section": "IRR, Sec. Elevators",
+      "description": "Minimum elevator car clear depth",
+      "value": 1400,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC032",
+      "section": "IRR, Sec. Elevators",
+      "description": "Minimum elevator door clear width",
+      "value": 900,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-DC033",
+      "section": "IRR, Sec. Elevators",
+      "description": "Elevator call button height",
+      "value": 1200,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Maximum height from floor to center of highest button"
+    }
+  ]
+}

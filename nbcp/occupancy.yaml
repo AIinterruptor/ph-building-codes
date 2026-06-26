@@ -1,0 +1,160 @@
+# National Building Code of the Philippines (PD 1096)
+# 2004 Revised IRR — Rule VII
+# Occupancy Classifications
+#
+# Source: 2004 Revised IRR of PD 1096, Sections 701-710
+
+code: "PD 1096"
+section: "Rule VII — Classification and General Requirements of All Buildings by Use or Occupancy"
+source: "2004 Revised IRR of PD 1096"
+last_verified: "2026-06-27"
+
+classifications:
+
+  - group: "A"
+    name: "Residential"
+    description: "Dwellings, apartments, hotels, dormitories"
+    divisions:
+      - division: "A-1"
+        name: "Single-Family Dwelling"
+        description: "One-family private dwelling unit"
+        max_occupants: null
+      - division: "A-2"
+        name: "Multiple-Family Dwelling"
+        description: "Apartments, condominiums, boarding houses"
+      - division: "A-3"
+        name: "Hotels and Apartment Hotels"
+        description: "Transient lodging, hotels, motels"
+      - division: "A-4"
+        name: "Dormitories"
+        description: "Dormitories, convents, monasteries"
+      - division: "A-5"
+        name: "Dwelling Accessory"
+        description: "Private garages, carports, fences, sheds"
+
+  - group: "B"
+    name: "Educational"
+    description: "Schools, day-care centers, training institutions"
+    divisions:
+      - division: "B-1"
+        name: "Schools"
+        description: "Schools, colleges, academies, seminaries, training institutions"
+
+  - group: "C"
+    name: "Institutional"
+    description: "Hospitals, jails, mental institutions, nursing homes"
+    divisions:
+      - division: "C-1"
+        name: "Hospitals and Sanitariums"
+        description: "Facilities for medical care of sick, injured, or infirm persons"
+      - division: "C-2"
+        name: "Nurseries, Homes for Children, Elderly"
+        description: "Custodial care of persons limited in ability to act for themselves"
+      - division: "C-3"
+        name: "Penal Institutions"
+        description: "Jails, prisons, reformatories, detention facilities"
+
+  - group: "D"
+    name: "Business and Mercantile"
+    description: "Offices, stores, markets, gas stations, shops"
+    divisions:
+      - division: "D-1"
+        name: "Offices"
+        description: "Professional and business offices"
+      - division: "D-2"
+        name: "Gasoline Stations"
+        description: "Motor fuel dispensing stations"
+      - division: "D-3"
+        name: "Stores and Shops"
+        description: "Wholesale and retail stores, shops, markets"
+
+  - group: "E"
+    name: "Industrial"
+    description: "Factories, workshops, power plants, pumping stations"
+    divisions:
+      - division: "E-1"
+        name: "Factories and Workshops (Low Hazard)"
+        description: "Manufacturing, assembly, processing — low fire/explosion risk"
+      - division: "E-2"
+        name: "Factories and Workshops (Moderate Hazard)"
+        description: "Manufacturing with moderate fire/explosion risk"
+      - division: "E-3"
+        name: "Factories and Workshops (High Hazard)"
+        description: "Manufacturing with high fire/explosion risk"
+
+  - group: "F"
+    name: "Storage"
+    description: "Warehouses, freight depots, grain elevators"
+    divisions:
+      - division: "F-1"
+        name: "Storage (Low Hazard)"
+        description: "Storage of non-combustible materials"
+      - division: "F-2"
+        name: "Storage (Moderate Hazard)"
+        description: "Storage of combustible materials"
+      - division: "F-3"
+        name: "Storage (High Hazard)"
+        description: "Storage of flammable/explosive materials"
+
+  - group: "G"
+    name: "Assembly"
+    description: "Churches, theaters, stadiums, restaurants, clubs"
+    divisions:
+      - division: "G-1"
+        name: "Assembly (Large)"
+        description: "Assembly buildings for 1,000 or more persons"
+        occupant_threshold: 1000
+      - division: "G-2"
+        name: "Assembly (Medium)"
+        description: "Assembly buildings for 300 to 999 persons"
+        occupant_range: [300, 999]
+      - division: "G-3"
+        name: "Assembly (Small)"
+        description: "Assembly buildings for less than 300 persons"
+        occupant_threshold_max: 300
+      - division: "G-4"
+        name: "Stadiums and Reviewing Stands"
+        description: "Open-air bleachers, grandstands, stadiums"
+      - division: "G-5"
+        name: "Amusement"
+        description: "Amusement parks, carnivals, fairgrounds"
+
+  - group: "H"
+    name: "Accessory"
+    description: "Fences over 1.8m, towers, monuments, chimneys"
+    divisions:
+      - division: "H-1"
+        name: "Accessory Structures"
+        description: "Structures appurtenant to buildings"
+
+  - group: "I"
+    name: "Agricultural"
+    description: "Barns, greenhouses, livestock shelters, silos"
+    divisions:
+      - division: "I-1"
+        name: "Agricultural Buildings"
+        description: "Buildings used for farming and agricultural purposes"
+
+  - group: "J"
+    name: "Mixed Occupancy"
+    description: "Buildings with more than one occupancy classification"
+    divisions:
+      - division: "J-1"
+        name: "Separated Mixed Occupancy"
+        description: "Each occupancy separated by fire-resistive assemblies"
+      - division: "J-2"
+        name: "Non-Separated Mixed Occupancy"
+        description: "Mixed uses not separated — most restrictive requirements apply"
+    notes: "Section 710: When a building has mixed occupancy, the most restrictive requirement for any occupancy shall apply to the entire building unless occupancies are separated by fire-resistive construction"
+
+zoning_to_occupancy_map:
+  R-1: ["A-1"]
+  R-2: ["A-1", "A-2"]
+  R-3: ["A-2", "A-4"]
+  R-4: ["A-2", "A-3"]
+  R-5: ["A-2", "A-3"]
+  C-1: ["D-3"]
+  C-2: ["D-1", "D-3"]
+  C-3: ["D-1", "D-2", "D-3"]
+  I-1: ["E-1"]
+  I-2: ["E-1", "E-2", "E-3"]

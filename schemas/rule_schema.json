@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Philippine Building Code Rule",
+  "description": "Schema for machine-readable Philippine building code rules",
+  "type": "object",
+  "required": ["code", "source", "rules"],
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Legal reference (e.g., PD 1096, BP 344, RA 9514)"
+    },
+    "section": {
+      "type": "string",
+      "description": "Section or rule reference"
+    },
+    "tables": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Referenced table numbers"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source document (e.g., 2004 Revised IRR of PD 1096)"
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date",
+      "description": "Date values were last verified against source"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    },
+    "classifications": {
+      "type": "array",
+      "description": "For occupancy classification files",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "$defs": {
+    "rule": {
+      "type": "object",
+      "required": ["id", "section", "description"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(NBCP|BP344|FC)-[A-Z]+-[A-Z][0-9]{3}$",
+          "description": "Unique rule identifier"
+        },
+        "section": {
+          "type": "string",
+          "description": "Official section reference"
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable rule description"
+        },
+        "value": {
+          "description": "Numeric or string value of the rule"
+        },
+        "value_min": {
+          "type": "number",
+          "description": "Minimum of a range"
+        },
+        "value_max": {
+          "type": "number",
+          "description": "Maximum of a range"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["m", "mm", "sqm", "sqmm", "cum", "%", "ratio", "hours", "days", "persons", "exits", "slot", "mm/person", "sqm/person", "boolean", "text", "N"],
+          "description": "Unit of measurement"
+        },
+        "applies_to": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Zoning types or building types this rule applies to"
+        },
+        "conditions": {
+          "type": "object",
+          "description": "Conditions under which this rule applies",
+          "additionalProperties": true
+        },
+        "formula": {
+          "type": "string",
+          "description": "Calculation formula if applicable"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional context or exceptions"
+        }
+      }
+    }
+  }
+}

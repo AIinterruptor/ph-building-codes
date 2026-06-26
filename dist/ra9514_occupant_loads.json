@@ -1,0 +1,232 @@
+{
+  "code": "RA 9514",
+  "section": "Division 10.2.8 — Occupant Load",
+  "source": "2019 RIRR of RA 9514",
+  "last_verified": "2026-06-27",
+  "notes": "Occupant Load Factor (OLF) = floor area per person.\nTo calculate occupant load: Total Floor Area / OLF = Number of Occupants.\nUse the most restrictive (smallest) OLF when multiple uses apply.\n",
+  "rules": [
+    {
+      "id": "FC-OL001",
+      "section": "Div. 10.2.8",
+      "description": "Assembly — concentrated seating (without fixed seats)",
+      "value": 0.65,
+      "unit": "sqm/person",
+      "applies_to": [
+        "assembly"
+      ],
+      "conditions": {
+        "seating": "concentrated"
+      }
+    },
+    {
+      "id": "FC-OL002",
+      "section": "Div. 10.2.8",
+      "description": "Assembly — less concentrated (tables and chairs)",
+      "value": 1.4,
+      "unit": "sqm/person",
+      "applies_to": [
+        "assembly"
+      ],
+      "conditions": {
+        "seating": "tables_and_chairs"
+      }
+    },
+    {
+      "id": "FC-OL003",
+      "section": "Div. 10.2.8",
+      "description": "Assembly — standing space",
+      "value": 0.46,
+      "unit": "sqm/person",
+      "applies_to": [
+        "assembly"
+      ],
+      "conditions": {
+        "seating": "standing"
+      }
+    },
+    {
+      "id": "FC-OL010",
+      "section": "Div. 10.2.8",
+      "description": "Business offices",
+      "value": 9.3,
+      "unit": "sqm/person",
+      "applies_to": [
+        "business"
+      ]
+    },
+    {
+      "id": "FC-OL020",
+      "section": "Div. 10.2.8",
+      "description": "Educational — classrooms",
+      "value": 1.8,
+      "unit": "sqm/person",
+      "applies_to": [
+        "educational"
+      ],
+      "conditions": {
+        "room_type": "classroom"
+      }
+    },
+    {
+      "id": "FC-OL021",
+      "section": "Div. 10.2.8",
+      "description": "Educational — shops/laboratories",
+      "value": 4.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "educational"
+      ],
+      "conditions": {
+        "room_type": "shop_laboratory"
+      }
+    },
+    {
+      "id": "FC-OL030",
+      "section": "Div. 10.2.8",
+      "description": "Industrial — general",
+      "value": 9.3,
+      "unit": "sqm/person",
+      "applies_to": [
+        "industrial"
+      ]
+    },
+    {
+      "id": "FC-OL040",
+      "section": "Div. 10.2.8",
+      "description": "Institutional — sleeping departments",
+      "value": 11.1,
+      "unit": "sqm/person",
+      "applies_to": [
+        "institutional"
+      ],
+      "conditions": {
+        "area_type": "sleeping"
+      }
+    },
+    {
+      "id": "FC-OL041",
+      "section": "Div. 10.2.8",
+      "description": "Institutional — treatment/outpatient",
+      "value": 22.3,
+      "unit": "sqm/person",
+      "applies_to": [
+        "institutional"
+      ],
+      "conditions": {
+        "area_type": "treatment"
+      }
+    },
+    {
+      "id": "FC-OL050",
+      "section": "Div. 10.2.8",
+      "description": "Mercantile — ground floor / basement",
+      "value": 2.8,
+      "unit": "sqm/person",
+      "applies_to": [
+        "mercantile"
+      ],
+      "conditions": {
+        "floor": "ground_or_basement"
+      }
+    },
+    {
+      "id": "FC-OL051",
+      "section": "Div. 10.2.8",
+      "description": "Mercantile — upper floors",
+      "value": 5.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "mercantile"
+      ],
+      "conditions": {
+        "floor": "upper"
+      }
+    },
+    {
+      "id": "FC-OL060",
+      "section": "Div. 10.2.8",
+      "description": "Residential — hotels, apartments",
+      "value": 18.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "residential"
+      ]
+    },
+    {
+      "id": "FC-OL070",
+      "section": "Div. 10.2.8",
+      "description": "Storage — general",
+      "value": 27.9,
+      "unit": "sqm/person",
+      "applies_to": [
+        "storage"
+      ]
+    },
+    {
+      "id": "FC-OL080",
+      "section": "Div. 10.2.8",
+      "description": "Kitchens (commercial)",
+      "value": 18.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "kitchen"
+      ]
+    },
+    {
+      "id": "FC-OL081",
+      "section": "Div. 10.2.8",
+      "description": "Library — reading rooms",
+      "value": 4.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "library"
+      ]
+    },
+    {
+      "id": "FC-OL082",
+      "section": "Div. 10.2.8",
+      "description": "Library — stack areas",
+      "value": 9.3,
+      "unit": "sqm/person",
+      "applies_to": [
+        "library"
+      ],
+      "conditions": {
+        "area_type": "stacks"
+      }
+    },
+    {
+      "id": "FC-OL083",
+      "section": "Div. 10.2.8",
+      "description": "Swimming pool deck",
+      "value": 4.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "recreation"
+      ]
+    },
+    {
+      "id": "FC-OL084",
+      "section": "Div. 10.2.8",
+      "description": "Exercise rooms / gymnasiums",
+      "value": 4.6,
+      "unit": "sqm/person",
+      "applies_to": [
+        "recreation"
+      ]
+    },
+    {
+      "id": "FC-OL085",
+      "section": "Div. 10.2.8",
+      "description": "Stages and platforms",
+      "value": 1.4,
+      "unit": "sqm/person",
+      "applies_to": [
+        "assembly"
+      ],
+      "conditions": {
+        "area_type": "stage"
+      }
+    }
+  ]
+}

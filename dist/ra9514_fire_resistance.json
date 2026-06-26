@@ -1,0 +1,219 @@
+{
+  "code": "RA 9514",
+  "section": "Fire Resistance and Suppression",
+  "source": "2019 RIRR of RA 9514",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "FC-FR001",
+      "section": "RIRR, Fire Walls",
+      "description": "Minimum fire resistance rating for fire walls",
+      "value": 3,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Structural fire walls separating buildings or occupancies"
+    },
+    {
+      "id": "FC-FR002",
+      "section": "RIRR, Fire Barriers",
+      "description": "Minimum fire resistance rating for fire barriers (occupancy separation)",
+      "value": 2,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Between different occupancy groups in mixed-use"
+    },
+    {
+      "id": "FC-FR003",
+      "section": "RIRR, Fire Barriers",
+      "description": "Minimum fire resistance rating for party/common walls (R-3)",
+      "value": 2,
+      "unit": "hours",
+      "applies_to": [
+        "R-3"
+      ],
+      "notes": "Between rowhouse/townhouse units"
+    },
+    {
+      "id": "FC-FR004",
+      "section": "RIRR, Fire Barriers",
+      "description": "Fire barrier minimum height above roof",
+      "value": 400,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Must extend above roof line"
+    },
+    {
+      "id": "FC-FR005",
+      "section": "RIRR, Shaft Enclosures",
+      "description": "Minimum fire resistance for vertical shaft enclosures (up to 4 storeys)",
+      "value": 1,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storeys_max": 4
+      }
+    },
+    {
+      "id": "FC-FR006",
+      "section": "RIRR, Shaft Enclosures",
+      "description": "Minimum fire resistance for vertical shaft enclosures (over 4 storeys)",
+      "value": 2,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "storeys_min": 5
+      }
+    },
+    {
+      "id": "FC-FR007",
+      "section": "RIRR, Floor Assemblies",
+      "description": "Minimum fire resistance for floor/ceiling assemblies",
+      "value": 1,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Between floors of different occupancy groups"
+    },
+    {
+      "id": "FC-FR008",
+      "section": "RIRR, Fire Doors",
+      "description": "Fire door minimum rating for 2-hour fire barrier",
+      "value": 1.5,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Fire door rating = barrier rating minus 30 min"
+    },
+    {
+      "id": "FC-FR009",
+      "section": "RIRR, Fire Doors",
+      "description": "Fire door minimum rating for 1-hour fire barrier",
+      "value": 0.75,
+      "unit": "hours",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "FC-FR020",
+      "section": "RIRR, Suppression",
+      "description": "Automatic fire suppression system (AFSS) — building height threshold",
+      "value": 15.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Required for all high-rise buildings (>15m)"
+    },
+    {
+      "id": "FC-FR021",
+      "section": "RIRR, Suppression",
+      "description": "AFSS required — assembly occupancy threshold",
+      "value": 300,
+      "unit": "persons",
+      "applies_to": [
+        "assembly"
+      ],
+      "notes": "Required when occupant load exceeds 300"
+    },
+    {
+      "id": "FC-FR022",
+      "section": "RIRR, Suppression",
+      "description": "Standpipe system required — building height threshold",
+      "value": 15.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Wet standpipe for high-rise; dry standpipe acceptable for parking"
+    },
+    {
+      "id": "FC-FR030",
+      "section": "RIRR, High-Rise",
+      "description": "Pressurized fire exit stair requirement",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "high_rise"
+      ],
+      "notes": "Required for all buildings above 15m"
+    },
+    {
+      "id": "FC-FR031",
+      "section": "RIRR, High-Rise",
+      "description": "Refuge floor interval (storeys)",
+      "value": 20,
+      "unit": "storeys",
+      "applies_to": [
+        "high_rise"
+      ],
+      "notes": "One refuge floor every 20 storeys"
+    },
+    {
+      "id": "FC-FR032",
+      "section": "RIRR, High-Rise",
+      "description": "Refuge floor minimum area as percentage of typical floor",
+      "value": 50,
+      "unit": "%",
+      "applies_to": [
+        "high_rise"
+      ],
+      "notes": "Must be at least 50% of typical floor plate area"
+    },
+    {
+      "id": "FC-FR040",
+      "section": "RIRR, Alarms",
+      "description": "Fire detection/alarm required — assembly threshold",
+      "value": 50,
+      "unit": "persons",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Required for buildings designed for 50+ occupants"
+    },
+    {
+      "id": "FC-FR041",
+      "section": "RIRR, Alarms",
+      "description": "Manual fire alarm pull station spacing",
+      "value": 60.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Maximum travel distance to nearest pull station"
+    },
+    {
+      "id": "FC-FR050",
+      "section": "RIRR, Access",
+      "description": "Minimum fire lane width",
+      "value": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "For fire truck access"
+    },
+    {
+      "id": "FC-FR051",
+      "section": "RIRR, Access",
+      "description": "Maximum distance from fire lane to building face",
+      "value": 46.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+# Fire Code of the Philippines (RA 9514)
+# 2019 Revised Implementing Rules and Regulations (RIRR)
+# Means of Egress Requirements
+#
+# Source: RA 9514 RIRR 2019, Division 10.2.5-10.2.11
+# Verified against: Studocu RA9514 RIRR, Scribd references, BFP training guide
+
+code: "RA 9514"
+section: "Division 10.2.5-10.2.11 — Means of Egress"
+source: "2019 RIRR of RA 9514"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # NUMBER OF EXITS REQUIRED
+  # ============================================================
+
+  - id: "FC-EG001"
+    section: "Div. 10.2.5"
+    description: "Minimum exits — occupant load up to 500"
+    value: 2
+    unit: "exits"
+    applies_to: ["all"]
+    conditions:
+      occupant_load_max: 500
+
+  - id: "FC-EG002"
+    section: "Div. 10.2.5"
+    description: "Minimum exits — occupant load 501 to 1000"
+    value: 3
+    unit: "exits"
+    applies_to: ["all"]
+    conditions:
+      occupant_load_min: 501
+      occupant_load_max: 1000
+
+  - id: "FC-EG003"
+    section: "Div. 10.2.5"
+    description: "Minimum exits — occupant load over 1000"
+    value: 4
+    unit: "exits"
+    applies_to: ["all"]
+    conditions:
+      occupant_load_min: 1001
+
+  # ============================================================
+  # TRAVEL DISTANCE TO EXITS
+  # ============================================================
+
+  - id: "FC-EG010"
+    section: "Div. 10.2.6"
+    description: "Maximum travel distance — without sprinkler system"
+    value: 46.0
+    unit: "m"
+    applies_to: ["all"]
+    conditions:
+      sprinkler: false
+
+  - id: "FC-EG011"
+    section: "Div. 10.2.6"
+    description: "Maximum travel distance — with approved sprinkler system"
+    value: 61.0
+    unit: "m"
+    applies_to: ["all"]
+    conditions:
+      sprinkler: true
+
+  - id: "FC-EG012"
+    section: "Div. 10.2.6"
+    description: "Maximum travel distance — hazardous occupancy"
+    value: 23.0
+    unit: "m"
+    applies_to: ["hazardous"]
+    notes: "Most restrictive; applies to high-hazard storage/industrial"
+
+  # ============================================================
+  # DEAD-END CORRIDORS
+  # ============================================================
+
+  - id: "FC-EG020"
+    section: "Div. 10.2.6"
+    description: "Maximum dead-end corridor length — without sprinkler"
+    value: 6.0
+    unit: "m"
+    applies_to: ["all"]
+    conditions:
+      sprinkler: false
+
+  - id: "FC-EG021"
+    section: "Div. 10.2.6"
+    description: "Maximum dead-end corridor length — with sprinkler"
+    value: 15.0
+    unit: "m"
+    applies_to: ["all"]
+    conditions:
+      sprinkler: true
+
+  # ============================================================
+  # EXIT / CORRIDOR / STAIR WIDTHS
+  # ============================================================
+
+  - id: "FC-EG030"
+    section: "Div. 10.2.7"
+    description: "Minimum corridor width"
+    value: 1120
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "44 inches; 1830mm (72 in) for educational/institutional corridors"
+
+  - id: "FC-EG031"
+    section: "Div. 10.2.7"
+    description: "Minimum corridor width — educational/institutional occupancy"
+    value: 1830
+    unit: "mm"
+    applies_to: ["educational", "institutional"]
+
+  - id: "FC-EG032"
+    section: "Div. 10.2.7"
+    description: "Minimum exit door width"
+    value: 900
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Clear opening width"
+
+  - id: "FC-EG033"
+    section: "Div. 10.2.7"
+    description: "Minimum stairway width"
+    value: 1120
+    unit: "mm"
+    applies_to: ["all"]
+    conditions:
+      occupant_load_min: 50
+    notes: "44 inches minimum for occupant load > 50"
+
+  - id: "FC-EG034"
+    section: "Div. 10.2.7"
+    description: "Exit width per occupant (stairways)"
+    value: 7.6
+    unit: "mm/person"
+    applies_to: ["all"]
+    formula: "required_width = max(1120, occupant_load × 7.6)"
+    notes: "0.3 inches per occupant"
+
+  - id: "FC-EG035"
+    section: "Div. 10.2.7"
+    description: "Exit width per occupant (doors/corridors/ramps)"
+    value: 5.1
+    unit: "mm/person"
+    applies_to: ["all"]
+    formula: "required_width = max(1120, occupant_load × 5.1)"
+    notes: "0.2 inches per occupant"
+
+  # ============================================================
+  # EXIT DOORS
+  # ============================================================
+
+  - id: "FC-EG040"
+    section: "Div. 10.2.9"
+    description: "Exit door swing direction — occupant load threshold"
+    value: 50
+    unit: "persons"
+    applies_to: ["all"]
+    notes: "Doors must swing in direction of exit travel when serving 50+ occupants"
+
+  - id: "FC-EG041"
+    section: "Div. 10.2.9"
+    description: "Maximum exit door width"
+    value: 1200
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Single leaf; paired doors may be wider"
+
+  - id: "FC-EG042"
+    section: "Div. 10.2.9"
+    description: "Exit door maximum opening force"
+    value: 67
+    unit: "N"
+    applies_to: ["all"]
+    notes: "15 lbf; doors must open with reasonable force"
+
+  # ============================================================
+  # STAIRWAYS — DIMENSIONAL
+  # ============================================================
+
+  - id: "FC-EG050"
+    section: "Div. 10.2.10"
+    description: "Maximum stair riser height"
+    value: 200
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "FC-EG051"
+    section: "Div. 10.2.10"
+    description: "Minimum stair tread depth"
+    value: 250
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "FC-EG052"
+    section: "Div. 10.2.10"
+    description: "Minimum stair headroom clearance"
+    value: 2030
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "80 inches measured vertically from tread nosing"
+
+  - id: "FC-EG053"
+    section: "Div. 10.2.10"
+    description: "Stair landing minimum depth"
+    value: 1120
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Not less than the width of the stairway"
+
+  # ============================================================
+  # PUBLIC ASSEMBLY THRESHOLD
+  # ============================================================
+
+  - id: "FC-EG060"
+    section: "Div. 10.2.8"
+    description: "Public assembly building occupancy threshold"
+    value: 50
+    unit: "persons"
+    applies_to: ["assembly"]
+    notes: "Buildings designed for 50+ persons classified as public assembly"

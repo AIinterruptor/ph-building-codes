@@ -1,0 +1,95 @@
+{
+  "code": "BP 344",
+  "section": "Accessibility — Ramps",
+  "source": "BP 344 IRR (2024 Revised)",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "BP344-R001",
+      "section": "IRR, Sec. Ramps",
+      "description": "Maximum ramp slope for PWD accessibility",
+      "value": "1:12",
+      "unit": "ratio",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "8.33% maximum grade"
+    },
+    {
+      "id": "BP344-R002",
+      "section": "IRR, Sec. Ramps",
+      "description": "Minimum ramp clear width",
+      "value": 1200,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ]
+    },
+    {
+      "id": "BP344-R003",
+      "section": "IRR, Sec. Ramps",
+      "description": "Maximum rise per ramp run",
+      "value": 750,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Each run limited to 750mm rise before a landing is required"
+    },
+    {
+      "id": "BP344-R004",
+      "section": "IRR, Sec. Ramps",
+      "description": "Ramp landing dimensions (top and bottom)",
+      "value": 1500,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "1500mm × 1500mm minimum at top and bottom of each run"
+    },
+    {
+      "id": "BP344-R005",
+      "section": "IRR, Sec. Ramps",
+      "description": "Ramp handrail height",
+      "value": 900,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Required on both sides"
+    },
+    {
+      "id": "BP344-R006",
+      "section": "IRR, Sec. Ramps",
+      "description": "Maximum ramp slope for vehicles",
+      "value": "1:10",
+      "unit": "ratio",
+      "applies_to": [
+        "vehicular"
+      ],
+      "notes": "10% maximum grade for vehicular ramps"
+    },
+    {
+      "id": "BP344-R007",
+      "section": "IRR, Sec. Ramps",
+      "description": "Ramp edge protection — detectable tapping rail required",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "At all hazard edges for safety"
+    },
+    {
+      "id": "BP344-R008",
+      "section": "IRR, Sec. Ramps",
+      "description": "Handrail extension beyond ramp run",
+      "value": 300,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Handrails must extend 300mm beyond top and bottom of ramp"
+    }
+  ]
+}

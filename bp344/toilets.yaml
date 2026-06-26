@@ -1,0 +1,138 @@
+# Accessibility Law of the Philippines (BP 344)
+# IRR as amended (2024 Revised IRR)
+# Accessible Toilet Requirements
+#
+# Source: BP 344 IRR, NCDA, DPWH
+# Verified against: aedoconstruction.com BP344 reference
+
+code: "BP 344"
+section: "Accessibility — Toilets"
+source: "BP 344 IRR (2024 Revised)"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # COMPARTMENT DIMENSIONS
+  # ============================================================
+
+  - id: "BP344-T001"
+    section: "IRR, Sec. Toilets"
+    description: "PWD toilet compartment minimum width"
+    value: 1700
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "BP344-T002"
+    section: "IRR, Sec. Toilets"
+    description: "PWD toilet compartment minimum depth"
+    value: 1800
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "BP344-T003"
+    section: "IRR, Sec. Toilets"
+    description: "PWD toilet door minimum clear width"
+    value: 900
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Door must swing outward or be sliding"
+
+  - id: "BP344-T004"
+    section: "IRR, Sec. Toilets"
+    description: "Clear transfer space adjacent to water closet"
+    value: 750
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "On at least one side of the water closet"
+
+  # ============================================================
+  # FIXTURES
+  # ============================================================
+
+  - id: "BP344-T010"
+    section: "IRR, Sec. Toilets"
+    description: "Water closet seat height from floor"
+    value_min: 450
+    value_max: 500
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "BP344-T011"
+    section: "IRR, Sec. Toilets"
+    description: "Grab bar height from floor"
+    value: 900
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "BP344-T012"
+    section: "IRR, Sec. Toilets"
+    description: "Grab bar diameter"
+    value_min: 33
+    value_max: 36
+    unit: "mm"
+    applies_to: ["all"]
+
+  - id: "BP344-T013"
+    section: "IRR, Sec. Toilets"
+    description: "Grab bar clearance from wall"
+    value: 38
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Space between grab bar and wall surface"
+
+  - id: "BP344-T014"
+    section: "IRR, Sec. Toilets"
+    description: "Lavatory/sink maximum height"
+    value: 800
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Measured to top of rim"
+
+  - id: "BP344-T015"
+    section: "IRR, Sec. Toilets"
+    description: "Knee clearance under lavatory"
+    value: 680
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Minimum clear space under lavatory for wheelchair users"
+
+  - id: "BP344-T016"
+    section: "IRR, Sec. Toilets"
+    description: "Mirror bottom edge maximum height"
+    value: 900
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Bottom edge of reflective surface"
+
+  - id: "BP344-T017"
+    section: "IRR, Sec. Toilets"
+    description: "Soap/towel dispenser maximum reach height"
+    value: 1200
+    unit: "mm"
+    applies_to: ["all"]
+
+  # ============================================================
+  # POOL AREAS (When Applicable)
+  # ============================================================
+
+  - id: "BP344-T020"
+    section: "IRR, Sec. Pools"
+    description: "Pool deck level area minimum width"
+    value: 1500
+    unit: "mm"
+    applies_to: ["swimming_pools"]
+
+  - id: "BP344-T021"
+    section: "IRR, Sec. Pools"
+    description: "Pool transfer wall minimum width"
+    value: 700
+    unit: "mm"
+    applies_to: ["swimming_pools"]
+
+  - id: "BP344-T022"
+    section: "IRR, Sec. Pools"
+    description: "Pool coping clearance"
+    value: 400
+    unit: "mm"
+    applies_to: ["swimming_pools"]

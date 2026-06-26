@@ -1,0 +1,284 @@
+{
+  "code": "PD 1096",
+  "section": "Rule VII & Rule VIII",
+  "tables": [
+    "VII.1",
+    "VIII.1"
+  ],
+  "source": "2004 Revised IRR of PD 1096",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "NBCP-VII-F001",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for low-density residential (R-1)",
+      "value": 1.5,
+      "unit": "ratio",
+      "applies_to": [
+        "R-1"
+      ],
+      "formula": "TGFA = FAR × TLA",
+      "notes": "Example: 300sqm lot × 1.5 FAR = 450sqm max TGFA"
+    },
+    {
+      "id": "NBCP-VII-F002",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for medium-density residential (R-2)",
+      "value": 2.0,
+      "unit": "ratio",
+      "applies_to": [
+        "R-2"
+      ]
+    },
+    {
+      "id": "NBCP-VII-F003",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for medium-high density residential (R-3)",
+      "value": 3.0,
+      "unit": "ratio",
+      "applies_to": [
+        "R-3"
+      ]
+    },
+    {
+      "id": "NBCP-VII-F004",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for high-density residential (R-4/R-5)",
+      "value": 5.0,
+      "unit": "ratio",
+      "applies_to": [
+        "R-4",
+        "R-5"
+      ],
+      "notes": "May go higher with government housing programs"
+    },
+    {
+      "id": "NBCP-VII-F005",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for neighborhood commercial (C-1)",
+      "value": 2.0,
+      "unit": "ratio",
+      "applies_to": [
+        "C-1"
+      ]
+    },
+    {
+      "id": "NBCP-VII-F006",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for community commercial (C-2)",
+      "value": 4.0,
+      "unit": "ratio",
+      "applies_to": [
+        "C-2"
+      ]
+    },
+    {
+      "id": "NBCP-VII-F007",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for general commercial / CBD (C-3)",
+      "value": 8.0,
+      "unit": "ratio",
+      "applies_to": [
+        "C-3"
+      ],
+      "notes": "CBD/mixed-use may go to 10.0+ per LGU ordinance"
+    },
+    {
+      "id": "NBCP-VII-F008",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for light industrial (I-1)",
+      "value": 2.0,
+      "unit": "ratio",
+      "applies_to": [
+        "I-1"
+      ]
+    },
+    {
+      "id": "NBCP-VII-F009",
+      "section": "Rule VII, Table VII.1",
+      "description": "FAR for medium/heavy industrial (I-2)",
+      "value": 2.0,
+      "unit": "ratio",
+      "applies_to": [
+        "I-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-P001",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Maximum PSO for R-1 (low-density residential)",
+      "value": 70,
+      "unit": "%",
+      "applies_to": [
+        "R-1"
+      ],
+      "formula": "AMBF = PSO × TLA / 100",
+      "notes": "60-70% depending on lot configuration"
+    },
+    {
+      "id": "NBCP-VIII-P002",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Maximum PSO for R-2 (medium-density residential)",
+      "value": 70,
+      "unit": "%",
+      "applies_to": [
+        "R-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-P003",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Maximum PSO for R-3 (medium-high density)",
+      "value": 75,
+      "unit": "%",
+      "applies_to": [
+        "R-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-P004",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Maximum PSO for commercial (C-1, C-2, C-3)",
+      "value": 90,
+      "unit": "%",
+      "applies_to": [
+        "C-1",
+        "C-2",
+        "C-3"
+      ],
+      "notes": "80-90% range; more restrictive in some LGUs"
+    },
+    {
+      "id": "NBCP-VIII-P005",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Maximum PSO for industrial",
+      "value": 80,
+      "unit": "%",
+      "applies_to": [
+        "I-1",
+        "I-2"
+      ],
+      "notes": "70-80% range"
+    },
+    {
+      "id": "NBCP-VIII-T001",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Minimum TOSL for R-1",
+      "value": 30,
+      "unit": "%",
+      "applies_to": [
+        "R-1"
+      ],
+      "formula": "TOSL = 100 - PSO"
+    },
+    {
+      "id": "NBCP-VIII-T002",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Minimum TOSL for R-2",
+      "value": 30,
+      "unit": "%",
+      "applies_to": [
+        "R-2"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-T003",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Minimum TOSL for R-3",
+      "value": 25,
+      "unit": "%",
+      "applies_to": [
+        "R-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-T004",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Minimum TOSL for commercial",
+      "value": 10,
+      "unit": "%",
+      "applies_to": [
+        "C-1",
+        "C-2",
+        "C-3"
+      ]
+    },
+    {
+      "id": "NBCP-VIII-T005",
+      "section": "Rule VIII, Table VIII.1",
+      "description": "Minimum TOSL for industrial",
+      "value": 20,
+      "unit": "%",
+      "applies_to": [
+        "I-1",
+        "I-2"
+      ]
+    },
+    {
+      "id": "NBCP-VII-H001",
+      "section": "Rule VII",
+      "description": "R-1 building height limit",
+      "value": 10.0,
+      "unit": "m",
+      "applies_to": [
+        "R-1"
+      ],
+      "notes": "3 storeys max; 9.0m for regular (non-deck) roof"
+    },
+    {
+      "id": "NBCP-VII-H002",
+      "section": "Rule VII",
+      "description": "R-2 building height limit",
+      "value": 15.0,
+      "unit": "m",
+      "applies_to": [
+        "R-2"
+      ],
+      "notes": "5 storeys max"
+    },
+    {
+      "id": "NBCP-VII-H003",
+      "section": "Rule VII",
+      "description": "High-rise building threshold",
+      "value": 15.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Buildings above 15m classified as high-rise per RA 9514"
+    },
+    {
+      "id": "NBCP-III-E001",
+      "section": "Rule III, Sec. 301.3.1",
+      "description": "Maximum area for exempt sheds/outhouses",
+      "value": 6.0,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "No building permit required"
+    },
+    {
+      "id": "NBCP-III-E002",
+      "section": "Rule III, Sec. 301.3.1",
+      "description": "Maximum area for exempt patios/terraces",
+      "value": 20.0,
+      "unit": "sqm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "No building permit required"
+    },
+    {
+      "id": "NBCP-III-E003",
+      "section": "Rule III, Sec. 301.3.1",
+      "description": "Maximum height for exempt garden walls",
+      "value": 1.2,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "No building permit required"
+    }
+  ]
+}

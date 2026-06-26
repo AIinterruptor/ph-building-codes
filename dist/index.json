@@ -1,0 +1,87 @@
+{
+  "codes": [
+    {
+      "directory": "nbcp",
+      "files": [
+        {
+          "name": "building_bulk",
+          "code": "PD 1096",
+          "section": "Rule VII & Rule VIII",
+          "rule_count": 25
+        },
+        {
+          "name": "light_ventilation",
+          "code": "PD 1096",
+          "section": "Rule VIII — Light and Ventilation",
+          "rule_count": 26
+        },
+        {
+          "name": "occupancy",
+          "code": "PD 1096",
+          "section": "Rule VII — Classification and General Requirements of All Buildings by Use or Occupancy",
+          "rule_count": 10
+        },
+        {
+          "name": "setbacks",
+          "code": "PD 1096",
+          "section": "Rule VIII — Light and Ventilation",
+          "rule_count": 36
+        }
+      ]
+    },
+    {
+      "directory": "bp344",
+      "files": [
+        {
+          "name": "doors_corridors",
+          "code": "BP 344",
+          "section": "Accessibility — Doors and Corridors",
+          "rule_count": 16
+        },
+        {
+          "name": "parking",
+          "code": "BP 344",
+          "section": "Accessibility — Parking",
+          "rule_count": 8
+        },
+        {
+          "name": "ramps",
+          "code": "BP 344",
+          "section": "Accessibility — Ramps",
+          "rule_count": 8
+        },
+        {
+          "name": "toilets",
+          "code": "BP 344",
+          "section": "Accessibility — Toilets",
+          "rule_count": 15
+        }
+      ]
+    },
+    {
+      "directory": "ra9514",
+      "files": [
+        {
+          "name": "fire_resistance",
+          "code": "RA 9514",
+          "section": "Fire Resistance and Suppression",
+          "rule_count": 19
+        },
+        {
+          "name": "means_of_egress",
+          "code": "RA 9514",
+          "section": "Division 10.2.5-10.2.11 — Means of Egress",
+          "rule_count": 22
+        },
+        {
+          "name": "occupant_loads",
+          "code": "RA 9514",
+          "section": "Division 10.2.8 — Occupant Load",
+          "rule_count": 19
+        }
+      ]
+    }
+  ],
+  "total_rules": 204,
+  "total_files": 11
+}
