@@ -1,0 +1,164 @@
+{
+  "code": "Green Building Code",
+  "section": "Water Conservation",
+  "source": "BERDE, LEED v4.1, Philippine Plumbing Code, MWSS Guidelines",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "GBC-H2O-W001",
+      "section": "Fixtures, Flow Rates",
+      "description": "Maximum flow rate for lavatory faucets",
+      "value": 6.0,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "liters/min"
+      },
+      "notes": "Standard faucet: 12 L/min. Low-flow aerator reduces to 4-6 L/min (50% savings). BERDE requires 30% reduction from baseline."
+    },
+    {
+      "id": "GBC-H2O-W002",
+      "section": "Fixtures, Flow Rates",
+      "description": "Maximum flow rate for shower heads",
+      "value": 9.0,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "liters/min"
+      },
+      "notes": "Standard shower: 15 L/min. Low-flow: 7-9 L/min. Below 7 L/min creates poor user experience."
+    },
+    {
+      "id": "GBC-H2O-W003",
+      "section": "Fixtures, Flush Volume",
+      "description": "Maximum flush volume for water closets — dual flush",
+      "value": "6/3",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "liters_full/half"
+      },
+      "notes": "Dual flush: 6L full / 3L half. Ultra-low flush: 4.8L/3L. BERDE baseline is 6/3 dual flush; credits for better."
+    },
+    {
+      "id": "GBC-H2O-W004",
+      "section": "Fixtures, Flow Rates",
+      "description": "Waterless urinals preferred for commercial buildings",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Saves 150,000L per urinal per year. BERDE awards significant credits. Requires compatible drain traps and maintenance protocol."
+    },
+    {
+      "id": "GBC-H2O-W005",
+      "section": "Fixtures, Sensors",
+      "description": "Sensor-activated faucets required for public/commercial restrooms",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Eliminates running taps. Typical savings: 30-50% vs. manual faucets. Specify 0.5L/activation or timed flow."
+    },
+    {
+      "id": "GBC-H2O-W010",
+      "section": "Greywater Recycling",
+      "description": "Greywater treatment and reuse for toilet flushing and irrigation",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "commercial",
+        "residential"
+      ],
+      "notes": "Greywater (sinks, showers, laundry) = 50-70% of household wastewater. Simple filtration + UV treatment for toilet flushing. BERDE awards 2 credits for greywater reuse."
+    },
+    {
+      "id": "GBC-H2O-W011",
+      "section": "Greywater Recycling",
+      "description": "Separate greywater and blackwater plumbing recommended for new construction",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Dual plumbing costs 5-10% more upfront but enables greywater reuse. Much cheaper to install during construction than retrofit."
+    },
+    {
+      "id": "GBC-H2O-W012",
+      "section": "Sewage Treatment",
+      "description": "On-site sewage treatment for buildings outside sewer service areas",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "area": "unsewered"
+      },
+      "notes": "Septic tank + constructed wetland for small buildings. STP (Sewage Treatment Plant) for larger developments. RA 9275 (Clean Water Act) mandates treatment before discharge."
+    },
+    {
+      "id": "GBC-H2O-W020",
+      "section": "Irrigation",
+      "description": "Landscape water reduction target vs. conventional irrigation",
+      "value": 50,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "BERDE and LEED both target 50% reduction. Achieve through: native drought-tolerant species, drip irrigation, mulching, rainwater harvesting, and soil moisture sensors."
+    },
+    {
+      "id": "GBC-H2O-W021",
+      "section": "Irrigation",
+      "description": "Drip irrigation preferred over spray/sprinkler for landscaping",
+      "value": "drip_preferred",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Drip irrigation: 90% efficiency vs. sprinkler 50-60%. Reduces evaporation loss significantly in tropical heat."
+    },
+    {
+      "id": "GBC-H2O-W022",
+      "section": "Irrigation",
+      "description": "Native and drought-adapted species for minimum 50% of landscaped area",
+      "value": 50,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Native species require less irrigation once established. BERDE awards credits for xeriscaping or native planting exceeding 50%."
+    },
+    {
+      "id": "GBC-H2O-W030",
+      "section": "Metering",
+      "description": "Sub-metering required for major water uses in commercial buildings",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Separate meters for: HVAC cooling towers, irrigation, domestic hot water, process water. Enables leak detection and consumption tracking."
+    },
+    {
+      "id": "GBC-H2O-W031",
+      "section": "Metering",
+      "description": "Leak detection system for main supply line",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Flow sensors that detect anomalous usage patterns. Philippine water losses average 30-40% in distribution — building-level leaks add to this."
+    }
+  ]
+}

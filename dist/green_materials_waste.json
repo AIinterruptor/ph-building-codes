@@ -1,0 +1,174 @@
+{
+  "code": "Green Building Code",
+  "section": "Sustainable Materials & Waste",
+  "source": "BERDE, LEED v4.1, RA 9003 (Ecological Solid Waste Management), PGBC",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "GBC-MAT-S001",
+      "section": "Materials, Regional",
+      "description": "Minimum percentage of materials sourced within 160km of site",
+      "value": 20,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "distance": "160km radius",
+        "basis": "by_cost"
+      },
+      "notes": "Reduces transport emissions and supports local economy. Philippines has strong local production of concrete, hollow blocks, steel, bamboo, and hardwood."
+    },
+    {
+      "id": "GBC-MAT-S002",
+      "section": "Materials, Recycled Content",
+      "description": "Minimum recycled content in building materials by cost",
+      "value": 10,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "BERDE baseline. Include recycled steel (typically 25-90% recycled), recycled aggregate concrete, reclaimed wood. Post-consumer recycled content valued at 2× pre-consumer."
+    },
+    {
+      "id": "GBC-MAT-S003",
+      "section": "Materials, Rapidly Renewable",
+      "description": "Rapidly renewable materials as percentage of total material cost",
+      "value": 5,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Materials with harvest cycle ≤10 years: bamboo (3-5yr), coconut lumber, rattan, cork, straw, natural fiber insulation. Philippines has abundant bamboo and coconut resources."
+    },
+    {
+      "id": "GBC-MAT-S004",
+      "section": "Materials, Certified Wood",
+      "description": "All virgin wood must be legally sourced and preferably FSC/PEFC certified",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "RA 7586 and DENR regulations prohibit use of illegally sourced timber. FSC certification preferred. Alternative: reclaimed/salvaged wood (superior green credit)."
+    },
+    {
+      "id": "GBC-MAT-S005",
+      "section": "Materials, Low-Emitting",
+      "description": "All interior adhesives, sealants, paints must be low-VOC",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "VOC limits per SCAQMD or GreenSeal standards. Paints ≤50 g/L, adhesives ≤70 g/L, sealants ≤250 g/L. Critical in tropical climates where heat accelerates off-gassing."
+    },
+    {
+      "id": "GBC-MAT-S010",
+      "section": "Embodied Carbon",
+      "description": "Environmental Product Declarations (EPD) required for major materials",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "BERDE and LEED award credits for EPDs covering 20+ permanently installed products. Enables lifecycle carbon accounting."
+    },
+    {
+      "id": "GBC-MAT-S011",
+      "section": "Embodied Carbon",
+      "description": "Concrete optimization — target cement reduction strategies",
+      "value": "30_percent_cement_reduction",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Concrete is 8% of global CO2. Reduce through: supplementary cementitious materials (fly ash, GGBS, rice husk ash), optimized mix design, post-tensioning for thinner sections."
+    },
+    {
+      "id": "GBC-MAT-S012",
+      "section": "Embodied Carbon",
+      "description": "Whole-building lifecycle assessment (LCA) for BERDE certification",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "LCA covers cradle-to-grave: material extraction, transport, construction, operation, demolition. Demonstrate 10% reduction vs. baseline for BERDE credit."
+    },
+    {
+      "id": "GBC-MAT-S020",
+      "section": "Construction Waste",
+      "description": "Minimum construction waste diversion from landfill",
+      "value": 75,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "By weight. Segregate: concrete/masonry (crush for fill), metals (recycle), wood (reuse/biomass), packaging (recycle). Requires waste management plan before construction."
+    },
+    {
+      "id": "GBC-MAT-S021",
+      "section": "Construction Waste",
+      "description": "Construction waste management plan required before groundbreaking",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Plan identifies: waste streams, diversion targets, responsible parties, haulers, tracking method. BERDE prerequisite."
+    },
+    {
+      "id": "GBC-MAT-S022",
+      "section": "Construction Waste",
+      "description": "Maximum construction waste generation per floor area",
+      "value": 25,
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "conditions": {
+        "unit_detail": "kg/m²"
+      },
+      "notes": "Philippine average: 40-60 kg/m². Target: ≤25 kg/m² through prefabrication, modular construction, cut optimization, and material take-off accuracy."
+    },
+    {
+      "id": "GBC-MAT-S030",
+      "section": "Operational Waste",
+      "description": "Waste segregation facilities required per RA 9003",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "RA 9003 mandates segregation into: biodegradable, recyclable, residual, special/hazardous. Building must provide designated collection points for each stream."
+    },
+    {
+      "id": "GBC-MAT-S031",
+      "section": "Operational Waste",
+      "description": "Composting facility for buildings with food service or >50 residential units",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "conditions": {
+        "food_service": true,
+        "units_min": 50
+      },
+      "notes": "On-site composting or vermicomposting for organic waste. Reduces hauling volume by 40-60%. Compost used for landscaping."
+    },
+    {
+      "id": "GBC-MAT-S032",
+      "section": "Operational Waste",
+      "description": "Recycling storage area minimum size per building area",
+      "value": "1sqm per 500sqm floor area",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Dedicated, accessible, covered, and ventilated recycling storage. Minimum 10sqm for any commercial building."
+    }
+  ]
+}

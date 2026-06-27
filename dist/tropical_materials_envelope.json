@@ -1,0 +1,241 @@
+{
+  "code": "Tropical Architecture",
+  "section": "Materials & Building Envelope",
+  "source": "Koenigsberger Manual, ASHRAE 90.1 Climate Zone 1, Philippine Practice",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "TA-MAT-M001",
+      "section": "Thermal Mass",
+      "description": "Low thermal mass preferred for naturally ventilated tropical buildings",
+      "value": "low_mass",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Unlike temperate climates, tropics have small diurnal temp swing (24-34°C). Heavy mass stores daytime heat and re-radiates at night when cooling is needed. Lightweight construction cools faster after sunset."
+    },
+    {
+      "id": "TA-MAT-M002",
+      "section": "Thermal Mass",
+      "description": "High thermal mass acceptable only for air-conditioned buildings",
+      "value": "high_mass_with_AC",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "AC buildings benefit from mass that absorbs internal gains and delays peak cooling load. Concrete cores work well when HVAC runs 8-12 hours."
+    },
+    {
+      "id": "TA-MAT-M003",
+      "section": "Wall Assembly",
+      "description": "Maximum wall U-value for tropical climate (ASHRAE Zone 1)",
+      "value": 3.29,
+      "unit": "ratio",
+      "applies_to": [
+        "commercial"
+      ],
+      "conditions": {
+        "unit_detail": "W/m²K",
+        "climate_zone": 1
+      },
+      "notes": "ASHRAE 90.1 prescriptive for mass walls in Zone 1. Residential naturally ventilated buildings rely more on shading than insulation."
+    },
+    {
+      "id": "TA-MAT-M004",
+      "section": "Roof Assembly",
+      "description": "Maximum roof U-value for tropical climate",
+      "value": 0.36,
+      "unit": "ratio",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "W/m²K"
+      },
+      "notes": "Roof receives the most solar radiation — insulation here has highest ROI. R-19 minimum. Radiant barrier under metal roofing adds significant performance."
+    },
+    {
+      "id": "TA-MAT-M010",
+      "section": "Moisture Protection",
+      "description": "Wall materials must resist sustained high humidity (75-95% RH)",
+      "value": "moisture_resistant",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Philippines averages 80-85% RH. Avoid untreated drywall, uncoated steel, and moisture-sensitive insulation in wall cavities. Use marine-grade, pressure-treated, or naturally resistant materials."
+    },
+    {
+      "id": "TA-MAT-M011",
+      "section": "Moisture Protection",
+      "description": "Raised floor or elevated foundation to protect against flooding and ground moisture",
+      "value_min": 300,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Traditional Filipino houses are elevated 600-1500mm on stilts. Minimum 300mm above grade prevents splash-back and improves under-floor ventilation."
+    },
+    {
+      "id": "TA-MAT-M012",
+      "section": "Moisture Protection",
+      "description": "Vapor barrier placement — on the exterior side in tropical climates",
+      "value": "exterior_side",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "climate": "hot_humid"
+      },
+      "notes": "Opposite of cold climates. Moisture drive is inward (humid outside, cool inside if AC). Vapor barrier goes on the warm/humid side = exterior."
+    },
+    {
+      "id": "TA-MAT-M013",
+      "section": "Moisture Protection",
+      "description": "Mold-resistant materials required for bathrooms and kitchens",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Persistent 80%+ RH means mold grows on almost any organic surface. Use cement board, marine plywood, fiber cement, or naturally resistant hardwoods."
+    },
+    {
+      "id": "TA-MAT-M020",
+      "section": "Indigenous Materials",
+      "description": "Bamboo — structural use requires treatment and species selection",
+      "value": "treated_structural_bamboo",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Guadua, Dendrocalamus, or Bambusa blumeana for structural. Borax-boric acid treatment minimum. Harvest age 3-5 years. ISO 22156 for engineered bamboo."
+    },
+    {
+      "id": "TA-MAT-M021",
+      "section": "Indigenous Materials",
+      "description": "Coconut timber (coco lumber) — density classification for structural use",
+      "value": "high_density_only",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Only the outer 30% of the trunk (high density, 600-900 kg/m³) is structural. Inner core is too soft. DENR/FPRDI grading applies."
+    },
+    {
+      "id": "TA-MAT-M022",
+      "section": "Indigenous Materials",
+      "description": "Nipa palm roofing — expected lifespan and replacement cycle",
+      "value": "3_to_5_years",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Traditional nipa shingles last 3-5 years. Excellent insulation (R-value ≈ 4-6) and natural ventilation through micro-gaps. Requires steep pitch (45°+) for rain shedding."
+    },
+    {
+      "id": "TA-MAT-M023",
+      "section": "Indigenous Materials",
+      "description": "Rammed earth and compressed earth blocks — tropical suitability",
+      "value": "suitable_with_protection",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Requires extended roof overhangs (1200mm+), stabilization with 6-10% cement, and waterproof base course. Not suitable for flood-prone areas."
+    },
+    {
+      "id": "TA-MAT-M030",
+      "section": "Wind Resistance",
+      "description": "Design wind speed for Philippine Typhoon Zone I (eastern Visayas, eastern Luzon)",
+      "value": 250,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "kph",
+        "zone": "typhoon_zone_1"
+      },
+      "notes": "NSCP 2015 Zone I. Roof connections must resist uplift forces. Hurricane straps/clips mandatory."
+    },
+    {
+      "id": "TA-MAT-M031",
+      "section": "Wind Resistance",
+      "description": "Roof pitch for typhoon resistance — optimal range",
+      "value_min": 25,
+      "value_max": 35,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "degrees"
+      },
+      "notes": "Below 25° = uplift risk (suction). Above 35° = increased windward pressure. 30° is optimal compromise. Hip roofs outperform gable roofs in typhoons."
+    },
+    {
+      "id": "TA-MAT-M032",
+      "section": "Wind Resistance",
+      "description": "Hip roof preferred over gable roof for typhoon resistance",
+      "value": "hip_preferred",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Hip roofs have 40% lower uplift forces than gable roofs in cyclonic winds. All slopes drain uniformly. Gable end walls are vulnerable to blowout."
+    },
+    {
+      "id": "TA-MAT-M033",
+      "section": "Wind Resistance",
+      "description": "Window and door protection — impact-rated or shuttered in typhoon zones",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "zone": "typhoon_zones"
+      },
+      "notes": "Wind-borne debris is the primary cause of envelope breach. Impact-rated glazing, rolling shutters, or removable plywood covers."
+    },
+    {
+      "id": "TA-MAT-M040",
+      "section": "Flood Resilience",
+      "description": "Finished floor level above expected flood height plus freeboard",
+      "value_min": 300,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "conditions": {
+        "above": "100_year_flood_level"
+      },
+      "notes": "Minimum 300mm freeboard above 100-year flood level per DPWH guidelines. Stilt construction (bahay kubo model) is the traditional and most effective approach."
+    },
+    {
+      "id": "TA-MAT-M041",
+      "section": "Flood Resilience",
+      "description": "Flood-damage-resistant materials below design flood elevation",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Below flood line: use concrete, marine plywood, PVC, ceramic tile, closed-cell insulation. No gypsum board, fiberglass insulation, or particleboard."
+    },
+    {
+      "id": "TA-MAT-M042",
+      "section": "Flood Resilience",
+      "description": "Electrical outlets minimum height in flood-prone ground floors",
+      "value_min": 1200,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Raise outlets, switches, and electrical panels above expected flood level. Prevents electrocution hazard and reduces damage."
+    }
+  ]
+}

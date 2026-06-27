@@ -1,0 +1,186 @@
+# Tropical Architecture
+# Passive Cooling & Natural Ventilation
+#
+# Sources: ASHRAE Handbook — Fundamentals (Chapter 16, Natural Ventilation),
+#          Koenigsberger et al. "Manual of Tropical Housing and Building",
+#          Givoni "Climate Considerations in Building and Urban Design",
+#          Philippine Green Building Code (RA 9729 IRR, DOE Guidelines),
+#          Bay & Ong "Tropical Sustainable Architecture"
+# Compiled for machine-readable architectural reference
+
+code: "Tropical Architecture"
+section: "Passive Cooling & Natural Ventilation"
+source: "Koenigsberger Manual, ASHRAE, Bay & Ong, Philippine Practice"
+last_verified: "2026-06-27"
+notes: >
+  Tropical architecture principles for hot-humid climates (Koppen Af/Am/Aw).
+  Philippines sits within 5-20°N latitude — cooling-dominated climate year-round.
+  These rules encode best practices, not legal mandates unless noted.
+
+rules:
+
+  # ============================================================
+  # CROSS VENTILATION
+  # ============================================================
+
+  - id: "TA-COOL-V001"
+    section: "Natural Ventilation"
+    description: "Building depth for effective cross ventilation should not exceed 14m"
+    value: 14.0
+    unit: "m"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "Beyond 14m, air velocity drops below comfort threshold. ASHRAE recommends 5× ceiling height as max depth for single-sided; cross ventilation effective up to 5× room width."
+
+  - id: "TA-COOL-V002"
+    section: "Natural Ventilation"
+    description: "Inlet-to-outlet opening ratio for maximum air velocity"
+    value: "inlet_smaller_than_outlet"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Venturi effect: smaller inlet accelerates airflow. Ideal ratio 1:1.25 to 1:1.5 (inlet:outlet). Equal openings give maximum volume, smaller inlet gives higher velocity."
+
+  - id: "TA-COOL-V003"
+    section: "Natural Ventilation"
+    description: "Minimum openable window area as percentage of floor area for tropical comfort"
+    value: 20
+    unit: "%"
+    applies_to: ["residential"]
+    notes: "NBCP requires 10% minimum. Tropical best practice doubles this to 20% for comfort without AC. Higher altitudes may use less."
+
+  - id: "TA-COOL-V004"
+    section: "Natural Ventilation"
+    description: "Window sill height for body-level ventilation while seated"
+    value_min: 600
+    value_max: 900
+    unit: "mm"
+    applies_to: ["residential"]
+    notes: "Air at occupant level cools the body directly. High windows ventilate the ceiling zone but miss occupants. Louvers at low level with high-level exhaust create stack ventilation."
+
+  - id: "TA-COOL-V005"
+    section: "Natural Ventilation"
+    description: "Prevailing wind orientation — long axis perpendicular to prevailing wind"
+    value: "perpendicular_to_wind"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Philippines: prevailing NE monsoon (Amihan, Nov-May), SW monsoon (Habagat, Jun-Oct). Orient to capture both or the dominant one."
+
+  - id: "TA-COOL-V006"
+    section: "Natural Ventilation"
+    description: "Stack ventilation — height difference between inlet and outlet for thermal buoyancy"
+    value_min: 3.0
+    unit: "m"
+    applies_to: ["all"]
+    notes: "Minimum 3m height difference for reliable stack effect. Clerestories, monitor roofs, and ventilation towers exploit this."
+
+  - id: "TA-COOL-V007"
+    section: "Natural Ventilation"
+    description: "Wing walls at window edges to increase airflow capture by 40-60%"
+    value: "40_to_60_percent_increase"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Vertical fins projecting 300-600mm from window jambs redirect oblique winds into the opening. Effective when wind is not perpendicular."
+
+  # ============================================================
+  # BUILDING ORIENTATION — SOLAR
+  # ============================================================
+
+  - id: "TA-COOL-V010"
+    section: "Solar Orientation"
+    description: "Long axis of building should run east-west to minimize solar heat gain"
+    value: "east_west_long_axis"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "E-W orientation keeps the long facades (north/south) shaded by overhangs. Short E/W facades receive harsh low-angle sun — minimize glazing there."
+
+  - id: "TA-COOL-V011"
+    section: "Solar Orientation"
+    description: "East and west facades should have minimal glazing — maximum 25% WWR"
+    value: 25
+    unit: "%"
+    applies_to: ["all"]
+    notes: "Low-angle morning/afternoon sun is hardest to shade. Deep louvers, vegetation screens, or opaque walls preferred on E/W."
+
+  - id: "TA-COOL-V012"
+    section: "Solar Orientation"
+    description: "North and south facades can have larger glazing — up to 50% WWR with proper shading"
+    value: 50
+    unit: "%"
+    applies_to: ["all"]
+    notes: "High-angle sun on N/S is easily controlled with horizontal overhangs. South facade (northern hemisphere tropics) gets most sun — size overhang to shade at noon."
+
+  # ============================================================
+  # SHADING DEVICES
+  # ============================================================
+
+  - id: "TA-COOL-V020"
+    section: "Shading"
+    description: "Horizontal overhang depth for south facade — minimum 600mm per storey height"
+    value: 600
+    unit: "mm"
+    applies_to: ["all"]
+    conditions:
+      facade: "south"
+      latitude_range: "5-20N"
+    notes: "At 14°N (Manila), 600mm overhang shades a 1.2m window from 10am-2pm sun. Deeper is better. Calculate with solar angle: overhang = window_height / tan(solar_altitude)."
+
+  - id: "TA-COOL-V021"
+    section: "Shading"
+    description: "Vertical fins or louvers required for east and west facades"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Horizontal overhangs are ineffective against low-angle E/W sun. Use vertical fins, egg-crate screens, or deciduous planting."
+
+  - id: "TA-COOL-V022"
+    section: "Shading"
+    description: "Roof overhang minimum for tropical rain and sun protection"
+    value_min: 900
+    unit: "mm"
+    applies_to: ["residential"]
+    notes: "900mm minimum for rain protection of walls. 1200-1500mm preferred in Philippines for both sun shading and rain splash protection."
+
+  - id: "TA-COOL-V023"
+    section: "Shading"
+    description: "Verandah or covered outdoor space — minimum depth for usable shade"
+    value_min: 2400
+    unit: "mm"
+    applies_to: ["residential"]
+    notes: "Traditional Filipino bahay kubo verandah is 2.4-3.0m deep. Serves as rain buffer, outdoor living, and transition zone."
+
+  # ============================================================
+  # CEILING & ROOF VENTILATION
+  # ============================================================
+
+  - id: "TA-COOL-V030"
+    section: "Roof Ventilation"
+    description: "Attic ventilation — minimum ridge vent or gable vent area"
+    value: 1
+    unit: "ratio"
+    applies_to: ["all"]
+    conditions:
+      calculation: "1/150 of attic floor area for ventilation without vapor barrier; 1/300 with vapor barrier"
+    notes: "Tropical attics reach 60-70°C without ventilation, radiating heat downward. Ridge vents + soffit vents create continuous airflow."
+
+  - id: "TA-COOL-V031"
+    section: "Roof Ventilation"
+    description: "Double roof or ventilated roof gap for heat dissipation"
+    value_min: 150
+    unit: "mm"
+    applies_to: ["all"]
+    notes: "Air gap between roofing material and ceiling allows hot air to exhaust at ridge. 150-300mm gap is effective. Radiant barrier foil under roofing adds 40% heat reduction."
+
+  - id: "TA-COOL-V032"
+    section: "Roof Ventilation"
+    description: "Light-colored or reflective roofing — solar reflectance index"
+    value_min: 0.50
+    unit: "ratio"
+    applies_to: ["all"]
+    notes: "SRI ≥ 0.50 reduces roof surface temp by 25-35°C. White/light metal roofing, cool roof coatings. Traditional nipa is naturally insulating."
+
+  - id: "TA-COOL-V033"
+    section: "Ceiling Height"
+    description: "Minimum ceiling height for natural ventilation comfort in tropics"
+    value_min: 3000
+    unit: "mm"
+    applies_to: ["residential"]
+    notes: "NBCP minimum is 2700mm. Tropical comfort improves significantly at 3000mm+ — hot air stratifies above occupant zone. Traditional bahay kubo: 3.5-4.5m."

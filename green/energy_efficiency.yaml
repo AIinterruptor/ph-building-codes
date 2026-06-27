@@ -1,0 +1,191 @@
+# Philippine Green Building Code
+# Energy Efficiency
+#
+# Sources: RA 9729 (Climate Change Act), DOE Philippine Energy Efficiency
+#          Guidelines, PNS ISO 52000, BERDE (Building for Ecologically
+#          Responsive Design Excellence), LEED v4.1 tropical adaptation,
+#          ASHRAE 90.1-2019 Climate Zone 1A
+#
+# The Philippine Green Building Code (GBC) was adopted via referral
+# ordinances in Metro Manila and major cities. BERDE is the national
+# voluntary green rating system administered by PHILGBC.
+
+code: "Green Building Code"
+section: "Energy Efficiency"
+source: "DOE Guidelines, BERDE, ASHRAE 90.1 CZ1A, PGBC"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # BUILDING ENVELOPE — OTTV / RTTV
+  # ============================================================
+
+  - id: "GBC-NRG-E001"
+    section: "Envelope, OTTV"
+    description: "Maximum Overall Thermal Transfer Value for air-conditioned buildings"
+    value: 45
+    unit: "ratio"
+    applies_to: ["commercial", "institutional"]
+    conditions:
+      unit_detail: "W/m²"
+      building_type: "air_conditioned"
+    notes: "OTTV measures total heat gain through walls. Philippine GBC adopts Singapore SS 530 methodology. OTTV = sum of conduction + solar heat gain through opaque and glazed portions."
+
+  - id: "GBC-NRG-E002"
+    section: "Envelope, RTTV"
+    description: "Maximum Roof Thermal Transfer Value"
+    value: 25
+    unit: "ratio"
+    applies_to: ["commercial", "institutional"]
+    conditions:
+      unit_detail: "W/m²"
+    notes: "Roof receives highest solar radiation. RTTV accounts for roof insulation, absorptance, and any skylight area."
+
+  - id: "GBC-NRG-E003"
+    section: "Envelope, WWR"
+    description: "Maximum window-to-wall ratio for energy efficiency"
+    value: 40
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "Higher WWR increases cooling load. If WWR exceeds 40%, compensate with high-performance glazing (U-value ≤ 2.2 W/m²K, SHGC ≤ 0.25) or external shading."
+
+  - id: "GBC-NRG-E004"
+    section: "Envelope, Glazing"
+    description: "Maximum Solar Heat Gain Coefficient for glazing in tropical climate"
+    value: 0.40
+    unit: "ratio"
+    applies_to: ["commercial", "institutional"]
+    notes: "SHGC ≤ 0.25 for east/west facades, ≤ 0.40 for north/south with shading. Low-E glass with tinted or reflective coating."
+
+  - id: "GBC-NRG-E005"
+    section: "Envelope, Glazing"
+    description: "Maximum U-value for glazing assemblies"
+    value: 3.30
+    unit: "ratio"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "W/m²K"
+    notes: "Double-glazed IGU recommended for AC buildings. Single-glazed acceptable only if SHGC ≤ 0.25 and external shading provided."
+
+  # ============================================================
+  # HVAC / AIR CONDITIONING
+  # ============================================================
+
+  - id: "GBC-NRG-E010"
+    section: "HVAC, Efficiency"
+    description: "Minimum COP for air-cooled chillers"
+    value: 2.80
+    unit: "ratio"
+    applies_to: ["commercial"]
+    notes: "ASHRAE 90.1 minimum for CZ1A. BERDE requires 10% above minimum for 1 credit, 20% for 2 credits."
+
+  - id: "GBC-NRG-E011"
+    section: "HVAC, Efficiency"
+    description: "Minimum EER for unitary/split AC systems (≤19kW)"
+    value: 11.0
+    unit: "ratio"
+    applies_to: ["residential", "commercial"]
+    conditions:
+      unit_detail: "BTU/Wh"
+    notes: "DOE EE labeling: 5-star inverter units typically achieve EER 12-14. Non-inverter minimum is EER 9.7 per DOE."
+
+  - id: "GBC-NRG-E012"
+    section: "HVAC, Controls"
+    description: "Thermostat setpoint for energy-efficient cooling"
+    value: 25
+    unit: "text"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "°C"
+    notes: "DOE recommended setpoint 25°C (not 22-23°C common practice). Each degree below 25°C increases energy consumption by 3-5%. Ceiling fans at 25°C feel like 22°C."
+
+  - id: "GBC-NRG-E013"
+    section: "HVAC, Fresh Air"
+    description: "Minimum outdoor air ventilation rate per person"
+    value: 8.5
+    unit: "text"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "L/s/person"
+    notes: "ASHRAE 62.1 for offices. Higher in tropics due to humidity — dehumidification of outdoor air is a major energy load. Energy recovery ventilators (ERV) save 30-50%."
+
+  # ============================================================
+  # LIGHTING
+  # ============================================================
+
+  - id: "GBC-NRG-E020"
+    section: "Lighting, LPD"
+    description: "Maximum Lighting Power Density for offices"
+    value: 10.0
+    unit: "ratio"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "W/m²"
+    notes: "ASHRAE 90.1 prescriptive. LED achieves 5-7 W/m² for 500 lux — well below limit. BERDE gives credit for 30% below standard."
+
+  - id: "GBC-NRG-E021"
+    section: "Lighting, LPD"
+    description: "Maximum Lighting Power Density for residential common areas"
+    value: 7.0
+    unit: "ratio"
+    applies_to: ["residential"]
+    conditions:
+      unit_detail: "W/m²"
+    notes: "Lobbies, corridors, parking. LED fixtures meet this easily."
+
+  - id: "GBC-NRG-E022"
+    section: "Lighting, Daylighting"
+    description: "Minimum daylit area as percentage of regularly occupied floor area"
+    value: 50
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "BERDE requires 50% of occupied spaces achieve 300-3000 lux daylight. Reduces lighting energy by 40-60%. Pair with automated dimming controls."
+
+  - id: "GBC-NRG-E023"
+    section: "Lighting, Controls"
+    description: "Occupancy sensors required for intermittent-use spaces"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial"]
+    notes: "Required for: restrooms, storage, conference rooms, stairwells, corridors. Reduces lighting energy by 15-30% in these areas."
+
+  # ============================================================
+  # RENEWABLE ENERGY
+  # ============================================================
+
+  - id: "GBC-NRG-E030"
+    section: "Renewables, Solar"
+    description: "Solar PV potential — minimum annual generation per kWp in Philippines"
+    value: 1400
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      unit_detail: "kWh/kWp/year"
+    notes: "Philippines average: 1400-1600 kWh/kWp/year (among highest globally). Visayas/Mindanao slightly higher than Luzon. 5-6 peak sun hours/day."
+
+  - id: "GBC-NRG-E031"
+    section: "Renewables, Solar"
+    description: "Solar PV recommended capacity for residential buildings"
+    value_min: 2
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      unit_detail: "kWp"
+    notes: "2kWp covers ~50% of typical household consumption. Net metering available under RA 9513 (Renewable Energy Act). ROI: 5-7 years in Philippines."
+
+  - id: "GBC-NRG-E032"
+    section: "Renewables, SWH"
+    description: "Solar water heating recommended for buildings with hot water demand"
+    value: "recommended"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Evacuated tube collectors preferred in tropics (effective even in cloudy/rainy conditions). 200L system covers 4-person household. BERDE awards 1-2 credits."
+
+  - id: "GBC-NRG-E033"
+    section: "Renewables, Integration"
+    description: "Minimum on-site renewable energy as percentage of total building energy"
+    value: 5
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "BERDE prerequisite for Green Mark certification. 5% is entry level — 10% earns additional credits. Include solar PV, SWH, wind, or biomass."

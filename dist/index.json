@@ -139,8 +139,72 @@
           "rule_count": 16
         }
       ]
+    },
+    {
+      "directory": "tropical",
+      "files": [
+        {
+          "name": "elevated_structures",
+          "code": "Tropical Architecture",
+          "section": "Elevated Structures & Adaptive Design",
+          "rule_count": 11
+        },
+        {
+          "name": "materials_envelope",
+          "code": "Tropical Architecture",
+          "section": "Materials & Building Envelope",
+          "rule_count": 19
+        },
+        {
+          "name": "passive_cooling",
+          "code": "Tropical Architecture",
+          "section": "Passive Cooling & Natural Ventilation",
+          "rule_count": 18
+        },
+        {
+          "name": "rainwater_landscape",
+          "code": "Tropical Architecture",
+          "section": "Rainwater Management & Landscape",
+          "rule_count": 13
+        }
+      ]
+    },
+    {
+      "directory": "green",
+      "files": [
+        {
+          "name": "energy_efficiency",
+          "code": "Green Building Code",
+          "section": "Energy Efficiency",
+          "rule_count": 17
+        },
+        {
+          "name": "indoor_environment",
+          "code": "Green Building Code",
+          "section": "Indoor Environmental Quality",
+          "rule_count": 13
+        },
+        {
+          "name": "materials_waste",
+          "code": "Green Building Code",
+          "section": "Sustainable Materials & Waste",
+          "rule_count": 14
+        },
+        {
+          "name": "site_ecology",
+          "code": "Green Building Code",
+          "section": "Site & Ecology",
+          "rule_count": 14
+        },
+        {
+          "name": "water_conservation",
+          "code": "Green Building Code",
+          "section": "Water Conservation",
+          "rule_count": 13
+        }
+      ]
     }
   ],
-  "total_rules": 354,
-  "total_files": 20
+  "total_rules": 486,
+  "total_files": 29
 }

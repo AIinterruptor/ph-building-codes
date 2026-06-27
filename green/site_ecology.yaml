@@ -1,0 +1,146 @@
+# Philippine Green Building Code
+# Site & Ecology
+#
+# Sustainable site selection, ecological protection,
+# heat island mitigation, and transportation.
+
+code: "Green Building Code"
+section: "Site & Ecology"
+source: "BERDE, LEED v4.1, RA 7586 (NIPAS Act), DENR Guidelines"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # SITE SELECTION
+  # ============================================================
+
+  - id: "GBC-SITE-X001"
+    section: "Site Selection"
+    description: "Avoid development on prime agricultural land (CARP/CARL protected)"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "RA 6657 (CARP) protects irrigated farmland. DAR reclassification required. BERDE penalizes greenfield development on productive agricultural land."
+
+  - id: "GBC-SITE-X002"
+    section: "Site Selection"
+    description: "Avoid development within wetlands, mangroves, or NIPAS areas"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "RA 7586 (NIPAS Act) and RA 7161 prohibit construction in protected areas. EIA required for projects near protected zones."
+
+  - id: "GBC-SITE-X003"
+    section: "Site Selection"
+    description: "Brownfield or infill sites preferred over greenfield"
+    value: "brownfield_preferred"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "BERDE awards 2 credits for brownfield remediation. Reduces sprawl, preserves natural land, and utilizes existing infrastructure."
+
+  - id: "GBC-SITE-X004"
+    section: "Site Selection"
+    description: "Proximity to public transportation — maximum distance to transit stop"
+    value: 400
+    unit: "m"
+    applies_to: ["commercial"]
+    notes: "400m ≈ 5 minute walk to jeepney/bus stop, MRT/LRT station, or PUV terminal. BERDE and LEED award credits. Reduces car dependency and associated emissions."
+
+  # ============================================================
+  # HEAT ISLAND MITIGATION
+  # ============================================================
+
+  - id: "GBC-SITE-X010"
+    section: "Heat Island, Roof"
+    description: "Minimum solar reflectance index (SRI) for roofing"
+    value: 78
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      roof_slope: "low_slope_2_12_or_less"
+    notes: "Low-slope roof SRI ≥ 78 (LEED). Steep-slope ≥ 29. Alternatively, use vegetated (green) roof for 50%+ of roof area. White TPO/PVC membranes typically SRI 80+."
+
+  - id: "GBC-SITE-X011"
+    section: "Heat Island, Hardscape"
+    description: "Minimum percentage of site hardscape that is shaded, permeable, or high-SRI"
+    value: 50
+    unit: "%"
+    applies_to: ["all"]
+    notes: "Dark asphalt: SRI 0. Light concrete: SRI 35. Permeable pavers, grass pavers, or tree canopy shading all qualify. Reduces ambient temperatures by 2-5°C."
+
+  - id: "GBC-SITE-X012"
+    section: "Heat Island, Green Roof"
+    description: "Vegetated roof coverage target"
+    value: 50
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "Extensive green roof (sedum, grasses, 75-150mm substrate) reduces roof surface temp by 30-40°C, extends roof membrane life 2-3×, provides stormwater retention."
+
+  # ============================================================
+  # ECOLOGY & BIODIVERSITY
+  # ============================================================
+
+  - id: "GBC-SITE-X020"
+    section: "Ecology"
+    description: "Existing mature trees must be preserved or transplanted"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "DENR requires cutting permits for trees >200mm diameter. Preservation preferred. If removal unavoidable, plant replacement at 1:10 ratio per DENR DAO 2004-44."
+
+  - id: "GBC-SITE-X021"
+    section: "Ecology"
+    description: "Native species minimum percentage in new planting"
+    value: 60
+    unit: "%"
+    applies_to: ["all"]
+    notes: "Native plants support local pollinators, require less irrigation, and resist local pests. BERDE awards credits for exceeding 60%."
+
+  - id: "GBC-SITE-X022"
+    section: "Ecology"
+    description: "Light pollution reduction — exterior lighting must not trespass property boundaries"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "All exterior lighting must be full-cutoff fixtures (no uplight). Reduces energy waste, protects nocturnal wildlife, and respects neighbors. BERDE prerequisite."
+
+  - id: "GBC-SITE-X023"
+    section: "Ecology"
+    description: "Pesticide and herbicide management plan for landscaping"
+    value: "IPM_required"
+    unit: "text"
+    applies_to: ["commercial"]
+    notes: "Integrated Pest Management (IPM) prioritizes non-chemical controls. BERDE prohibits neonicotinoid pesticides. Organic fertilizers preferred for food-producing landscapes."
+
+  # ============================================================
+  # TRANSPORTATION
+  # ============================================================
+
+  - id: "GBC-SITE-X030"
+    section: "Transportation"
+    description: "Bicycle parking minimum for commercial buildings"
+    value: 5
+    unit: "%"
+    applies_to: ["commercial"]
+    conditions:
+      basis: "of_total_parking_capacity"
+    notes: "5% of total vehicle parking count. BERDE and LEED requirement. Provide covered, secure bike racks. Shower/changing facilities for 0.5% of occupants."
+
+  - id: "GBC-SITE-X031"
+    section: "Transportation"
+    description: "Preferred parking for fuel-efficient vehicles"
+    value: 5
+    unit: "%"
+    applies_to: ["commercial"]
+    conditions:
+      basis: "of_total_parking_capacity"
+    notes: "Designated close-to-entrance spots for EVs, hybrids, or carpools. EV charging infrastructure for at least 2% of spaces."
+
+  - id: "GBC-SITE-X032"
+    section: "Transportation"
+    description: "EV charging station readiness for new parking structures"
+    value: 10
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "At minimum, 10% of parking spaces should have electrical conduit roughed in for future EV charger installation. EVSE-ready per DOE-PH emerging guidelines."

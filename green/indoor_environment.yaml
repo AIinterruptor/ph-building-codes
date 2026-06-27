@@ -1,0 +1,156 @@
+# Philippine Green Building Code
+# Indoor Environmental Quality (IEQ)
+#
+# Thermal comfort, indoor air quality, acoustics, and daylighting
+# for occupant health and productivity in tropical buildings.
+
+code: "Green Building Code"
+section: "Indoor Environmental Quality"
+source: "BERDE, ASHRAE 55/62.1, WELL Building Standard, PGBC"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # THERMAL COMFORT
+  # ============================================================
+
+  - id: "GBC-IEQ-Q001"
+    section: "Thermal Comfort"
+    description: "Acceptable operative temperature range for naturally ventilated buildings (tropics)"
+    value_min: 23
+    value_max: 31
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      unit_detail: "°C"
+      ventilation: "natural"
+    notes: "ASHRAE 55 adaptive comfort model. With air movement ≥0.6 m/s, acceptable range extends to 31°C. Ceiling fans critical for expanding comfort zone."
+
+  - id: "GBC-IEQ-Q002"
+    section: "Thermal Comfort"
+    description: "Air velocity for thermal comfort supplement in non-AC spaces"
+    value_min: 0.6
+    value_max: 1.5
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      unit_detail: "m/s"
+    notes: "0.6 m/s extends comfort by ~3°C. 1.0 m/s = gentle breeze (ideal). Above 1.5 m/s = papers fly, discomfort. Ceiling fans typically produce 0.8-1.2 m/s."
+
+  - id: "GBC-IEQ-Q003"
+    section: "Thermal Comfort"
+    description: "Ceiling fan required in all habitable rooms of naturally ventilated buildings"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    conditions:
+      ventilation: "natural"
+    notes: "Ceiling fan uses 30-75W vs. AC 1000-3000W. At 25-29°C with fan, comfort equivalent to 22-25°C AC. Fan diameter ≥1200mm for rooms up to 20sqm."
+
+  # ============================================================
+  # INDOOR AIR QUALITY
+  # ============================================================
+
+  - id: "GBC-IEQ-Q010"
+    section: "Air Quality"
+    description: "Minimum ventilation rate per ASHRAE 62.1 for offices"
+    value: 8.5
+    unit: "text"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "L/s/person"
+    notes: "Includes outdoor air component. Natural ventilation must demonstrate equivalent air changes. BERDE requires 30% above ASHRAE 62.1 for credits."
+
+  - id: "GBC-IEQ-Q011"
+    section: "Air Quality"
+    description: "CO2 monitoring in densely occupied spaces"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial"]
+    conditions:
+      occupant_density: "above_25_per_100sqm"
+    notes: "CO2 ≤ 800ppm indicates adequate ventilation. Demand-controlled ventilation (DCV) using CO2 sensors saves 20-30% HVAC energy."
+
+  - id: "GBC-IEQ-Q012"
+    section: "Air Quality"
+    description: "Construction IAQ management plan — flush-out before occupancy"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial"]
+    notes: "14,000 L/m² total outdoor air volume flush, or 14-day continuous ventilation with 100% outside air and temperature 15-27°C. Removes construction dust and VOC off-gassing."
+
+  - id: "GBC-IEQ-Q013"
+    section: "Air Quality"
+    description: "Smoking prohibition within 8m of building entries, operable windows, and air intakes"
+    value: 8
+    unit: "m"
+    applies_to: ["all"]
+    notes: "RA 9211 (Tobacco Regulation Act) + BERDE/LEED requirement. Designated smoking areas must be downwind and distant from air handling equipment."
+
+  # ============================================================
+  # DAYLIGHTING & VIEWS
+  # ============================================================
+
+  - id: "GBC-IEQ-Q020"
+    section: "Daylighting"
+    description: "Daylight illuminance target for regularly occupied spaces"
+    value_min: 300
+    value_max: 3000
+    unit: "text"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "lux"
+    notes: "Spatial Daylight Autonomy (sDA300/50%): 55% of occupied space achieves 300 lux for 50% of annual occupied hours. Pair with glare control."
+
+  - id: "GBC-IEQ-Q021"
+    section: "Daylighting"
+    description: "Annual Sunlight Exposure limit — glare control"
+    value: 10
+    unit: "%"
+    applies_to: ["commercial"]
+    conditions:
+      threshold: "1000_lux_for_250_hours"
+    notes: "ASE: no more than 10% of occupied area receives 1000+ lux for 250+ hours/year. Prevents glare and overheating. Use shading devices, light shelves, or dynamic glazing."
+
+  - id: "GBC-IEQ-Q022"
+    section: "Views"
+    description: "Direct line of sight to outdoor views from 75% of regularly occupied area"
+    value: 75
+    unit: "%"
+    applies_to: ["commercial"]
+    notes: "BERDE and WELL standard. Views reduce eye strain and improve mental health. Measure from 1.07m seated eye height. Interior glazed partitions count if they maintain a view path."
+
+  # ============================================================
+  # ACOUSTICS
+  # ============================================================
+
+  - id: "GBC-IEQ-Q030"
+    section: "Acoustics"
+    description: "Maximum background noise level for offices (open plan)"
+    value: 45
+    unit: "text"
+    applies_to: ["commercial"]
+    conditions:
+      unit_detail: "dBA"
+    notes: "ASHRAE Handbook / WELL standard. Private offices: 35 dBA. Conference rooms: 35 dBA. Natural ventilation can conflict — louvers admit more noise than sealed glazing."
+
+  - id: "GBC-IEQ-Q031"
+    section: "Acoustics"
+    description: "Maximum background noise level for residential bedrooms"
+    value: 35
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      unit_detail: "dBA"
+    notes: "WHO guideline. Tropical challenge: operable windows for ventilation admit more ambient noise. Acoustic louvers or sound-attenuating ventilation paths help."
+
+  - id: "GBC-IEQ-Q032"
+    section: "Acoustics"
+    description: "Sound Transmission Class for party walls between residential units"
+    value_min: 50
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      unit_detail: "STC"
+    notes: "STC 50 = loud speech barely audible. STC 55+ preferred. 200mm CHB with plaster both sides ≈ STC 48-52."

@@ -1,6 +1,6 @@
-# Philippine Building Codes + Feng Shui — Machine-Readable
+# Philippine Building Codes + Tropical Architecture + Green Building + Feng Shui — Machine-Readable
 
-Machine-readable YAML/JSON encoding of Philippine building regulations and classical Feng Shui principles for automated architectural compliance and design analysis.
+Machine-readable YAML/JSON encoding of Philippine building regulations, tropical architecture principles, green building standards, and classical Feng Shui for automated architectural compliance, design analysis, and sustainability assessment.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -8,12 +8,14 @@ Machine-readable YAML/JSON encoding of Philippine building regulations and class
 
 | Code | Reference | Scope | Rules | Status |
 |------|-----------|-------|-------|--------|
-| **National Building Code** | PD 1096 (2004 Revised IRR) | Setbacks, FAR, PSO, ceiling heights, ventilation, occupancy | 90 | ✅ Seeded |
-| **Accessibility Law** | BP 344 (2024 Revised IRR) | Ramps, PWD parking, doors, toilets, corridors | 44 | ✅ Seeded |
-| **Fire Code** | RA 9514 (2019 RIRR) | Occupant loads, travel distance, exit widths, fire ratings | 70 | ✅ Seeded |
-| **Feng Shui** | Classical Form & Compass Schools | Orientation, doors, room layout, five elements, water, landscaping | 150 | ✅ Seeded |
+| **National Building Code** | PD 1096 (2004 Revised IRR) | Setbacks, FAR, PSO, ceiling heights, ventilation, occupancy | 90 | ✅ |
+| **Accessibility Law** | BP 344 (2024 Revised IRR) | Ramps, PWD parking, doors, toilets, corridors | 44 | ✅ |
+| **Fire Code** | RA 9514 (2019 RIRR) | Occupant loads, travel distance, exit widths, fire ratings | 70 | ✅ |
+| **Tropical Architecture** | Koenigsberger, ASHRAE, Bay & Ong | Passive cooling, materials, typhoon/flood resilience, elevated design | 62 | ✅ |
+| **Green Building Code** | BERDE, LEED, DOE-PH, RA 9729 | Energy, water, materials, IEQ, site ecology, renewables | 70 | ✅ |
+| **Feng Shui** | Classical Form & Compass Schools | Orientation, doors, room layout, five elements, water, landscaping | 150 | ✅ |
 
-**Total: 354 machine-readable rules across 20 files.**
+**Total: 486 machine-readable rules across 29 files.**
 
 ## Repository Structure
 
@@ -33,6 +35,17 @@ ph-building-codes/
 │   ├── occupant_loads.yaml  # Load factors by occupancy type
 │   ├── means_of_egress.yaml # Travel distance, exit widths, dead ends
 │   └── fire_resistance.yaml # Fire ratings, firewalls, suppression
+├── tropical/                # Tropical Architecture — Climate-Responsive Design
+│   ├── passive_cooling.yaml     # Cross ventilation, solar orientation, shading
+│   ├── materials_envelope.yaml  # Thermal mass, moisture, typhoon, flood resilience
+│   ├── rainwater_landscape.yaml # Rainwater harvesting, stormwater, native species
+│   └── elevated_structures.yaml # Stilt construction, outdoor living, adaptive elements
+├── green/                   # Green Building Code — Sustainability Standards
+│   ├── energy_efficiency.yaml   # OTTV, HVAC, lighting, renewables, solar PV
+│   ├── water_conservation.yaml  # Fixtures, greywater, irrigation, metering
+│   ├── materials_waste.yaml     # Recycled content, embodied carbon, waste diversion
+│   ├── indoor_environment.yaml  # Thermal comfort, IAQ, daylighting, acoustics
+│   └── site_ecology.yaml       # Heat island, biodiversity, transport, EV charging
 ├── fengshui/                # Feng Shui — Classical Design Principles
 │   ├── orientation_siting.yaml  # Four Animals, lot shape, elevation
 │   ├── main_door_entry.yaml     # Qi mouth, Lu Ban ruler, door alignment
@@ -100,9 +113,9 @@ This is a community effort to digitize Philippine building codes. Contributions 
 
 Format: `{CODE}-{RULE}-{TYPE}{NUMBER}`
 
-- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui)
-- Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`)
-- Type: `S` (setback/siting), `H` (height), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance), `W` (water), `E` (element), `C` (circulation), `F` (form), `B` (business)
+- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui), `TA` (Tropical Architecture), `GBC` (Green Building Code)
+- Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`, `COOL`, `MAT`, `RAIN`, `ELEV`, `NRG`, `H2O`, `IEQ`)
+- Type: `S` (setback/siting), `H` (height/harvesting), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance), `W` (water), `E` (element/elevated/energy), `C` (circulation), `F` (form), `B` (business), `V` (ventilation), `M` (material), `Q` (quality), `X` (ecology/site)
 - Number: Sequential 3-digit (e.g., `001`)
 
 ### Feng Shui as Architectural Data

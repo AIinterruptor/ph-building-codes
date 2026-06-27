@@ -1,0 +1,132 @@
+{
+  "code": "Tropical Architecture",
+  "section": "Elevated Structures & Adaptive Design",
+  "source": "Philippine Vernacular, Bay & Ong, Contemporary Practice",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "TA-ELEV-E001",
+      "section": "Stilt Construction",
+      "description": "Minimum elevation of habitable floor above grade for ventilation",
+      "value_min": 600,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "600mm allows meaningful under-floor airflow. Traditional bahay kubo: 1.0-2.0m. Higher elevation = better flood protection + ventilation + pest barrier."
+    },
+    {
+      "id": "TA-ELEV-E002",
+      "section": "Stilt Construction",
+      "description": "Under-floor space should be open for air circulation, not enclosed",
+      "value": "open_or_ventilated",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Enclosing the under-floor space traps moisture, creates mold, and eliminates the cooling benefit. If enclosed for storage, provide vent openings on all sides."
+    },
+    {
+      "id": "TA-ELEV-E003",
+      "section": "Stilt Construction",
+      "description": "Stilt/pier material must resist ground moisture and termites",
+      "value": "concrete_steel_or_treated_hardwood",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Concrete piers with termite shields preferred. Hardwood posts (molave, ipil) with soil-contact treatment. Never use untreated softwood in ground contact."
+    },
+    {
+      "id": "TA-ELEV-E004",
+      "section": "Stilt Construction",
+      "description": "Termite barrier required between ground contact and structure",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Physical barrier (stainless steel mesh, granite particle layer) or chemical barrier at foundation-to-structure junction. Tropics have year-round termite pressure."
+    },
+    {
+      "id": "TA-ELEV-E010",
+      "section": "Outdoor Living",
+      "description": "Covered outdoor living area as percentage of total floor area",
+      "value_min": 20,
+      "unit": "%",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Traditional Filipino home: 30-50% of usable space is semi-outdoor (verandah, terrace, lanai). Covered but open-sided for breeze. Extends usable living space year-round."
+    },
+    {
+      "id": "TA-ELEV-E011",
+      "section": "Outdoor Living",
+      "description": "Transition zone (covered porch/verandah) between outdoor and indoor",
+      "value_min": 1800,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Minimum 1.8m deep covered transition allows eyes to adjust from bright sun, shoes to be removed, and rain to be shed before entering. Traditional: 2.4-3.0m."
+    },
+    {
+      "id": "TA-ELEV-E012",
+      "section": "Outdoor Living",
+      "description": "Floor level change between outdoor deck and indoor rooms",
+      "value_min": 50,
+      "unit": "mm",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "50-150mm step-up from outdoor deck to interior prevents rain splash and wind-driven water ingress. Also provides psychological threshold between spaces."
+    },
+    {
+      "id": "TA-ELEV-E020",
+      "section": "Adaptive Elements",
+      "description": "Operable walls/sliding panels for flexible indoor-outdoor connection",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Full-width sliding or folding panels allow the living space to open completely to the outdoors in fair weather and close during storms. Traditional capiz shell sliding panels (ventanilla) serve this function."
+    },
+    {
+      "id": "TA-ELEV-E021",
+      "section": "Adaptive Elements",
+      "description": "Adjustable louvers preferred over fixed windows for tropical climate",
+      "value": "louvers_preferred",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Louvers allow ventilation during rain (angled up), full airflow in dry weather (horizontal), and closure during typhoons. Jalousie windows are the tropical standard."
+    },
+    {
+      "id": "TA-ELEV-E022",
+      "section": "Adaptive Elements",
+      "description": "Mosquito screening on all operable openings",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Essential in dengue/malaria zones. Stainless steel or fiberglass mesh (18x16 mesh count). Must not significantly reduce airflow — specify low-profile mesh."
+    },
+    {
+      "id": "TA-ELEV-E023",
+      "section": "Adaptive Elements",
+      "description": "Detachable typhoon shutters for all windows and openings",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "conditions": {
+        "zone": "typhoon_prone"
+      },
+      "notes": "Rolling aluminum shutters, folding steel shutters, or pre-fitted plywood covers. Must be operable by one person. Store on-site when not deployed."
+    }
+  ]
+}

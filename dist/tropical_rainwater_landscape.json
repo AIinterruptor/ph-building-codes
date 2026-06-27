@@ -1,0 +1,157 @@
+{
+  "code": "Tropical Architecture",
+  "section": "Rainwater Management & Landscape",
+  "source": "Philippine Practice, LEED, Koenigsberger Manual",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "TA-RAIN-H001",
+      "section": "Rainwater Collection",
+      "description": "Minimum rainwater tank capacity per 100sqm roof catchment",
+      "value": 5000,
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "conditions": {
+        "unit_detail": "liters"
+      },
+      "notes": "100sqm roof in 2000mm/yr rainfall zone = 200,000L potential. 5000L tank covers ~2 weeks dry spell for non-potable use. Scale linearly with roof area."
+    },
+    {
+      "id": "TA-RAIN-H002",
+      "section": "Rainwater Collection",
+      "description": "First-flush diverter required to discard initial contaminated runoff",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "First 1-2mm of rainfall washes dust, bird droppings, and debris from roof. Divert first 20L per 100sqm before collection begins."
+    },
+    {
+      "id": "TA-RAIN-H003",
+      "section": "Rainwater Collection",
+      "description": "Gutter sizing for tropical rainfall intensity — minimum 150mm half-round",
+      "value_min": 150,
+      "unit": "mm",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Philippines peak rainfall intensity: 100-200mm/hr. Standard temperate gutters (100mm) overflow. Use 150mm half-round or 125mm box gutters with multiple downspouts."
+    },
+    {
+      "id": "TA-RAIN-H010",
+      "section": "Stormwater",
+      "description": "Minimum permeable surface area as percentage of lot",
+      "value": 30,
+      "unit": "%",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Reduces runoff, recharges groundwater, reduces urban heat island. Use permeable pavers, gravel, grass pavers, or preserved natural ground."
+    },
+    {
+      "id": "TA-RAIN-H011",
+      "section": "Stormwater",
+      "description": "Site grading should direct water away from building at minimum slope",
+      "value_min": 2,
+      "unit": "%",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "2% minimum slope away from foundation for 3m, then 1% beyond. Prevents foundation saturation in heavy rains."
+    },
+    {
+      "id": "TA-RAIN-H012",
+      "section": "Stormwater",
+      "description": "Bioswales or rain gardens for on-site stormwater treatment",
+      "value": "recommended",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Natural filtration of runoff through planted depressions. Size at 5-10% of impervious catchment area. Use native aquatic-tolerant species."
+    },
+    {
+      "id": "TA-RAIN-H020",
+      "section": "Landscape Cooling",
+      "description": "Tree canopy coverage target for outdoor comfort",
+      "value": 40,
+      "unit": "%",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "40% canopy coverage reduces ambient air temp by 2-4°C through evapotranspiration and shade. Position deciduous trees on south/west for seasonal benefit."
+    },
+    {
+      "id": "TA-RAIN-H021",
+      "section": "Landscape Cooling",
+      "description": "Shade trees minimum distance from building for root protection",
+      "value_min": 3.0,
+      "unit": "m",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Large trees (mango, acacia, rain tree) need 5-8m. Medium trees (talisay, fire tree) 3-5m. Prevents root damage to foundations while still providing shade."
+    },
+    {
+      "id": "TA-RAIN-H022",
+      "section": "Landscape Cooling",
+      "description": "Green wall or vertical garden for west facade heat reduction",
+      "value": "20_to_30_percent_reduction",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Vegetated walls reduce surface temperature by 10-15°C compared to bare concrete. Most effective on west facade which receives harsh afternoon sun."
+    },
+    {
+      "id": "TA-RAIN-H023",
+      "section": "Landscape Cooling",
+      "description": "Ground cover between buildings to reduce heat reflection",
+      "value": "planted_or_shaded",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Bare concrete/asphalt between buildings creates heat canyon effect. Use grass, ground cover plants, or shaded pavers. Reduces reflected heat load on adjacent facades."
+    },
+    {
+      "id": "TA-RAIN-H030",
+      "section": "Native Species",
+      "description": "Priority shade trees for Philippine tropical architecture",
+      "value": "narra, molave, talisay, kamagong, rain_tree, fire_tree, ilang_ilang",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Narra (national tree) — broad canopy, nitrogen fixing. Talisay — excellent coastal shade. Rain tree — massive canopy, fast growing. All are drought and typhoon resistant."
+    },
+    {
+      "id": "TA-RAIN-H031",
+      "section": "Native Species",
+      "description": "Windbreak planting — multi-layer buffer for typhoon protection",
+      "value": "3_layer_minimum",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Layer 1: low shrubs (1-2m). Layer 2: medium trees (5-10m). Layer 3: tall trees (15m+). Plant on windward side. 50% porosity is optimal — solid walls create turbulence."
+    },
+    {
+      "id": "TA-RAIN-H032",
+      "section": "Native Species",
+      "description": "Edible landscaping integration — food forest layer system",
+      "value": "7_layer_food_forest",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Tropical permaculture: canopy (coconut, mango), understory (cacao, calamansi), shrub (malunggay, chili), herb (lemongrass, ginger), ground cover (camote), vine (upo, ampalaya), root (gabi, kamote). Provides food security and microclimate cooling."
+    }
+  ]
+}
