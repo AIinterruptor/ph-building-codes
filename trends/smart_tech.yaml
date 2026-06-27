@@ -1,0 +1,112 @@
+# Philippine Architectural Design Trends (2024-2026)
+# Smart Technology & Digital Integration
+#
+# PropTech, smart homes, BIM mandates, and the digitization
+# of Philippine construction and real estate.
+
+code: "PH Design Trends"
+section: "Smart Technology & Digital Integration"
+source: "DICT, DPWH BIM Roadmap, PRBRES, Industry Practice 2024-2026"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # SMART HOME — MASS MARKET
+  # ============================================================
+
+  - id: "TR-SMART-S001"
+    section: "Smart Home"
+    description: "Pre-wired smart home infrastructure as standard in mid-market housing"
+    value: "smart_ready_wiring"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Cat6 Ethernet + fiber to unit, smart switch-ready junction boxes, and centralized IoT hub location. Ayala Land, DMCI, and SMDC now include smart home packages in mid-range launches. Market shift from luxury-only to mass market."
+
+  - id: "TR-SMART-S002"
+    section: "Smart Home"
+    description: "Voice-controlled lighting, AC, and security as baseline amenity"
+    value: "voice_automation"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Google Home / Alexa integration with split-type inverter AC, smart lighting (Tuya/Philips Hue), and CCTV. Filipino market adopted fast — PH is top-5 ASEAN for smart speaker penetration."
+
+  - id: "TR-SMART-S003"
+    section: "Smart Home"
+    description: "Solar monitoring and energy management dashboards"
+    value: "energy_dashboard"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Real-time solar production, grid consumption, and battery status on mobile app. Meralco sub-metering API integration emerging. Gamification of energy savings trending in condo communities."
+
+  - id: "TR-SMART-S004"
+    section: "Smart Home"
+    description: "Smart water leak detection and automatic shutoff"
+    value: "smart_water_management"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Floor-mounted leak sensors + motorized ball valve shutoff. Prevents catastrophic water damage in condos. Insurance companies beginning to offer discounts. Maynilad/Manila Water exploring smart meter integration."
+
+  # ============================================================
+  # BUILDING INFORMATION MODELING (BIM)
+  # ============================================================
+
+  - id: "TR-SMART-S010"
+    section: "BIM"
+    description: "BIM Level 2 adoption for government projects above PHP 50M"
+    value: "BIM_level_2"
+    unit: "text"
+    applies_to: ["institutional", "commercial"]
+    notes: "DPWH BIM Roadmap 2023-2028 targets BIM Level 2 for all major infrastructure. UAP (United Architects of the Philippines) promoting BIM certification for architects. Revit dominant, with growing ArchiCAD presence."
+
+  - id: "TR-SMART-S011"
+    section: "BIM"
+    description: "Digital twin for facility management in commercial buildings"
+    value: "digital_twin"
+    unit: "text"
+    applies_to: ["commercial"]
+    notes: "As-built BIM models linked to IoT sensors for real-time building performance monitoring. BGC and Makati CBD office towers adopting. Enables predictive maintenance and energy optimization."
+
+  - id: "TR-SMART-S012"
+    section: "BIM"
+    description: "AI-assisted design and generative architecture tools"
+    value: "AI_generative_design"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Filipino architects adopting Midjourney/DALL-E for concept visualization, Autodesk Forma for environmental analysis, and AI code-checking tools. This repository (ph-building-codes) enables machine-readable compliance checking with AI."
+
+  # ============================================================
+  # PROPTECH & CONSTRUCTION TECH
+  # ============================================================
+
+  - id: "TR-SMART-S020"
+    section: "Construction Tech"
+    description: "3D-printed concrete for low-cost housing and disaster relief"
+    value: "3D_printed_concrete"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Pilot projects in Bulacan and Laguna. 50sqm house printed in 24-48 hours. DPWH-DOST collaboration exploring for socialized housing (BP 220). Cost target: PHP 350,000 per unit."
+
+  - id: "TR-SMART-S021"
+    section: "Construction Tech"
+    description: "Prefabricated and modular construction for speed and quality"
+    value: "prefab_modular"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Factory-built bathroom pods, wall panels, and structural modules. Reduces on-site construction time by 30-50%. Revolution Precrafted (PH company) exports globally. Growing domestic adoption for mass housing."
+
+  - id: "TR-SMART-S022"
+    section: "Construction Tech"
+    description: "Drone surveying and construction monitoring as standard practice"
+    value: "drone_monitoring"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Weekly drone flights for progress tracking, volumetric calculations, and as-built documentation. Photogrammetry creating site point clouds. CAAP regulations streamlined for construction use."
+
+  - id: "TR-SMART-S023"
+    section: "Construction Tech"
+    description: "Augmented reality for on-site BIM model overlay"
+    value: "AR_construction"
+    unit: "text"
+    applies_to: ["commercial"]
+    notes: "HoloLens and iPad-based AR overlaying BIM models onto construction sites for clash detection and layout verification. Early adoption in major Makati and BGC tower projects."

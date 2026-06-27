@@ -1,6 +1,6 @@
-# Philippine Building Codes + Tropical Architecture + Green Building + Feng Shui — Machine-Readable
+# Philippine Building Codes + Architecture Knowledge Base — Machine-Readable
 
-Machine-readable YAML/JSON encoding of Philippine building regulations, tropical architecture principles, green building standards, and classical Feng Shui for automated architectural compliance, design analysis, and sustainability assessment.
+Machine-readable YAML/JSON encoding of Philippine building regulations, tropical architecture principles, green building standards, design trends, and classical Feng Shui for automated architectural compliance, design analysis, and sustainability assessment.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -13,9 +13,10 @@ Machine-readable YAML/JSON encoding of Philippine building regulations, tropical
 | **Fire Code** | RA 9514 (2019 RIRR) | Occupant loads, travel distance, exit widths, fire ratings | 70 | ✅ |
 | **Tropical Architecture** | Koenigsberger, ASHRAE, Bay & Ong | Passive cooling, materials, typhoon/flood resilience, elevated design | 62 | ✅ |
 | **Green Building Code** | BERDE, LEED, DOE-PH, RA 9729 | Energy, water, materials, IEQ, site ecology, renewables | 70 | ✅ |
+| **PH Design Trends** | BluPrint, UAP, PHILGBC, Industry 2024-2026 | Neo-vernacular, resilience, smart tech, lifestyle, biophilic | 50 | ✅ |
 | **Feng Shui** | Classical Form & Compass Schools | Orientation, doors, room layout, five elements, water, landscaping | 150 | ✅ |
 
-**Total: 486 machine-readable rules across 29 files.**
+**Total: 536 machine-readable rules across 33 files.**
 
 ## Repository Structure
 
@@ -46,6 +47,11 @@ ph-building-codes/
 │   ├── materials_waste.yaml     # Recycled content, embodied carbon, waste diversion
 │   ├── indoor_environment.yaml  # Thermal comfort, IAQ, daylighting, acoustics
 │   └── site_ecology.yaml       # Heat island, biodiversity, transport, EV charging
+├── trends/                  # PH Design Trends 2024-2026
+│   ├── tropical_modernism.yaml  # Neo-bahay kubo, tropical brutalism, biophilic
+│   ├── resilient_adaptive.yaml  # Climate-adaptive, energy/water independence, seismic
+│   ├── smart_tech.yaml          # Smart home, BIM, 3D printing, prefab, drones
+│   └── lifestyle_spaces.yaml   # WFH, wellness, multi-gen, co-living, compact
 ├── fengshui/                # Feng Shui — Classical Design Principles
 │   ├── orientation_siting.yaml  # Four Animals, lot shape, elevation
 │   ├── main_door_entry.yaml     # Qi mouth, Lu Ban ruler, door alignment
@@ -113,9 +119,9 @@ This is a community effort to digitize Philippine building codes. Contributions 
 
 Format: `{CODE}-{RULE}-{TYPE}{NUMBER}`
 
-- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui), `TA` (Tropical Architecture), `GBC` (Green Building Code)
-- Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`, `COOL`, `MAT`, `RAIN`, `ELEV`, `NRG`, `H2O`, `IEQ`)
-- Type: `S` (setback/siting), `H` (height/harvesting), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance), `W` (water), `E` (element/elevated/energy), `C` (circulation), `F` (form), `B` (business), `V` (ventilation), `M` (material), `Q` (quality), `X` (ecology/site)
+- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui), `TA` (Tropical Architecture), `GBC` (Green Building Code), `TR` (Design Trends)
+- Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`, `COOL`, `MAT`, `RAIN`, `ELEV`, `NRG`, `H2O`, `IEQ`, `TMOD`, `RESIL`, `SMART`, `LIFE`)
+- Type: `S` (setback/siting), `H` (height/harvesting), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance/trend), `W` (water), `E` (element/elevated/energy), `C` (circulation), `F` (form), `B` (business), `V` (ventilation), `M` (material), `Q` (quality), `X` (ecology/site)
 - Number: Sequential 3-digit (e.g., `001`)
 
 ### Feng Shui as Architectural Data

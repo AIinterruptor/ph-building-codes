@@ -203,8 +203,37 @@
           "rule_count": 13
         }
       ]
+    },
+    {
+      "directory": "trends",
+      "files": [
+        {
+          "name": "lifestyle_spaces",
+          "code": "PH Design Trends",
+          "section": "Lifestyle Spaces & Emerging Typologies",
+          "rule_count": 16
+        },
+        {
+          "name": "resilient_adaptive",
+          "code": "PH Design Trends",
+          "section": "Resilient & Adaptive Design",
+          "rule_count": 11
+        },
+        {
+          "name": "smart_tech",
+          "code": "PH Design Trends",
+          "section": "Smart Technology & Digital Integration",
+          "rule_count": 11
+        },
+        {
+          "name": "tropical_modernism",
+          "code": "PH Design Trends",
+          "section": "Tropical Modernism & Neo-Vernacular",
+          "rule_count": 12
+        }
+      ]
     }
   ],
-  "total_rules": 486,
-  "total_files": 29
+  "total_rules": 536,
+  "total_files": 33
 }

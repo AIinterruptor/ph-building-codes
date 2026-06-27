@@ -1,0 +1,125 @@
+# Philippine Architectural Design Trends (2024-2026)
+# Tropical Modernism & Neo-Vernacular
+#
+# The dominant movement: merging Filipino vernacular with contemporary
+# minimalism. Architects like Royal Pineda, BUDJI+ROYAL, WTA Architecture,
+# and Kenneth Cobonpue's design influence are defining the aesthetic.
+
+code: "PH Design Trends"
+section: "Tropical Modernism & Neo-Vernacular"
+source: "BluPrint Magazine, PHILGBC, UNITED Architects of the Philippines, Industry Practice 2024-2026"
+last_verified: "2026-06-27"
+notes: >
+  These are observed design trends, not code requirements.
+  They reflect current market demand, award-winning projects,
+  and emerging best practices in Philippine architecture.
+
+rules:
+
+  # ============================================================
+  # NEO-BAHAY KUBO — MODERN FILIPINO VERNACULAR
+  # ============================================================
+
+  - id: "TR-TMOD-T001"
+    section: "Neo-Vernacular"
+    description: "Elevated living platform on stilts — modern interpretation of bahay kubo"
+    value: "stilt_or_piloti"
+    unit: "text"
+    applies_to: ["residential", "resort"]
+    notes: "Reinterpreting the traditional elevated house using concrete/steel stilts. Ground level remains open for parking, gardens, or flood resilience. Trending in Batangas, Palawan, Siargao resort architecture."
+
+  - id: "TR-TMOD-T002"
+    section: "Neo-Vernacular"
+    description: "Steep pitched roof with exposed timber or steel trusses"
+    value: "high_pitch_exposed_structure"
+    unit: "text"
+    applies_to: ["residential", "resort", "commercial"]
+    notes: "Cathedral ceilings with visible structure celebrate Filipino craftsmanship. Pitch 30-45° for rain shedding and thermal stack ventilation. Trending material: engineered bamboo laminate trusses."
+
+  - id: "TR-TMOD-T003"
+    section: "Neo-Vernacular"
+    description: "Modern capiz, solihiya, or banig-inspired screen walls"
+    value: "woven_screen_patterns"
+    unit: "text"
+    applies_to: ["residential", "commercial", "institutional"]
+    notes: "Traditional weaving patterns (solihiya cane, banig mat) translated into CNC-cut metal, perforated concrete, or woven rattan panels. Provides privacy, ventilation, and cultural identity. Kenneth Cobonpue's influence."
+
+  - id: "TR-TMOD-T004"
+    section: "Neo-Vernacular"
+    description: "Open-plan living merging indoor and outdoor via full-width sliding doors"
+    value: "indoor_outdoor_blur"
+    unit: "text"
+    applies_to: ["residential", "resort"]
+    notes: "Multi-panel folding glass doors (4-8 panels) that open entire wall to garden/terrace. Creates the traditional Filipino kamalig flow where interior breathes into the landscape."
+
+  - id: "TR-TMOD-T005"
+    section: "Neo-Vernacular"
+    description: "Local stone and wood as feature materials against clean white/concrete volumes"
+    value: "local_material_contrast"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Coral stone (Mactan), adobe (Pampanga), Romblon marble, or reclaimed molave as accent walls/floors against minimalist concrete. Celebrating provenance — material tells a regional story."
+
+  # ============================================================
+  # TROPICAL BRUTALISM / RAW CONCRETE
+  # ============================================================
+
+  - id: "TR-TMOD-T010"
+    section: "Tropical Brutalism"
+    description: "Exposed board-formed concrete (fair-face) with tropical planting"
+    value: "raw_concrete_plus_green"
+    unit: "text"
+    applies_to: ["residential", "commercial", "institutional"]
+    notes: "Raw concrete walls softened by cascading plants, vertical gardens, and weathered patina. The tropical climate ages concrete beautifully. Inspired by Geoffrey Bawa (Sri Lanka) and Brazilian modernism, adapted to PH."
+
+  - id: "TR-TMOD-T011"
+    section: "Tropical Brutalism"
+    description: "Perforated concrete block (breeze block / ventilation block) as facade system"
+    value: "breeze_block_facade"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Geometric patterned CHB (concrete hollow blocks) used as ventilated screens. Provides privacy, airflow, filtered light, and visual texture. Revived from 1960s-70s Filipino modernism. Low cost, locally made."
+
+  - id: "TR-TMOD-T012"
+    section: "Tropical Brutalism"
+    description: "Cantilevered concrete volumes creating deep shade and rain protection"
+    value: "deep_cantilever"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "2-3m cantilevers over outdoor spaces, eliminating the need for separate awnings. Bold structural gesture that also functions as passive cooling. Post-tensioned slabs enable longer spans."
+
+  # ============================================================
+  # BIOPHILIC DESIGN
+  # ============================================================
+
+  - id: "TR-TMOD-T020"
+    section: "Biophilic Design"
+    description: "Interior courtyard (silong/looban) as central organizing element"
+    value: "central_courtyard"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Courtyard houses are traditional in Vigan and ancestral homes. Modern version: double-height planted atriums, internal gardens, or light wells that bring nature into the building core."
+
+  - id: "TR-TMOD-T021"
+    section: "Biophilic Design"
+    description: "Living green walls on building facades — vertical forest trend"
+    value: "vertical_green_facade"
+    unit: "text"
+    applies_to: ["commercial", "residential"]
+    notes: "Manila condo and office towers increasingly feature planted facades. Reduces OTTV, improves air quality, and softens urban edges. SHDA and Ayala Land projects pioneering this."
+
+  - id: "TR-TMOD-T022"
+    section: "Biophilic Design"
+    description: "Rooftop urban farms and productive landscapes on commercial buildings"
+    value: "productive_rooftop"
+    unit: "text"
+    applies_to: ["commercial", "institutional"]
+    notes: "Beyond ornamental green roofs — actual food production. Trending in BGC, Makati, and Cebu IT Park developments. Connects to RA 11511 (Urban Agriculture). Some buildings grow 30% of cafeteria produce."
+
+  - id: "TR-TMOD-T023"
+    section: "Biophilic Design"
+    description: "Water features as thermal comfort and sensory design elements"
+    value: "integrated_water"
+    unit: "text"
+    applies_to: ["residential", "commercial", "resort"]
+    notes: "Reflecting pools, rain chains replacing downspouts, infinity edges, and shallow wading courts. Evaporative cooling + ambient sound. Filipino love of water (tubig) made architectural."

@@ -1,0 +1,137 @@
+{
+  "code": "PH Design Trends",
+  "section": "Resilient & Adaptive Design",
+  "source": "DPWH Resilient Design Manual, PAGASA, CCC, Industry Practice 2024-2026",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "TR-RESIL-A001",
+      "section": "Climate Adaptation",
+      "description": "Amphibious or flood-adaptive foundations for coastal and riparian zones",
+      "value": "amphibious_foundation",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Houses designed to float or rise with floodwaters, then settle back. Buoyant foundation systems piloted in Tacloban and Leyte post-Yolanda. Combining bahay kubo stilt wisdom with modern engineering."
+    },
+    {
+      "id": "TR-RESIL-A002",
+      "section": "Climate Adaptation",
+      "description": "Breakaway ground floor walls for storm surge zones",
+      "value": "breakaway_lower_walls",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "conditions": {
+        "zone": "storm_surge"
+      },
+      "notes": "Non-structural ground floor walls designed to break away under surge force, preserving the structure above. Living spaces on second floor. Adopted from US FEMA V-zone guidelines, adapted for PH."
+    },
+    {
+      "id": "TR-RESIL-A003",
+      "section": "Climate Adaptation",
+      "description": "Multi-hazard safe rooms integrated into residential design",
+      "value": "safe_room",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Reinforced interior room (typically bathroom or storage) rated for typhoon winds 250+ kph. Doubles as secure storage. Trending in Visayas and eastern Luzon new builds."
+    },
+    {
+      "id": "TR-RESIL-A004",
+      "section": "Climate Adaptation",
+      "description": "Modular and demountable construction for rapid post-disaster rebuild",
+      "value": "modular_demountable",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "institutional"
+      ],
+      "notes": "Pre-engineered steel frame + bolt-on panel systems that can be disassembled, relocated, or rapidly replaced. Schools, clinics, and temporary housing. Growing post-disaster housing market."
+    },
+    {
+      "id": "TR-RESIL-A010",
+      "section": "Energy Resilience",
+      "description": "Solar + battery microgrids for residential off-grid or grid-resilient design",
+      "value": "solar_battery_microgrid",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "resort"
+      ],
+      "notes": "5kWp solar + 10kWh battery provides 24-48hr autonomy during grid outages (common after typhoons). Island and rural resort projects increasingly designed off-grid from the start. LFP batteries dropping below PHP 15,000/kWh."
+    },
+    {
+      "id": "TR-RESIL-A011",
+      "section": "Energy Resilience",
+      "description": "Net-zero energy homes — emerging in PH high-end residential",
+      "value": "net_zero_energy",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Solar PV + passive cooling + high-performance envelope achieving net-zero annual energy. Still rare but growing — PHILGBC showcased 3 certified net-zero homes in 2025. Tropical advantage: cooling load solved passively."
+    },
+    {
+      "id": "TR-RESIL-A012",
+      "section": "Energy Resilience",
+      "description": "Passive survivability — habitable without mechanical systems for 72+ hours",
+      "value": "72_hour_passive",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Building remains thermally habitable (below 31°C) for 72 hours without power. Achieved through cross ventilation, thermal mass management, shading, and potable water storage. Post-typhoon design criterion."
+    },
+    {
+      "id": "TR-RESIL-A020",
+      "section": "Water Resilience",
+      "description": "Rainwater-as-primary-source design for island and rural buildings",
+      "value": "rainwater_primary",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "resort"
+      ],
+      "notes": "Full rainwater harvesting system with filtration, UV treatment, and 30-day storage. Standard for Palawan, Siargao, and Guimaras resort builds where municipal water is unreliable."
+    },
+    {
+      "id": "TR-RESIL-A021",
+      "section": "Water Resilience",
+      "description": "Atmospheric water generators as supplemental source in humid climates",
+      "value": "AWG_supplemental",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "PH humidity (80-90% RH) is ideal for AWG. Units produce 20-50L/day from air. Emerging trend in high-end residential and office buildings as backup potable source."
+    },
+    {
+      "id": "TR-RESIL-A030",
+      "section": "Seismic",
+      "description": "Base isolation and seismic dampers in mid-rise residential",
+      "value": "base_isolation",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Previously only high-rise/institutional. Now trickling down to 5-10 storey condos in Metro Manila and Cebu. Lead-rubber bearings and friction pendulum systems. West Valley Fault awareness driving demand."
+    },
+    {
+      "id": "TR-RESIL-A031",
+      "section": "Seismic",
+      "description": "Performance-based seismic design replacing prescriptive code compliance",
+      "value": "performance_based",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "NSCP 2015 allows performance-based design for complex structures. Non-linear analysis with target performance levels (Immediate Occupancy, Life Safety, Collapse Prevention). Growing adoption in BGC and Makati towers."
+    }
+  ]
+}

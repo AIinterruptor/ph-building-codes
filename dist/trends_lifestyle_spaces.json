@@ -1,0 +1,190 @@
+{
+  "code": "PH Design Trends",
+  "section": "Lifestyle Spaces & Emerging Typologies",
+  "source": "BluPrint Magazine, Lamudi Trends Report, PRBRES, Industry Practice 2024-2026",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "TR-LIFE-L001",
+      "section": "WFH Spaces",
+      "description": "Dedicated home office nook or flex room as standard residential feature",
+      "value": "dedicated_WFH_space",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Post-pandemic permanent shift. New condo units include 'study nooks' (3-5sqm) with task lighting and data ports. House designs feature detached garden offices (kubo-office). BPO workforce (1.4M Filipinos) drives demand."
+    },
+    {
+      "id": "TR-LIFE-L002",
+      "section": "WFH Spaces",
+      "description": "Co-working amenity floors in residential condominiums",
+      "value": "condo_coworking",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Shared workspace floors with hot desks, Zoom rooms, and printing stations. Replacing traditional function rooms. Megaworld, Alveo, and Federal Land now include in mid-rise projects."
+    },
+    {
+      "id": "TR-LIFE-L003",
+      "section": "WFH Spaces",
+      "description": "Acoustic privacy design for multi-person WFH households",
+      "value": "acoustic_zoning",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Sound-rated sliding partitions, acoustic pods, and separate HVAC zones for work areas. Filipino multi-generational households (5-8 people) often have 2-3 members on video calls simultaneously."
+    },
+    {
+      "id": "TR-LIFE-L010",
+      "section": "Wellness",
+      "description": "Circadian lighting design in residential and commercial interiors",
+      "value": "circadian_lighting",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Tunable white LED systems that shift color temperature from cool (5000K morning) to warm (2700K evening). WELL Building Standard influence. Philippine sunrise 5:30-6:00AM year-round aids natural rhythm."
+    },
+    {
+      "id": "TR-LIFE-L011",
+      "section": "Wellness",
+      "description": "Indoor air quality as a marketed design feature",
+      "value": "IAQ_as_amenity",
+      "unit": "text",
+      "applies_to": [
+        "commercial",
+        "residential"
+      ],
+      "notes": "HEPA filtration, UV-C in AHUs, real-time PM2.5/CO2 display in lobbies. Post-COVID awareness. Manila's PM2.5 levels (annual mean 20-30 µg/m³) make this genuinely valuable, not just marketing."
+    },
+    {
+      "id": "TR-LIFE-L012",
+      "section": "Wellness",
+      "description": "Meditation rooms and quiet zones in commercial buildings",
+      "value": "contemplative_spaces",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Prayer/meditation rooms transitioning from compliance (Muslim prayer rooms) to wellness amenity. Biophilic design, acoustic treatment, and dim adjustable lighting. Reflecting Filipino spiritual culture."
+    },
+    {
+      "id": "TR-LIFE-L013",
+      "section": "Wellness",
+      "description": "Active design — stairs as architectural feature, not hidden service",
+      "value": "feature_staircase",
+      "unit": "text",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Visible, wide, daylit stairs encouraging walking over elevators. WELL and Fitwel standards. Open treads, planted landings, and workout wayfinding. Some Manila offices report 40% stair use increase."
+    },
+    {
+      "id": "TR-LIFE-L020",
+      "section": "Multi-Generational",
+      "description": "Multigenerational compound design — connected but separate units",
+      "value": "compound_layout",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Filipino extended family culture expressed architecturally. Main house + granny flat + young family unit sharing a courtyard. Each with own entrance and kitchen, shared garden and parking. Top Lamudi search trend."
+    },
+    {
+      "id": "TR-LIFE-L021",
+      "section": "Multi-Generational",
+      "description": "Universal design / aging-in-place features as standard, not retrofit",
+      "value": "universal_design_standard",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Wide doorways (900mm+), zero-threshold showers, reinforced bathroom walls for future grab bars, single-floor living option. Filipino lola/lolo (grandparent) care is home-based — design must support it from day one."
+    },
+    {
+      "id": "TR-LIFE-L022",
+      "section": "Co-Living",
+      "description": "Purpose-built co-living for young professionals in Metro Manila",
+      "value": "co_living_typology",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Private bedroom + shared kitchen, laundry, lounge. Targets 22-35 age group, PHP 8,000-15,000/month. MyTown (Megaworld) and indie operators growing. Not dormitories — designed with community spaces and privacy gradient."
+    },
+    {
+      "id": "TR-LIFE-L030",
+      "section": "Resort-Residential",
+      "description": "Resort-style amenities as standard in mid-market subdivisions",
+      "value": "resort_amenity_creep",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Infinity-edge pools, cabanas, outdoor kitchens, and spa-like bathrooms in PHP 3-5M house and lot packages. Filipino aspiration: 'vacation every day.' Developers competing on amenity count."
+    },
+    {
+      "id": "TR-LIFE-L031",
+      "section": "Resort-Residential",
+      "description": "Airbnb-ready design — dual-purpose residential units",
+      "value": "airbnb_ready",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "resort"
+      ],
+      "notes": "Lock-off master suites, separate guest entrances, smart locks, and rental-grade finishes. Designed for owner occupancy that converts to short-term rental. Siargao, Boracay, Bohol, and Guimaras."
+    },
+    {
+      "id": "TR-LIFE-L032",
+      "section": "Resort-Residential",
+      "description": "Outdoor shower and wash-down areas for tropical lifestyle",
+      "value": "outdoor_shower",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "resort"
+      ],
+      "notes": "Post-beach, post-garden rinse stations. Screened but open-air. Hot/cold water. Transitioning from resort luxury to suburban standard in Visayas and Mindanao coastal communities."
+    },
+    {
+      "id": "TR-LIFE-L040",
+      "section": "Compact Living",
+      "description": "Ultra-efficient micro units (18-24sqm) with transformable furniture",
+      "value": "micro_unit",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Murphy beds, folding desks, pocket kitchens. SMDC and Camella leading. Driven by Metro Manila land prices (PHP 200,000+/sqm in Makati). NBCP minimum 12sqm habitable room applies."
+    },
+    {
+      "id": "TR-LIFE-L041",
+      "section": "Compact Living",
+      "description": "Vertical villages — mixed-use towers with neighborhood amenities per cluster",
+      "value": "vertical_village",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Sky gardens, communal kitchens, daycare, and co-working every 8-10 floors creating 'neighborhoods in the sky.' Inspired by Singapore (Kampung Admiralty) adapted for PH. Megaworld Eastland Heights model."
+    },
+    {
+      "id": "TR-LIFE-L042",
+      "section": "Compact Living",
+      "description": "Pocket parks and micro-gardens in ultra-dense developments",
+      "value": "pocket_park",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "50-200sqm green spaces inserted between buildings. Programmed for yoga, children's play, or urban farming. Compensating for small unit sizes with generous shared outdoor space."
+    }
+  ]
+}
