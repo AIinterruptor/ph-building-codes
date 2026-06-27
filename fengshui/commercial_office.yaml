@@ -1,0 +1,164 @@
+# Feng Shui for Architecture
+# Commercial, Office & Retail Design
+#
+# Business Feng Shui focuses on wealth generation, customer flow,
+# leadership positioning, and employee productivity.
+
+code: "Feng Shui"
+section: "Commercial & Office Design"
+source: "Classical Commercial Feng Shui, Modern Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # OFFICE DESK PLACEMENT
+  # ============================================================
+
+  - id: "FS-COMM-B001"
+    section: "Office, Desk Position"
+    description: "Executive desk must be in power/command position — back to wall, facing door"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Never sit with back to door. Diagonal to the door is ideal. Solid wall behind represents mountain support."
+
+  - id: "FS-COMM-B002"
+    section: "Office, Desk Position"
+    description: "Desk should not directly face the door"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Directly facing the door catches too much qi — creates confrontation energy. Offset slightly."
+
+  - id: "FS-COMM-B003"
+    section: "Office, Desk Position"
+    description: "Desk should not be under an exposed beam"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Beam above the desk creates pressure, headaches, and blocked career progression."
+
+  - id: "FS-COMM-B004"
+    section: "Office, Desk Position"
+    description: "Desk should not face a wall directly (close range)"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Facing a close wall blocks vision and career advancement. If unavoidable, hang landscape artwork showing depth."
+
+  - id: "FS-COMM-B005"
+    section: "Office, Desk Position"
+    description: "Desk should not be between two doors (qi corridor)"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Sitting in the path between two doors creates instability and argumentative energy."
+
+  # ============================================================
+  # OFFICE LAYOUT
+  # ============================================================
+
+  - id: "FS-COMM-B010"
+    section: "Office Layout"
+    description: "CEO/owner office should be in the deepest part of the office, not near the entrance"
+    value: "deep_interior"
+    unit: "text"
+    applies_to: ["commercial", "office"]
+    notes: "The power position is furthest from the entrance. Reception handles the qi mouth; leadership commands from depth."
+
+  - id: "FS-COMM-B011"
+    section: "Office Layout"
+    description: "Reception desk should face the main entrance"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Receptionist is the gatekeeper of qi — should see everyone entering. Desk should not have back to the door."
+
+  - id: "FS-COMM-B012"
+    section: "Office Layout"
+    description: "Avoid seating employees with backs to main circulation paths"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "office"]
+    notes: "Back to circulation = back to the door principle. Creates anxiety and reduces productivity."
+
+  - id: "FS-COMM-B013"
+    section: "Office Layout"
+    description: "Accounting/finance department should be in the southeast sector"
+    value: "southeast"
+    unit: "text"
+    applies_to: ["commercial", "office"]
+    notes: "Southeast is the wealth sector. Placing financial operations here enhances money management."
+
+  # ============================================================
+  # RETAIL & STOREFRONT
+  # ============================================================
+
+  - id: "FS-COMM-B020"
+    section: "Retail, Storefront"
+    description: "Store entrance should be wide and inviting — avoid narrow entries"
+    value: "wide_inviting"
+    unit: "text"
+    applies_to: ["commercial", "retail"]
+    notes: "Wider entrance gathers more qi (customers). Double doors preferred over single."
+
+  - id: "FS-COMM-B021"
+    section: "Retail, Storefront"
+    description: "Cash register should be in the diagonal corner from the entrance"
+    value: "diagonal_from_door"
+    unit: "text"
+    applies_to: ["commercial", "retail"]
+    notes: "The power corner (diagonal from qi entry) accumulates the most energy. Wealth collects here."
+
+  - id: "FS-COMM-B022"
+    section: "Retail, Storefront"
+    description: "Cash register should not directly face the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "retail"]
+    notes: "Money directly facing the door flows out. Position at an angle."
+
+  - id: "FS-COMM-B023"
+    section: "Retail, Storefront"
+    description: "Store layout should encourage clockwise circulation"
+    value: "clockwise"
+    unit: "text"
+    applies_to: ["commercial", "retail"]
+    notes: "Clockwise movement (entering and turning right) is natural and keeps customers in the store longer. Most retail layouts use this pattern."
+
+  - id: "FS-COMM-B024"
+    section: "Retail, Storefront"
+    description: "Avoid placing sale/discount items at the entrance"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "retail"]
+    notes: "Cheap items at the qi mouth signal devaluation. Place premium items where qi first enters; sale items deeper inside."
+
+  # ============================================================
+  # RESTAURANT DESIGN
+  # ============================================================
+
+  - id: "FS-COMM-B030"
+    section: "Restaurant, Kitchen"
+    description: "Restaurant kitchen fire (stove) should not be visible from the dining area entrance"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "restaurant"]
+    notes: "Exposed fire creates anxiety for diners. Screen with partition or half-wall."
+
+  - id: "FS-COMM-B031"
+    section: "Restaurant, Layout"
+    description: "Dining area should have bright, yang energy — well-lit with warm colors"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "restaurant"]
+    notes: "Yang energy stimulates appetite and social interaction. Avoid dim, cave-like dining unless it's intentional ambiance."
+
+  - id: "FS-COMM-B032"
+    section: "Restaurant, Cashier"
+    description: "Cashier should not be placed near the toilet or kitchen waste area"
+    value: true
+    unit: "boolean"
+    applies_to: ["commercial", "restaurant"]
+    notes: "Proximity to waste/drains at the point of payment implies wealth draining."

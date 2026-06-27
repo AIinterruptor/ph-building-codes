@@ -1,0 +1,173 @@
+# Feng Shui for Architecture
+# Main Door & Entry (Qi Mouth)
+#
+# The main door is the single most important Feng Shui element.
+# Classical texts call it the "qi kou" (mouth of qi) — where energy
+# enters the building.
+
+code: "Feng Shui"
+section: "Main Door & Entry"
+source: "Yang Zhai San Yao (Three Essentials of Yang Dwellings), Classical Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # DOOR SIZING & PROPORTION
+  # ============================================================
+
+  - id: "FS-DOOR-D001"
+    section: "Yang Zhai, Qi Mouth"
+    description: "Main door should be the largest door in the building"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "The main entrance must be proportionally dominant. Interior doors should not exceed front door size."
+
+  - id: "FS-DOOR-D002"
+    section: "Yang Zhai, Qi Mouth"
+    description: "Main door height should be proportional to building — Lu Ban ruler auspicious dimensions"
+    value: "lu_ban_auspicious"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Lu Ban ruler divides measurements into 8 sectors cycling through auspicious/inauspicious. Common auspicious door heights: 2110mm, 2134mm, 2286mm."
+
+  - id: "FS-DOOR-D003"
+    section: "Lu Ban Ruler"
+    description: "Lu Ban ruler auspicious width ranges (first cycle)"
+    value: "54-108mm, 162-215mm, 269-323mm, 378-432mm"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "The 8 sectors per 432mm cycle: Cai (wealth 0-54), Bing (illness 54-108), Li (separation 108-162), Yi (righteousness 162-215), Guan (authority 215-269), Jie (robbery 269-323), Hai (harm 323-378), Ben (origin 378-432). Cycle repeats."
+
+  # ============================================================
+  # DOOR ALIGNMENT
+  # ============================================================
+
+  - id: "FS-DOOR-D010"
+    section: "Yang Zhai, Alignment"
+    description: "Front door must not directly align with back door (qi piercing)"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "Direct front-to-back alignment causes qi to rush through without settling. Cure: place a screen, partition, or stagger the alignment."
+
+  - id: "FS-DOOR-D011"
+    section: "Yang Zhai, Alignment"
+    description: "Front door must not directly face a staircase"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "Stairs rushing down toward the door drain qi out. Stairs should be offset or screened from direct door view."
+
+  - id: "FS-DOOR-D012"
+    section: "Yang Zhai, Alignment"
+    description: "Front door must not directly face a toilet door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "all"]
+    notes: "Toilet represents draining/flushing qi. Keep toilet doors closed and not visible from main entry."
+
+  - id: "FS-DOOR-D013"
+    section: "Yang Zhai, Alignment"
+    description: "Front door must not directly face a mirror"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "Mirror reflects qi back out the door. Place mirrors on side walls, never facing the entrance."
+
+  - id: "FS-DOOR-D014"
+    section: "Yang Zhai, Alignment"
+    description: "Avoid three or more doors in a straight line (qi arrow)"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Multiple aligned doors accelerate qi into sha. Stagger door placements or use screens to break the line."
+
+  # ============================================================
+  # ENTRY SPACE (MING TANG)
+  # ============================================================
+
+  - id: "FS-DOOR-D020"
+    section: "Form School, Ming Tang"
+    description: "Entry foyer should be bright and well-lit"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Dark entryways suppress incoming qi. Use lighting, light colors, and if possible natural light."
+
+  - id: "FS-DOOR-D021"
+    section: "Form School, Ming Tang"
+    description: "Entry area should be clutter-free with clear circulation"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Clutter at the qi mouth blocks energy distribution. Maintain minimum 1.2m clear width at entry."
+
+  - id: "FS-DOOR-D022"
+    section: "Form School, Ming Tang"
+    description: "Entry should not open directly into a wall less than 1.5m away"
+    value_min: 1.5
+    unit: "m"
+    applies_to: ["all"]
+    notes: "Facing a wall immediately upon entering blocks qi and creates oppressive feeling. If unavoidable, hang artwork or use a plant."
+
+  # ============================================================
+  # DOOR ORIENTATION — EIGHT MANSIONS
+  # ============================================================
+
+  - id: "FS-DOOR-D030"
+    section: "Eight Mansions (Ba Zhai)"
+    description: "Door facing should ideally match the owner's favorable direction (sheng qi, tian yi, yan nian, or fu wei)"
+    value: "match_kua_favorable"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      method: "eight_mansions"
+    notes: "Calculate owner's Kua number from birth year. East group (Kua 1,3,4,9): favor E,SE,N,S. West group (Kua 2,6,7,8): favor W,NW,SW,NE."
+
+  - id: "FS-DOOR-D031"
+    section: "Eight Mansions (Ba Zhai)"
+    description: "Kua number calculation for males born before 2000"
+    value: "(10 - (sum_of_birth_year_digits mod 9)) mod 9; if 0 then 9"
+    unit: "text"
+    applies_to: ["residential"]
+    formula: "(10 - (sum_of_birth_year_digits mod 9)) mod 9; if 0 then 9"
+    notes: "Example: 1985 → 1+9+8+5=23 → 2+3=5 → 10-5=5 → Kua 5 (male, treat as Kua 2)"
+
+  - id: "FS-DOOR-D032"
+    section: "Eight Mansions (Ba Zhai)"
+    description: "Kua number calculation for females born before 2000"
+    value: "((sum_of_birth_year_digits mod 9) + 5) mod 9; if 0 then 9"
+    unit: "text"
+    applies_to: ["residential"]
+    formula: "((sum_of_birth_year_digits mod 9) + 5) mod 9; if 0 then 9"
+    notes: "Example: 1990 → 1+9+9+0=19 → 1+9=10 → 1+0=1 → 1+5=6 → Kua 6"
+
+  # ============================================================
+  # DOOR PROBLEMS & CURES
+  # ============================================================
+
+  - id: "FS-DOOR-D040"
+    section: "Classical Remedies"
+    description: "Two doors facing each other across a corridor cause quarrels"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial"]
+    notes: "Offset doors slightly or hang curtains. If doors are different sizes, the larger one dominates."
+
+  - id: "FS-DOOR-D041"
+    section: "Classical Remedies"
+    description: "Door should not be directly under an exposed beam"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Beam above the door creates pressing qi. Cover the beam with a false ceiling or hang flutes."
+
+  - id: "FS-DOOR-D042"
+    section: "Classical Remedies"
+    description: "Main door should open inward"
+    value: "inward"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Inward-opening door draws qi into the building. Outward-opening pushes qi away. Commercial may differ due to fire code requirements — fire code always takes precedence."

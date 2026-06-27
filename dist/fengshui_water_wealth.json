@@ -1,0 +1,189 @@
+{
+  "code": "Feng Shui",
+  "section": "Water Features & Wealth",
+  "source": "Water Dragon Classic (Shui Long Jing), Form School, Flying Stars",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "FS-WATER-W001",
+      "section": "Water Dragon Classic",
+      "description": "Water feature should be placed at the front of the building (ming tang)",
+      "value": "front_of_building",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Water in the bright hall gathers prosperity qi. Avoid placing water behind the building."
+    },
+    {
+      "id": "FS-WATER-W002",
+      "section": "Water Dragon Classic",
+      "description": "Water behind the building is inauspicious",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Water behind weakens the Tortoise support. Exception: very large bodies of water (lake/ocean) at a distance can serve as a secondary bright hall."
+    },
+    {
+      "id": "FS-WATER-W003",
+      "section": "Form School, Water Flow",
+      "description": "Water should flow toward the building, not away from it",
+      "value": "toward_building",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Water flowing away carries wealth qi with it. Rivers curving toward and embracing the building are ideal (jade belt water)."
+    },
+    {
+      "id": "FS-WATER-W004",
+      "section": "Form School, Water Flow",
+      "description": "Water should flow gently, not rush violently past the property",
+      "value": "gentle_flow",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Rushing water creates sha qi and carries wealth past too quickly. Slow, meandering flow is auspicious."
+    },
+    {
+      "id": "FS-WATER-W005",
+      "section": "Form School, Water Flow",
+      "description": "Stagnant or dirty water is sha — must be clean and moving",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Stagnant water generates yin sha and illness qi. All water features must be maintained, clean, and circulating."
+    },
+    {
+      "id": "FS-WATER-W010",
+      "section": "Indoor Water Features",
+      "description": "Aquariums and indoor water features best placed in north, east, or southeast sectors",
+      "value": "north_east_southeast",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "North = water element native sector. Southeast = wealth sector enhanced by water. East = wood sector fed by water."
+    },
+    {
+      "id": "FS-WATER-W011",
+      "section": "Indoor Water Features",
+      "description": "Do not place water features in the bedroom",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Water in bedroom creates excessive yin energy, disrupts sleep and can cause relationship issues."
+    },
+    {
+      "id": "FS-WATER-W012",
+      "section": "Indoor Water Features",
+      "description": "Do not place water features in the south sector",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "South is fire element — water here creates destructive fire-water clash."
+    },
+    {
+      "id": "FS-WATER-W013",
+      "section": "Indoor Water Features",
+      "description": "Fish tank auspicious number of fish: 1, 6, 7, 8, or 9",
+      "value": "1_6_7_8_9",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "8 is most popular (prosperity). Common combo: 8 gold/red + 1 black (absorbs sha). 9 symbolizes completeness."
+    },
+    {
+      "id": "FS-WATER-W020",
+      "section": "Pools, Exterior",
+      "description": "Swimming pool should be in front or side of building, not behind",
+      "value": "front_or_side",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Same principle as general water placement — water in front gathers qi."
+    },
+    {
+      "id": "FS-WATER-W021",
+      "section": "Pools, Exterior",
+      "description": "Pool shape should be kidney/curved embracing the building, not angled",
+      "value": "curved_embracing",
+      "unit": "text",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Curved pool embracing the building creates jade belt water effect. Rectangular is neutral. L-shaped pools pointing away are unfavorable."
+    },
+    {
+      "id": "FS-WATER-W022",
+      "section": "Pools, Exterior",
+      "description": "Pool should not be larger than the building footprint",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "Excessively large water relative to building creates yin-yang imbalance — water overwhelms the structure."
+    },
+    {
+      "id": "FS-WATER-W030",
+      "section": "Drains, Wealth Leaks",
+      "description": "Toilet should not be in the southeast (wealth) sector",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential",
+        "commercial"
+      ],
+      "notes": "Flushing in the wealth sector drains financial qi. If unavoidable, keep lid closed and door shut."
+    },
+    {
+      "id": "FS-WATER-W031",
+      "section": "Drains, Wealth Leaks",
+      "description": "Toilet should not be in the center of the building",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Center is tai qi — toilet here poisons the heart of the home. Worst placement possible."
+    },
+    {
+      "id": "FS-WATER-W032",
+      "section": "Drains, Wealth Leaks",
+      "description": "Visible drains and exposed plumbing should be covered",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Visible drains represent visible wealth leaking. Cover floor drains, conceal pipes."
+    },
+    {
+      "id": "FS-WATER-W033",
+      "section": "Drains, Wealth Leaks",
+      "description": "Keep all toilet lids closed when not in use",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Open toilets continuously drain qi. Simple habit that preserves wealth energy."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+# Feng Shui for Architecture
+# Stairs, Corridors & Circulation
+#
+# Internal circulation governs how qi moves through a building.
+# Poor circulation design creates stagnant pockets or sha qi channels.
+
+code: "Feng Shui"
+section: "Stairs, Corridors & Circulation"
+source: "Yang Zhai Shi Shu, Classical Form School"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # STAIRCASE RULES
+  # ============================================================
+
+  - id: "FS-STAIR-C001"
+    section: "Stairs, Position"
+    description: "Staircase should not be in the center of the building"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial"]
+    notes: "Center is the tai qi — stairs here drill through the heart of the home. Place stairs along walls, preferably not at the front."
+
+  - id: "FS-STAIR-C002"
+    section: "Stairs, Position"
+    description: "Staircase should not directly face the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial"]
+    notes: "Downward-flowing stairs facing the door drain qi out of the building. If unavoidable, curve the last few steps, add a screen, or place a plant."
+
+  - id: "FS-STAIR-C003"
+    section: "Stairs, Position"
+    description: "Staircase should not be directly above the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Stairs pressing down on the entry suppress incoming qi."
+
+  - id: "FS-STAIR-C004"
+    section: "Stairs, Design"
+    description: "Spiral staircases are inauspicious, especially in the center"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Spiral stairs create a corkscrew of sha qi drilling through floors. Straight or L-shaped stairs are preferred."
+
+  - id: "FS-STAIR-C005"
+    section: "Stairs, Design"
+    description: "Stairs should have solid risers — open-riser stairs leak qi"
+    value: "solid_risers"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Open risers allow qi and wealth to fall through. If open risers exist, place plants underneath."
+
+  - id: "FS-STAIR-C006"
+    section: "Stairs, Design"
+    description: "Stairs should curve or turn — straight stairs accelerate qi"
+    value: "curved_or_L_shaped"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    notes: "Gentle curves slow qi to a beneficial pace. Long straight flights create rushing energy. A landing turn is effective."
+
+  - id: "FS-STAIR-C007"
+    section: "Stairs, Design"
+    description: "Preferred number of stair steps should be odd"
+    value: "odd_number"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Start on the same foot you finish. Some traditions also avoid counts ending in 4 or 7."
+
+  # ============================================================
+  # CORRIDORS & HALLWAYS
+  # ============================================================
+
+  - id: "FS-STAIR-C010"
+    section: "Corridors, Flow"
+    description: "Long straight corridors create sha qi (poison arrows)"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Qi accelerates down long corridors like an arrow. Break with artwork, plants, rugs, or subtle curves in layout."
+
+  - id: "FS-STAIR-C011"
+    section: "Corridors, Flow"
+    description: "Corridors should not aim directly at a bedroom door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Accelerated corridor qi hitting a bedroom door disturbs sleep. Offset the door or use a curtain."
+
+  - id: "FS-STAIR-C012"
+    section: "Corridors, Light"
+    description: "Corridors should be well-lit — dark hallways accumulate yin qi"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Use uplighting, skylights, or light wall colors. Dark corridors breed stagnant and heavy energy."
+
+  - id: "FS-STAIR-C013"
+    section: "Corridors, Width"
+    description: "Corridors should not be excessively narrow relative to ceiling height"
+    value: "proportional"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Narrow corridors with high ceilings create tunnel sha. Width should be at least 1/3 of ceiling height."
+
+  # ============================================================
+  # WINDOWS & VENTILATION
+  # ============================================================
+
+  - id: "FS-STAIR-C020"
+    section: "Windows, Qi Flow"
+    description: "Window-to-door ratio should not exceed 3:1"
+    value: 3
+    unit: "ratio"
+    applies_to: ["residential"]
+    notes: "Too many windows relative to doors dissipate qi before it circulates. Children disobey parents (classical interpretation)."
+
+  - id: "FS-STAIR-C021"
+    section: "Windows, Qi Flow"
+    description: "Windows and doors should not be directly aligned creating a wind tunnel"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Direct window-to-door alignment creates qi piercing, same as front-to-back door alignment."
+
+  - id: "FS-STAIR-C022"
+    section: "Windows, Qi Flow"
+    description: "Every room should have at least one window"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Windowless rooms accumulate stagnant qi. This aligns with building code light/ventilation requirements."

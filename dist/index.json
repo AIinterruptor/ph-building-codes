@@ -80,8 +80,67 @@
           "rule_count": 19
         }
       ]
+    },
+    {
+      "directory": "fengshui",
+      "files": [
+        {
+          "name": "building_shape",
+          "code": "Feng Shui",
+          "section": "Building Shape & Form",
+          "rule_count": 14
+        },
+        {
+          "name": "commercial_office",
+          "code": "Feng Shui",
+          "section": "Commercial & Office Design",
+          "rule_count": 17
+        },
+        {
+          "name": "five_elements",
+          "code": "Feng Shui",
+          "section": "Five Elements (Wu Xing)",
+          "rule_count": 17
+        },
+        {
+          "name": "landscaping_exterior",
+          "code": "Feng Shui",
+          "section": "Landscaping & Exterior",
+          "rule_count": 15
+        },
+        {
+          "name": "main_door_entry",
+          "code": "Feng Shui",
+          "section": "Main Door & Entry",
+          "rule_count": 17
+        },
+        {
+          "name": "orientation_siting",
+          "code": "Feng Shui",
+          "section": "Orientation & Siting",
+          "rule_count": 16
+        },
+        {
+          "name": "room_layout",
+          "code": "Feng Shui",
+          "section": "Room Layout & Placement",
+          "rule_count": 24
+        },
+        {
+          "name": "stairs_corridors",
+          "code": "Feng Shui",
+          "section": "Stairs, Corridors & Circulation",
+          "rule_count": 14
+        },
+        {
+          "name": "water_wealth",
+          "code": "Feng Shui",
+          "section": "Water Features & Wealth",
+          "rule_count": 16
+        }
+      ]
     }
   ],
-  "total_rules": 204,
-  "total_files": 11
+  "total_rules": 354,
+  "total_files": 20
 }

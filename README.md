@@ -1,16 +1,19 @@
-# Philippine Building Codes — Machine-Readable
+# Philippine Building Codes + Feng Shui — Machine-Readable
 
-Machine-readable YAML/JSON encoding of Philippine building regulations for automated compliance checking.
+Machine-readable YAML/JSON encoding of Philippine building regulations and classical Feng Shui principles for automated architectural compliance and design analysis.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Covered Codes
 
-| Code | Reference | Scope | Status |
-|------|-----------|-------|--------|
-| **National Building Code** | PD 1096 (2004 Revised IRR) | Setbacks, FAR, PSO, ceiling heights, ventilation, occupancy | ✅ Seeded |
-| **Accessibility Law** | BP 344 (2024 Revised IRR) | Ramps, PWD parking, doors, toilets, corridors | ✅ Seeded |
-| **Fire Code** | RA 9514 (2019 RIRR) | Occupant loads, travel distance, exit widths, fire ratings | ✅ Seeded |
+| Code | Reference | Scope | Rules | Status |
+|------|-----------|-------|-------|--------|
+| **National Building Code** | PD 1096 (2004 Revised IRR) | Setbacks, FAR, PSO, ceiling heights, ventilation, occupancy | 90 | ✅ Seeded |
+| **Accessibility Law** | BP 344 (2024 Revised IRR) | Ramps, PWD parking, doors, toilets, corridors | 44 | ✅ Seeded |
+| **Fire Code** | RA 9514 (2019 RIRR) | Occupant loads, travel distance, exit widths, fire ratings | 70 | ✅ Seeded |
+| **Feng Shui** | Classical Form & Compass Schools | Orientation, doors, room layout, five elements, water, landscaping | 150 | ✅ Seeded |
+
+**Total: 354 machine-readable rules across 20 files.**
 
 ## Repository Structure
 
@@ -30,6 +33,16 @@ ph-building-codes/
 │   ├── occupant_loads.yaml  # Load factors by occupancy type
 │   ├── means_of_egress.yaml # Travel distance, exit widths, dead ends
 │   └── fire_resistance.yaml # Fire ratings, firewalls, suppression
+├── fengshui/                # Feng Shui — Classical Design Principles
+│   ├── orientation_siting.yaml  # Four Animals, lot shape, elevation
+│   ├── main_door_entry.yaml     # Qi mouth, Lu Ban ruler, door alignment
+│   ├── room_layout.yaml         # Ba Gua sectors, bedroom, kitchen, living
+│   ├── five_elements.yaml       # Wu Xing cycles, materials, colors
+│   ├── water_wealth.yaml        # Water placement, pools, drains, wealth
+│   ├── stairs_corridors.yaml    # Circulation, stair design, corridors
+│   ├── building_shape.yaml      # Plan shape, roof form, proportion
+│   ├── commercial_office.yaml   # Office, retail, restaurant design
+│   └── landscaping_exterior.yaml # Trees, paths, fences, lighting
 ├── schemas/                 # JSON Schema for rule validation
 │   └── rule_schema.json
 ├── scripts/                 # Build tools
@@ -87,10 +100,19 @@ This is a community effort to digitize Philippine building codes. Contributions 
 
 Format: `{CODE}-{RULE}-{TYPE}{NUMBER}`
 
-- Code: `NBCP`, `BP344`, `FC` (Fire Code)
-- Rule: Roman numeral or section (e.g., `VIII`, `IRR`)
-- Type: `S` (setback), `H` (height), `A` (area), `R` (ratio), `D` (dimension), `L` (load), `T` (time/distance)
+- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui)
+- Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`)
+- Type: `S` (setback/siting), `H` (height), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance), `W` (water), `E` (element), `C` (circulation), `F` (form), `B` (business)
 - Number: Sequential 3-digit (e.g., `001`)
+
+### Feng Shui as Architectural Data
+
+The Feng Shui rules are encoded using the same schema as legal building codes, making them queryable alongside compliance data. They are clearly marked as traditional design philosophy — not legal requirements. This allows architects and AI tools to run a single query that returns both code compliance results and Feng Shui design recommendations.
+
+**Example:** "Is my south-facing door compliant?" returns:
+- `NBCP-VIII-S001`: Front setback 4.5m — PASS (legal)
+- `FS-SITE-S010`: South facing preferred for prosperity — PASS (Feng Shui)
+- `FS-DOOR-D010`: Check front-to-back door alignment — CHECK (Feng Shui)
 
 ## Disclaimer
 

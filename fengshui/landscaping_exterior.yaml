@@ -1,0 +1,149 @@
+# Feng Shui for Architecture
+# Landscaping, Garden & Exterior Design
+#
+# Exterior landscaping shapes the qi environment before it enters
+# the building. Trees, paths, fences, and garden features all
+# influence the quality and flow of energy.
+
+code: "Feng Shui"
+section: "Landscaping & Exterior"
+source: "Form School, Garden Feng Shui Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # TREES & PLANTS
+  # ============================================================
+
+  - id: "FS-LAND-L001"
+    section: "Trees, Position"
+    description: "No large tree directly in front of the main door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential", "commercial", "all"]
+    notes: "Tree blocking the qi mouth obstructs energy entry. Keep the ming tang clear. Large trees belong to the side or rear."
+
+  - id: "FS-LAND-L002"
+    section: "Trees, Position"
+    description: "Trees behind the building strengthen the Tortoise support"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Tall trees at the rear provide backing energy. Best trees: banyan, pine, bamboo (evergreen, strong)."
+
+  - id: "FS-LAND-L003"
+    section: "Trees, Health"
+    description: "Dead or dying trees must be removed — they create yin sha"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Dead trees represent decay and stagnation. Remove and replace with healthy specimens."
+
+  - id: "FS-LAND-L004"
+    section: "Trees, Species"
+    description: "Auspicious trees for tropical architecture"
+    value: "bamboo, plumeria, citrus, palm, jade_plant, money_tree"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Bamboo = resilience. Citrus = wealth. Palm = upward energy. Jade/money plant = prosperity. Avoid thorny plants near entries (except roses for boundary protection)."
+
+  - id: "FS-LAND-L005"
+    section: "Trees, Species"
+    description: "Avoid cactus and thorny plants near the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Thorns create sha qi at the entry point. Acceptable at property boundaries for protection."
+
+  # ============================================================
+  # PATHWAYS & DRIVEWAYS
+  # ============================================================
+
+  - id: "FS-LAND-L010"
+    section: "Paths, Design"
+    description: "Pathways to the front door should curve gently, not run straight"
+    value: "curved"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Curved paths slow qi to a beneficial pace. Straight paths create sha qi rushing at the door. Even a slight S-curve helps."
+
+  - id: "FS-LAND-L011"
+    section: "Paths, Design"
+    description: "Driveway should not slope downward away from the house toward the street"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Downward slope drains qi and wealth away from the property. If unavoidable, place a light or water feature at the low point to arrest the flow."
+
+  - id: "FS-LAND-L012"
+    section: "Paths, Design"
+    description: "Path width should widen as it approaches the front door (welcoming shape)"
+    value: "widening_toward_door"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Narrowing paths constrict qi. A funnel shape gathering energy toward the entrance is ideal."
+
+  # ============================================================
+  # FENCES, WALLS & GATES
+  # ============================================================
+
+  - id: "FS-LAND-L020"
+    section: "Fences, Proportion"
+    description: "Boundary fence should not be taller than the building"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Excessively tall fences trap qi and create prison-like energy. Fence height should be proportional."
+
+  - id: "FS-LAND-L021"
+    section: "Fences, Design"
+    description: "Fence should not have pointed/arrow-shaped pickets facing inward"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Inward-facing points create sha aimed at the house. Points should face outward (protective) or use flat-top pickets."
+
+  - id: "FS-LAND-L022"
+    section: "Gates, Alignment"
+    description: "Main gate should align with or lead toward the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Gate and door should work as a qi funnel. Gate opening toward the door guides energy. Avoid gate at 90° to front door."
+
+  - id: "FS-LAND-L023"
+    section: "Gates, Size"
+    description: "Main gate should be proportional to the fence — not excessively large or small"
+    value: "proportional"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Gate too large = qi floods uncontrolled. Gate too small = qi restricted. Gate height ≈ 1.2-1.5× fence height."
+
+  # ============================================================
+  # OUTDOOR LIGHTING
+  # ============================================================
+
+  - id: "FS-LAND-L030"
+    section: "Lighting, Exterior"
+    description: "Front entrance should be well-lit at night"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Darkness at the qi mouth blocks energy after sunset. Use warm-toned lights flanking the entrance."
+
+  - id: "FS-LAND-L031"
+    section: "Lighting, Exterior"
+    description: "Dark corners of the property should have uplighting"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Dark corners accumulate yin sha. Lights activate stagnant areas and lift energy."
+
+  - id: "FS-LAND-L032"
+    section: "Lighting, Exterior"
+    description: "Use paired lights flanking the front door for balance"
+    value: "paired"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Symmetrical lighting creates balanced qi entry. Odd/asymmetric lighting is unsettling."

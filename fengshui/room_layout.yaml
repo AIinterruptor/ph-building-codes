@@ -1,0 +1,245 @@
+# Feng Shui for Architecture
+# Room Layout, Placement & Interior Arrangement
+#
+# Room placement within the ba gua grid determines the energy
+# quality of each space. This file covers ideal room positions,
+# bedroom rules, kitchen placement, and living area guidelines.
+
+code: "Feng Shui"
+section: "Room Layout & Placement"
+source: "Ba Zhai (Eight Mansions), Xuan Kong Flying Stars, Classical Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # BA GUA ROOM MAPPING
+  # ============================================================
+
+  - id: "FS-ROOM-R001"
+    section: "Ba Gua, Sector Mapping"
+    description: "North sector governs career — suitable for study, home office, or entry"
+    value: "career"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "north"
+      element: "water"
+    notes: "Enhance with water features, dark blue/black colors, glass, mirrors."
+
+  - id: "FS-ROOM-R002"
+    section: "Ba Gua, Sector Mapping"
+    description: "South sector governs fame/reputation — suitable for living room or reception"
+    value: "fame"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "south"
+      element: "fire"
+    notes: "Enhance with red accents, lighting, candles, awards display."
+
+  - id: "FS-ROOM-R003"
+    section: "Ba Gua, Sector Mapping"
+    description: "East sector governs health/family — suitable for dining room or family room"
+    value: "health_family"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "east"
+      element: "wood"
+    notes: "Enhance with green plants, wood furniture, family photos."
+
+  - id: "FS-ROOM-R004"
+    section: "Ba Gua, Sector Mapping"
+    description: "West sector governs creativity/children — suitable for children's room or creative studio"
+    value: "creativity_children"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "west"
+      element: "metal"
+    notes: "Enhance with white/metallic colors, round shapes, art supplies."
+
+  - id: "FS-ROOM-R005"
+    section: "Ba Gua, Sector Mapping"
+    description: "Southeast sector governs wealth — suitable for home office, cash register area, or prosperity corner"
+    value: "wealth"
+    unit: "text"
+    applies_to: ["residential", "commercial"]
+    conditions:
+      sector: "southeast"
+      element: "wood"
+    notes: "Enhance with healthy plants, wealth symbols, flowing water feature. Never place trash or toilet here."
+
+  - id: "FS-ROOM-R006"
+    section: "Ba Gua, Sector Mapping"
+    description: "Southwest sector governs love/relationships — suitable for master bedroom"
+    value: "love_relationships"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "southwest"
+      element: "earth"
+    notes: "Enhance with paired objects, earth tones, rose quartz, romantic imagery."
+
+  - id: "FS-ROOM-R007"
+    section: "Ba Gua, Sector Mapping"
+    description: "Northeast sector governs knowledge/wisdom — suitable for study, library, meditation"
+    value: "knowledge"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "northeast"
+      element: "earth"
+    notes: "Enhance with books, mountain imagery, blue/beige tones, quiet atmosphere."
+
+  - id: "FS-ROOM-R008"
+    section: "Ba Gua, Sector Mapping"
+    description: "Northwest sector governs helpful people/travel — suitable for father's room or home office"
+    value: "mentors_travel"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      sector: "northwest"
+      element: "metal"
+    notes: "Enhance with silver/gold colors, metal objects, travel mementos."
+
+  # ============================================================
+  # BEDROOM RULES
+  # ============================================================
+
+  - id: "FS-ROOM-R010"
+    section: "Bedroom, Bed Placement"
+    description: "Bed should be in command position — door visible from bed but not directly in line"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Occupant should see the door from bed without being directly in the door's path. Diagonal to door is ideal."
+
+  - id: "FS-ROOM-R011"
+    section: "Bedroom, Bed Placement"
+    description: "Bed must have a solid wall behind the headboard"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Solid backing provides support and security. Avoid placing bed with headboard against a window."
+
+  - id: "FS-ROOM-R012"
+    section: "Bedroom, Bed Placement"
+    description: "Bed should not be under an exposed beam"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Beams create pressing qi that causes health issues, especially over the chest or head. Cover with false ceiling."
+
+  - id: "FS-ROOM-R013"
+    section: "Bedroom, Bed Placement"
+    description: "Bed should not be placed with feet pointing directly at the door (coffin position)"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Known as the 'death position' — the deceased are carried out feet-first. Reposition bed diagonally."
+
+  - id: "FS-ROOM-R014"
+    section: "Bedroom, Bed Placement"
+    description: "Avoid mirror facing the bed"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Mirror reflecting sleepers disturbs rest. If unavoidable, cover mirror at night or reposition."
+
+  - id: "FS-ROOM-R015"
+    section: "Bedroom, Bed Placement"
+    description: "Bedroom should not be directly above a garage"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Unstable energy from cars moving below disrupts sleep. If unavoidable, use thick carpet and grounding decor."
+
+  - id: "FS-ROOM-R016"
+    section: "Bedroom, Bed Placement"
+    description: "Bedroom door should not face bathroom door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Bathroom draining energy flows into bedroom. Keep bathroom door closed; use a curtain if directly facing."
+
+  - id: "FS-ROOM-R017"
+    section: "Bedroom, Headboard Direction"
+    description: "Headboard should point toward one of the owner's four favorable directions per Kua number"
+    value: "match_kua_favorable"
+    unit: "text"
+    applies_to: ["residential"]
+    notes: "Sleeping direction is the direction the top of the head points. East group: E, SE, N, S. West group: W, NW, SW, NE."
+
+  # ============================================================
+  # KITCHEN RULES
+  # ============================================================
+
+  - id: "FS-ROOM-R020"
+    section: "Kitchen, Stove Placement"
+    description: "Stove should not be directly opposite the sink or refrigerator (fire-water clash)"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Fire and water elements in direct opposition create conflict. Offset by at least 60° or place a wood-element object between."
+
+  - id: "FS-ROOM-R021"
+    section: "Kitchen, Stove Placement"
+    description: "Stove should not be directly under a window"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Wind from window disperses fire qi and wealth energy. Stove needs solid backing."
+
+  - id: "FS-ROOM-R022"
+    section: "Kitchen, Stove Placement"
+    description: "Stove should not be visible from the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Exposed stove from front door implies money burns quickly. Screen with partition or island."
+
+  - id: "FS-ROOM-R023"
+    section: "Kitchen, Stove Placement"
+    description: "Cook should be in command position — able to see kitchen entrance while cooking"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Back to the door while cooking creates startle qi. Use a mirror backsplash if stove faces wall."
+
+  - id: "FS-ROOM-R024"
+    section: "Kitchen, Location"
+    description: "Kitchen should not be in the center of the house"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Center is the tai qi (heart of the home) — fire element here burns the heart. Keep center open or as living space."
+
+  # ============================================================
+  # LIVING ROOM & CENTER
+  # ============================================================
+
+  - id: "FS-ROOM-R030"
+    section: "Living Room, Center"
+    description: "Center of the home (tai qi) should be kept open, bright, and uncluttered"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "The center represents earth element and overall wellbeing. No pillars, heavy storage, or bathrooms at center."
+
+  - id: "FS-ROOM-R031"
+    section: "Living Room, Sofa"
+    description: "Main sofa should have a solid wall behind it"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Solid backing for seating provides support and security, same principle as bed headboard."
+
+  - id: "FS-ROOM-R032"
+    section: "Living Room, Sofa"
+    description: "Sofa should not have back facing the main door"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Turning your back to the qi mouth is unwelcoming and creates vulnerability."

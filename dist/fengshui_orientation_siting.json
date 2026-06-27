@@ -1,0 +1,201 @@
+{
+  "code": "Feng Shui",
+  "section": "Orientation & Siting",
+  "source": "Classical Form School, Compass School, Yang Zhai Shi Shu",
+  "last_verified": "2026-06-27",
+  "notes": "Feng Shui is not a building code — it is a traditional design philosophy. These rules encode widely accepted principles for architectural reference. They complement, never override, legal building codes (NBCP, BP 344, RA 9514).\n",
+  "rules": [
+    {
+      "id": "FS-SITE-S001",
+      "section": "Form School, Four Animals",
+      "description": "Black Tortoise — rear of lot should have higher ground, wall, or solid backing",
+      "value": "higher_ground_or_solid_wall",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Mountain or solid structure behind provides protection and support. Avoid cliff drops at rear."
+    },
+    {
+      "id": "FS-SITE-S002",
+      "section": "Form School, Four Animals",
+      "description": "Red Phoenix — front of lot should have open space (ming tang / bright hall)",
+      "value": "open_space",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Open area in front gathers qi. A gentle body of water in the front is auspicious."
+    },
+    {
+      "id": "FS-SITE-S003",
+      "section": "Form School, Four Animals",
+      "description": "Green Dragon — left side (facing out from front door) should be slightly higher or longer",
+      "value": "higher_or_longer_left",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Dragon side (east when south-facing) represents yang energy and prosperity."
+    },
+    {
+      "id": "FS-SITE-S004",
+      "section": "Form School, Four Animals",
+      "description": "White Tiger — right side (facing out) should be slightly lower or shorter than left",
+      "value": "lower_or_shorter_right",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Tiger side (west when south-facing) should not dominate the Dragon side."
+    },
+    {
+      "id": "FS-SITE-S010",
+      "section": "Compass School, Facing Direction",
+      "description": "Preferred main door facing direction for general prosperity",
+      "value": "south_or_southeast",
+      "unit": "text",
+      "applies_to": [
+        "residential",
+        "all"
+      ],
+      "conditions": {
+        "hemisphere": "northern"
+      },
+      "notes": "South-facing maximizes light and warmth (northern hemisphere). Southeast is wealth direction. Tropical climates may prefer east for morning sun."
+    },
+    {
+      "id": "FS-SITE-S011",
+      "section": "Compass School, Facing Direction",
+      "description": "Avoid main door directly facing a T-junction (lu chong / road rush)",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Rushing qi from oncoming road is sha (killing energy). Mitigate with screen wall, landscaping, or offset entry."
+    },
+    {
+      "id": "FS-SITE-S012",
+      "section": "Compass School, Facing Direction",
+      "description": "Avoid main door facing a dead-end road",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential",
+        "commercial",
+        "all"
+      ],
+      "notes": "Dead-end stagnates qi flow. If unavoidable, use water features or plants to activate."
+    },
+    {
+      "id": "FS-SITE-S013",
+      "section": "Form School, Poison Arrows",
+      "description": "Avoid sharp building corners (sha qi) pointing at front door",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Sharp edges of adjacent buildings, rooflines, or walls directed at entry create cutting qi. Deflect with ba gua mirror, screen, or landscaping."
+    },
+    {
+      "id": "FS-SITE-S014",
+      "section": "Form School, Poison Arrows",
+      "description": "Avoid utility poles, large trees, or pillars directly in front of main door",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Objects blocking the ming tang obstruct qi entry. Minimum clear distance: 2× door width."
+    },
+    {
+      "id": "FS-SITE-S020",
+      "section": "Form School, Lot Geometry",
+      "description": "Preferred lot shape — regular rectangle or square",
+      "value": "rectangle_or_square",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Regular shapes hold qi evenly. Square represents earth element stability."
+    },
+    {
+      "id": "FS-SITE-S021",
+      "section": "Form School, Lot Geometry",
+      "description": "Avoid triangular lots",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Triangular lots create fire-element imbalance and sharp qi angles. If unavoidable, use landscaping to square off usable area."
+    },
+    {
+      "id": "FS-SITE-S022",
+      "section": "Form School, Lot Geometry",
+      "description": "Avoid lots narrower at front than rear (dustpan shape)",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Narrow front restricts qi entry. Wider-front-than-rear (trumpet shape) is preferred for gathering energy."
+    },
+    {
+      "id": "FS-SITE-S023",
+      "section": "Form School, Lot Geometry",
+      "description": "Avoid lots with missing corners (L-shape, irregular cutouts)",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Missing corners weaken the corresponding ba gua sector. Southwest missing = relationship issues, southeast missing = wealth issues. Cure with lights, plants, or mirrors at the missing sector."
+    },
+    {
+      "id": "FS-SITE-S030",
+      "section": "Form School, Topography",
+      "description": "Building site should be higher than the road",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Higher ground commands qi. Buildings below road level drain energy downward."
+    },
+    {
+      "id": "FS-SITE-S031",
+      "section": "Form School, Topography",
+      "description": "Avoid building at the bottom of a slope where water collects",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Water pooling creates dampness and stagnant qi. Proper drainage and elevation mitigate."
+    },
+    {
+      "id": "FS-SITE-S032",
+      "section": "Form School, Topography",
+      "description": "Avoid building on top of a sharp ridge or hill peak",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Exposed hilltop has no backing support (no Tortoise). Wind disperses qi. Slightly below the peak with backing is ideal."
+    }
+  ]
+}

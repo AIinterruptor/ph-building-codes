@@ -51,7 +51,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^(NBCP|BP344|FC)-[A-Z]+-[A-Z][0-9]{3}$",
+          "pattern": "^(NBCP|BP344|FC|FS)-[A-Z]+-[A-Z][0-9]{3}$",
           "description": "Unique rule identifier"
         },
         "section": {

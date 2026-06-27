@@ -1,0 +1,147 @@
+# Feng Shui for Architecture
+# Building Shape, Form & Massing
+#
+# The external form of a building generates its own qi field.
+# Shape, proportion, and relationship to surrounding structures
+# determine whether the building radiates sha or sheng qi.
+
+code: "Feng Shui"
+section: "Building Shape & Form"
+source: "Form School, Classical Architecture Feng Shui"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # FLOOR PLAN SHAPE
+  # ============================================================
+
+  - id: "FS-SHAPE-F001"
+    section: "Plan Shape"
+    description: "Preferred floor plan shape — rectangle or square"
+    value: "rectangle_or_square"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Regular shapes distribute qi evenly. Square = earth (stable). Rectangle = wood (growth). Both are auspicious."
+
+  - id: "FS-SHAPE-F002"
+    section: "Plan Shape"
+    description: "L-shaped buildings have a missing ba gua sector"
+    value: "missing_sector"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "The missing corner weakens its corresponding ba gua sector. Cure: extend qi with outdoor lighting, tall plants, or a garden feature in the missing area to symbolically complete the shape."
+
+  - id: "FS-SHAPE-F003"
+    section: "Plan Shape"
+    description: "T-shaped buildings create unbalanced qi — one wing dominates"
+    value: "unbalanced"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "The protruding arm creates asymmetry. Mitigate by strengthening the shorter sides with landscaping and lighting."
+
+  - id: "FS-SHAPE-F004"
+    section: "Plan Shape"
+    description: "U-shaped buildings with opening facing away from road are inauspicious"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "U opening = qi leaks out the back. U opening toward the road = arms embrace incoming qi (acceptable)."
+
+  - id: "FS-SHAPE-F005"
+    section: "Plan Shape"
+    description: "Circular or octagonal floor plans are auspicious"
+    value: "auspicious"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Circle = metal element, continuous flow. Octagon = ba gua shape, balanced all sectors. Works well for pavilions and meditation spaces."
+
+  # ============================================================
+  # ROOF FORM
+  # ============================================================
+
+  - id: "FS-SHAPE-F010"
+    section: "Roof Shape"
+    description: "Preferred roof shapes by element"
+    value: "gable_hip_flat"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      fire: "steep_gable_or_A_frame"
+      earth: "flat_or_low_pitch"
+      metal: "domed_or_arched"
+      water: "wavy_or_undulating"
+      wood: "tall_narrow_gable"
+    notes: "Match roof shape to desired element or the productive element for the building's facing direction."
+
+  - id: "FS-SHAPE-F011"
+    section: "Roof Shape"
+    description: "Roof should not have sharp ridges or points aimed at neighboring buildings"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Sharp roof peaks create sha qi for neighbors. This also invites retaliation through the same mechanism."
+
+  - id: "FS-SHAPE-F012"
+    section: "Roof Shape"
+    description: "Roof should not slope entirely in one direction toward the front door"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Single-slope (shed) roof draining toward the entry washes qi away. Dual-pitch or hip roof distributes drainage evenly."
+
+  # ============================================================
+  # BUILDING PROPORTION
+  # ============================================================
+
+  - id: "FS-SHAPE-F020"
+    section: "Proportion"
+    description: "Building should not be excessively tall and narrow"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Height-to-width ratio should not exceed 3:1. Tall narrow buildings are unstable qi (lonely pillar sha)."
+
+  - id: "FS-SHAPE-F021"
+    section: "Proportion"
+    description: "Building should not be significantly taller or shorter than its neighbors"
+    value: "contextual_proportion"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Much taller = exposed to wind, no Dragon/Tiger support. Much shorter = suppressed by neighbors. Match neighborhood scale."
+
+  - id: "FS-SHAPE-F022"
+    section: "Proportion"
+    description: "Ground floor should not be narrower than upper floors (top-heavy)"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Top-heavy buildings create unstable, oppressive energy. Each floor should be equal or slightly smaller than the one below."
+
+  # ============================================================
+  # COLUMNS & STRUCTURAL ELEMENTS
+  # ============================================================
+
+  - id: "FS-SHAPE-F030"
+    section: "Columns, Interior"
+    description: "Avoid freestanding columns in the center of rooms"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Central columns split qi and block flow. If structural, conceal with plants, wrapping, or integrate into built-in furniture."
+
+  - id: "FS-SHAPE-F031"
+    section: "Beams, Interior"
+    description: "Exposed beams above seating, sleeping, or working areas create pressing qi"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Beams exert downward pressure on anyone below. Cover with false ceilings, or position furniture between beams, not under them."
+
+  - id: "FS-SHAPE-F032"
+    section: "Corners, Interior"
+    description: "Sharp interior corners (protruding wall corners) should be softened"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Sharp corners project sha qi like arrows. Use rounded corners, hang a plant, or place furniture to block the sharp edge."

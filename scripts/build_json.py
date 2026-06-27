@@ -22,7 +22,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 SCHEMA_PATH = ROOT / "schemas" / "rule_schema.json"
-SOURCE_DIRS = ["nbcp", "bp344", "ra9514"]
+SOURCE_DIRS = ["nbcp", "bp344", "ra9514", "fengshui"]
 
 
 def load_yaml(path: Path) -> dict:
@@ -127,7 +127,7 @@ def build(validate: bool = False) -> int:
         if all_errors:
             print(f"\nValidation errors ({len(all_errors)}):")
             for e in all_errors:
-                print(f"  ✗ {e}")
+                print(f"  FAIL: {e}")
             return 1
         else:
             print("Validation: PASS")

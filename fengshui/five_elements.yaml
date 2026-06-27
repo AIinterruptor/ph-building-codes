@@ -1,0 +1,195 @@
+# Feng Shui for Architecture
+# Five Elements (Wu Xing) — Material & Color Selection
+#
+# The Five Elements cycle governs material choices, color palettes,
+# and spatial arrangement. Understanding productive and destructive
+# cycles is essential for architectural harmony.
+
+code: "Feng Shui"
+section: "Five Elements (Wu Xing)"
+source: "Wu Xing Theory, Classical Feng Shui Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # ELEMENT ASSOCIATIONS
+  # ============================================================
+
+  - id: "FS-ELEM-E001"
+    section: "Wu Xing, Wood Element"
+    description: "Wood element — directions, materials, colors, shapes"
+    value: "east_southeast"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      directions: ["east", "southeast"]
+      colors: ["green", "teal", "brown"]
+      materials: ["timber", "bamboo", "rattan", "living_plants"]
+      shapes: ["rectangular", "columnar", "tall"]
+      season: "spring"
+    notes: "Wood represents growth, vitality, and upward energy. Use in health (east) and wealth (southeast) sectors."
+
+  - id: "FS-ELEM-E002"
+    section: "Wu Xing, Fire Element"
+    description: "Fire element — directions, materials, colors, shapes"
+    value: "south"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      directions: ["south"]
+      colors: ["red", "orange", "purple", "hot_pink"]
+      materials: ["candles", "lighting", "leather", "animal_prints"]
+      shapes: ["triangular", "pointed", "star"]
+      season: "summer"
+    notes: "Fire represents fame, passion, and illumination. Use in south sector. Too much fire creates aggression."
+
+  - id: "FS-ELEM-E003"
+    section: "Wu Xing, Earth Element"
+    description: "Earth element — directions, materials, colors, shapes"
+    value: "center_southwest_northeast"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      directions: ["center", "southwest", "northeast"]
+      colors: ["yellow", "beige", "terracotta", "sand"]
+      materials: ["stone", "brick", "tile", "ceramic", "clay"]
+      shapes: ["square", "flat", "low"]
+      season: "late_summer"
+    notes: "Earth represents stability, grounding, and nourishment. Use at center, SW (relationships), NE (knowledge)."
+
+  - id: "FS-ELEM-E004"
+    section: "Wu Xing, Metal Element"
+    description: "Metal element — directions, materials, colors, shapes"
+    value: "west_northwest"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      directions: ["west", "northwest"]
+      colors: ["white", "silver", "gold", "grey", "copper"]
+      materials: ["steel", "aluminum", "iron", "brass", "stone"]
+      shapes: ["round", "domed", "arched", "spherical"]
+      season: "autumn"
+    notes: "Metal represents precision, clarity, and structure. Use in west (children/creativity) and NW (mentors/travel)."
+
+  - id: "FS-ELEM-E005"
+    section: "Wu Xing, Water Element"
+    description: "Water element — directions, materials, colors, shapes"
+    value: "north"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      directions: ["north"]
+      colors: ["black", "dark_blue", "navy", "charcoal"]
+      materials: ["glass", "mirrors", "water_features", "reflective_surfaces"]
+      shapes: ["wavy", "freeform", "asymmetric", "flowing"]
+      season: "winter"
+    notes: "Water represents career, wisdom, and flow. Use in north sector. Too much water creates fear and instability."
+
+  # ============================================================
+  # PRODUCTIVE CYCLE (SHENG)
+  # ============================================================
+
+  - id: "FS-ELEM-E010"
+    section: "Wu Xing, Productive Cycle"
+    description: "Wood feeds Fire — use wood to strengthen fire sector"
+    value: "wood_produces_fire"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Add wooden furniture or green plants to the south sector to enhance fame energy."
+
+  - id: "FS-ELEM-E011"
+    section: "Wu Xing, Productive Cycle"
+    description: "Fire produces Earth — use fire to strengthen earth sector"
+    value: "fire_produces_earth"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Add lighting, candles, or red accents to center/SW/NE to enhance stability."
+
+  - id: "FS-ELEM-E012"
+    section: "Wu Xing, Productive Cycle"
+    description: "Earth produces Metal — use earth to strengthen metal sector"
+    value: "earth_produces_metal"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Add ceramics, crystals, or stone to west/NW to enhance creativity and mentors."
+
+  - id: "FS-ELEM-E013"
+    section: "Wu Xing, Productive Cycle"
+    description: "Metal produces Water — use metal to strengthen water sector"
+    value: "metal_produces_water"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Add metal bowls, wind chimes, or white objects to north to enhance career."
+
+  - id: "FS-ELEM-E014"
+    section: "Wu Xing, Productive Cycle"
+    description: "Water produces Wood — use water to strengthen wood sector"
+    value: "water_produces_wood"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Add water features or blue/black accents to east/SE to enhance health and wealth."
+
+  # ============================================================
+  # DESTRUCTIVE CYCLE (KE)
+  # ============================================================
+
+  - id: "FS-ELEM-E020"
+    section: "Wu Xing, Destructive Cycle"
+    description: "Water destroys Fire — avoid water elements in south sector"
+    value: "water_destroys_fire"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "No aquariums, fountains, or blue/black dominance in the south. Kills fame and recognition."
+
+  - id: "FS-ELEM-E021"
+    section: "Wu Xing, Destructive Cycle"
+    description: "Fire destroys Metal — avoid fire elements in west/NW sectors"
+    value: "fire_destroys_metal"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Avoid excessive red, candles, or fireplaces in the west/NW. Weakens children and mentor luck."
+
+  - id: "FS-ELEM-E022"
+    section: "Wu Xing, Destructive Cycle"
+    description: "Metal destroys Wood — avoid metal elements in east/SE sectors"
+    value: "metal_destroys_wood"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Avoid heavy metal furniture or white/metallic dominance in east/SE. Weakens health and wealth."
+
+  - id: "FS-ELEM-E023"
+    section: "Wu Xing, Destructive Cycle"
+    description: "Wood destroys Earth — avoid wood elements in center/SW/NE sectors"
+    value: "wood_destroys_earth"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Avoid too many plants or green dominance at center. Destabilizes relationships and grounding."
+
+  - id: "FS-ELEM-E024"
+    section: "Wu Xing, Destructive Cycle"
+    description: "Earth destroys Water — avoid earth elements in north sector"
+    value: "earth_destroys_water"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Avoid heavy stone, ceramics, or yellow/beige dominance in the north. Blocks career qi."
+
+  # ============================================================
+  # ARCHITECTURAL MATERIAL SELECTION
+  # ============================================================
+
+  - id: "FS-ELEM-E030"
+    section: "Materials, Balance"
+    description: "Building should incorporate all five elements in balanced proportion"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "A building dominated by one element creates imbalance. Mix wood (timber), fire (lighting), earth (stone/brick), metal (steel/fixtures), water (glass/reflections)."
+
+  - id: "FS-ELEM-E031"
+    section: "Materials, Exterior"
+    description: "Facade material should support the building's facing direction element"
+    value: "match_facing_element"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "South-facing = fire, use wood (productive) or fire (same). North-facing = water, use metal (productive). Avoid the controlling element."
