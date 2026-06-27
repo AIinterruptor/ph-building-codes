@@ -1,0 +1,173 @@
+{
+  "code": "Architectural Practice",
+  "section": "Common Mistakes & Hard Lessons",
+  "source": "Industry Practice, UAP Peer Knowledge",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "PR-FAIL-P001",
+      "section": "Design Errors",
+      "description": "Not visiting the site before designing — the #1 beginner mistake",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Designing from a Google Earth screenshot misses: actual grades, drainage patterns, neighbor window locations, sun angles at different times, noise sources, utility pole locations, existing trees worth saving, soil conditions visible from adjacent cuts. Visit the site. Walk it. Sit there for an hour."
+    },
+    {
+      "id": "PR-FAIL-P002",
+      "section": "Design Errors",
+      "description": "Ignoring the sun path — orient first, plan second",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "In PH (7-14°N latitude), east and west walls receive brutal solar heat. New architects place bedrooms on the west wall with full glass — then wonder why the AC can't cope. Plot the sun path for your specific latitude. Shield east/west. Open north/south."
+    },
+    {
+      "id": "PR-FAIL-P003",
+      "section": "Design Errors",
+      "description": "Designing rooms that can't fit furniture — always do a furniture layout",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "A 3m x 3m bedroom is 9sqm — code compliant. But fit a queen bed (1.5x2.0m), two side tables, a cabinet, and a desk? Impossible. Always draw furniture to scale in your plans. Clients assume room dimensions accommodate their furniture. If it doesn't fit, it's your fault."
+    },
+    {
+      "id": "PR-FAIL-P004",
+      "section": "Design Errors",
+      "description": "Forgetting about door swing clearances",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Doors need 900mm clear swing arc. Two doors opening into each other = doors that can't open fully. Toilet doors opening into a corridor = hitting passersby. Draw every door arc on your plan. Common fix: sliding doors or pocket doors in tight spaces."
+    },
+    {
+      "id": "PR-FAIL-P005",
+      "section": "Design Errors",
+      "description": "Designing beautiful exteriors with unlivable interiors",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "residential"
+      ],
+      "notes": "New architects obsess over facade composition and neglect interior flow. Clients live inside, not outside. Circulation should be efficient (not more than 15% of GFA). Every room should have purpose and adequate natural light. Form follows function — especially in residential."
+    },
+    {
+      "id": "PR-FAIL-P010",
+      "section": "Documentation",
+      "description": "Inconsistent dimensions between plans, sections, and details",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Plan shows 3.0m room width. Section shows 2.8m. Detail shows 3.2m. Contractor builds to whichever is cheapest. Experienced architects cross-check every dimension across all sheets. Use BIM to eliminate this — Revit won't let you have contradictory dimensions."
+    },
+    {
+      "id": "PR-FAIL-P011",
+      "section": "Documentation",
+      "description": "Missing specifications — drawings without specs are incomplete",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Drawings show WHAT. Specifications say HOW and WITH WHAT. Without specs, the contractor chooses the cheapest materials and methods. New architects submit drawings without a written specification book — then wonder why the contractor used the wrong paint, wrong tiles, wrong concrete mix."
+    },
+    {
+      "id": "PR-FAIL-P012",
+      "section": "Documentation",
+      "description": "Not dimensioning to structural grid — contractors build to dimensions, not scale",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "If your plan is 'not to scale' and missing dimensions, the contractor will guess. Dimension everything from the structural grid. Reference all setbacks, openings, and features to grid lines. A fully dimensioned plan prevents 90% of construction errors."
+    },
+    {
+      "id": "PR-FAIL-P020",
+      "section": "Supervision",
+      "description": "Trusting the contractor blindly — verify everything",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "'Sir, all good na po' is not a site inspection report. Measure rebar spacing yourself. Check concrete delivery receipts. Count CHB deliveries. Verify elevations with a level. Filipino contractors are often skilled but sometimes cut corners when unsupervised. Trust but verify."
+    },
+    {
+      "id": "PR-FAIL-P021",
+      "section": "Supervision",
+      "description": "Not catching errors before concrete pour — concrete is permanent",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Before every concrete pour: check rebar placement, verify dimensions, confirm embedded conduits and sleeves, check formwork alignment. After pour: it's demolish or live with it. The 30 minutes you spend checking saves PHP 100,000+ in demolition and rework."
+    },
+    {
+      "id": "PR-FAIL-P022",
+      "section": "Supervision",
+      "description": "Forgetting embedded items — conduits, sleeves, anchor bolts",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Electrical conduits in slabs, plumbing sleeves through beams, anchor bolts in foundations — all must be placed BEFORE concrete pour. Chipping concrete later weakens structure, wastes money, and looks unprofessional. Create an embedded items checklist for every pour."
+    },
+    {
+      "id": "PR-FAIL-P030",
+      "section": "Business",
+      "description": "Starting work before getting paid — the most expensive mistake",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "New architect syndrome: client says 'start designing, I'll pay when I see the plans.' You design for 2 weeks. Client disappears. You've lost 2 weeks of work. Rule: no downpayment, no work. No exceptions. If the client is serious, they'll pay."
+    },
+    {
+      "id": "PR-FAIL-P031",
+      "section": "Business",
+      "description": "Not tracking project costs — flying blind on profitability",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Most new architects don't know if their projects are profitable until tax season reveals they earned less than their drafters. Track hours per project. Track expenses. Compare to fee collected. After 5 projects, you'll know your actual cost structure and can price accurately."
+    },
+    {
+      "id": "PR-FAIL-P032",
+      "section": "Business",
+      "description": "Saying yes to every project — burnout and quality collapse",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "New architects are afraid to say no because they need income. But 5 simultaneous projects with one architect = 5 poorly served clients. Know your capacity: 2-3 active projects at a time for a solo practitioner. Quality drops exponentially after that."
+    },
+    {
+      "id": "PR-FAIL-P033",
+      "section": "Business",
+      "description": "Not saving as-built documents — you'll need them in 5 years",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Client calls 5 years later: 'We want to renovate, do you have the plans?' If yes: easy project, loyal client, repeat business. If no: lost opportunity, embarrassment. Archive every project: final drawings, specs, permits, photos, correspondence. Cloud backup. This archive is your professional asset."
+    }
+  ]
+}

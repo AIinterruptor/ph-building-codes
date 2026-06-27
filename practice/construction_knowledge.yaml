@@ -1,0 +1,169 @@
+# What Every New Architect Should Know
+# Construction Knowledge & Materials
+#
+# What they don't teach enough in school: how buildings
+# are actually built in the Philippines, and what goes wrong.
+
+code: "Architectural Practice"
+section: "Construction Knowledge & Materials"
+source: "DPWH Blue Book, NSCP 2015, ASTM/PNS Standards, Industry Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # STRUCTURAL COORDINATION
+  # ============================================================
+
+  - id: "PR-CONST-P001"
+    section: "Structural"
+    description: "Architects must understand basic structural systems — you're the team leader"
+    value: "structural_literacy"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      must_know: "beam-column grid logic, load paths, slab types (one-way vs two-way), cantilever limits, expansion joints, seismic bracing concepts"
+    notes: "You don't design the structure, but you must know when your design creates structural problems. A column-free 8m span is doable with post-tensioned slab but not with conventional. Know the cost of what you draw."
+
+  - id: "PR-CONST-P002"
+    section: "Structural"
+    description: "Column grid should align with architectural layout — coordinate early"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "The #1 coordination failure in PH construction: architect draws rooms, structural engineer adds columns that land in doorways and corridors. Share floor plans with the structural engineer at schematic stage, not after construction docs are done."
+
+  - id: "PR-CONST-P003"
+    section: "Structural"
+    description: "Understand rebar — standard Philippine sizes and concrete cover requirements"
+    value: "rebar_basics"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      common_sizes: "10mm (slab), 12mm (beams/columns), 16mm (columns), 20mm (foundation), 25mm (heavy)"
+      concrete_cover: "40mm for columns, 50mm for foundation, 25mm for slabs (interior)"
+    notes: "You'll inspect rebar placement during CA. Know what correct looks like. Insufficient cover = corrosion in 10 years in PH climate. Spacing, lap lengths, stirrup hooks — learn to read structural details."
+
+  # ============================================================
+  # COMMON PH CONSTRUCTION METHODS
+  # ============================================================
+
+  - id: "PR-CONST-P010"
+    section: "Methods"
+    description: "Understand CHB (concrete hollow block) construction — the Filipino standard"
+    value: "CHB_knowledge"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      standard_sizes: "100mm (partition), 150mm (exterior), 200mm (load-bearing)"
+      class: "Class A (10.34 MPa) for structural, Class B (6.90 MPa) for non-bearing"
+    notes: "90%+ of PH residential construction uses CHB. Know the difference between Class A and B — many contractors use Class B everywhere to save money. Check by visual inspection: Class A is denser, heavier, more uniform. Specify Class A in your specs."
+
+  - id: "PR-CONST-P011"
+    section: "Methods"
+    description: "Concrete mix design — know the standard Philippine specs"
+    value: "concrete_specs"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      residential: "3000 PSI (20.7 MPa) minimum for structural"
+      commercial: "4000 PSI (27.6 MPa) typical"
+      foundation: "3000 PSI minimum, 4000 PSI for high-rise"
+    notes: "Insist on concrete mix design from a testing lab for projects above PHP 2M. On smaller residential, specify sacks-per-cubic-meter ratio. Common error: contractors use excess water for workability — reduces strength by 20-30%. Slump test on-site."
+
+  - id: "PR-CONST-P012"
+    section: "Methods"
+    description: "Curing is critical — concrete must be wet-cured for 7 days minimum"
+    value: 7
+    unit: "days"
+    applies_to: ["all"]
+    notes: "Most PH contractors strip formwork at 3 days and never cure. This costs 30% of concrete strength. Specify curing in your contract. Insist on it during CA. Curing compounds are acceptable alternative. This is the single cheapest quality improvement."
+
+  - id: "PR-CONST-P013"
+    section: "Methods"
+    description: "Waterproofing — the most common construction defect in the Philippines"
+    value: "waterproofing_critical"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      critical_areas: "roof deck, toilet floors, balconies, below-grade walls, planter boxes, water tanks"
+    notes: "50%+ of PH building complaints are water leakage. Specify waterproofing membrane (not just paint-on) for all wet areas. Flood test every toilet and balcony for 24 hours before tiling. Experienced architects inspect waterproofing personally — they don't delegate it."
+
+  # ============================================================
+  # MATERIALS KNOWLEDGE
+  # ============================================================
+
+  - id: "PR-CONST-P020"
+    section: "Materials"
+    description: "Know current material prices — you can't design without budget awareness"
+    value: "price_awareness"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      check_quarterly: "cement (PHP 260-290/bag), 10mm rebar (PHP 150-180/pc), CHB 4\" (PHP 12-15/pc), CHB 6\" (PHP 18-22/pc), plywood 1/4\" (PHP 450-550/sheet)"
+    notes: "Prices fluctuate 10-20% annually. New architects specify materials without knowing cost — then the client can't afford their design. Keep a running price list. Visit hardware stores quarterly. Know the difference between Iloilo, Manila, and Cebu pricing."
+
+  - id: "PR-CONST-P021"
+    section: "Materials"
+    description: "Specify materials by performance, not brand — avoid liability and bias"
+    value: "performance_specs"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Write 'porcelain floor tile, 600x600mm, PEI 4, water absorption <0.5%, or approved equal' — NOT 'Niro Granite GHP04.' Brand specs limit competition and can create liability. Use 'or approved equal' for everything. Let the contractor submit alternatives for your approval."
+
+  - id: "PR-CONST-P022"
+    section: "Materials"
+    description: "Tropical material durability — know what survives PH climate"
+    value: "climate_durability"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      avoid: "untreated mild steel (rusts in months), MDF in wet areas (swells), wallpaper in non-AC spaces (mold), carpet in humid zones"
+      prefer: "stainless steel 304/316 for hardware, marine-grade aluminum, fiber cement over gypsum for soffits, porcelain over ceramic for exteriors"
+    notes: "PH climate (30°C, 80%+ RH, salt air near coast, typhoon rain) destroys materials that work fine in temperate countries. If you learned it from a US or European textbook, verify it works in tropical conditions."
+
+  - id: "PR-CONST-P023"
+    section: "Materials"
+    description: "Window specifications — the most argued detail in PH residential"
+    value: "window_specs"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      budget: "powder-coated aluminum sliding (PHP 3,500-5,000/sqm)"
+      mid_range: "aluminum casement/awning (PHP 5,000-8,000/sqm)"
+      premium: "thermally broken aluminum + laminated glass (PHP 12,000-20,000/sqm)"
+    notes: "Clients fixate on windows. Specify precisely: frame material, glass type (clear/tinted/laminated/tempered), operation type, hardware, screen. For typhoon zones: tempered or laminated glass mandatory. Sliding windows leak air — casement/awning are superior for ventilation."
+
+  # ============================================================
+  # MEP COORDINATION
+  # ============================================================
+
+  - id: "PR-CONST-P030"
+    section: "MEP"
+    description: "Coordinate ceiling height with MEP — allow 300mm for ductwork and piping"
+    value: 300
+    unit: "mm"
+    applies_to: ["commercial"]
+    notes: "3000mm floor-to-floor with 150mm slab = 2850mm. Subtract 300mm MEP zone = 2550mm ceiling height. If you promised the client 2700mm ceiling, something has to give. Coordinate MEP routes at design development, not during construction."
+
+  - id: "PR-CONST-P031"
+    section: "MEP"
+    description: "Electrical load computation — understand the basics even as an architect"
+    value: "electrical_basics"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      residential_rule: "50-75 VA per sqm general lighting, plus 1500W per appliance circuit"
+      common_mistake: "undersized main breaker and wire gauge"
+    notes: "You're not the PEE, but you should know: a 200sqm house needs ~100A service. AC units need dedicated circuits. Kitchen needs 20A circuits. If you design a house with 4 split-type ACs and the electrician sizes for 2, your client's breaker trips daily."
+
+  - id: "PR-CONST-P032"
+    section: "MEP"
+    description: "Plumbing — drainage slope and vent requirements"
+    value: "plumbing_basics"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      drain_slope: "2% minimum (1:50) for horizontal waste pipes"
+      vent_required: "every fixture group needs a vent stack"
+    notes: "Common PH construction error: no venting. Water drains slowly, gurgling sounds, sewer gas enters building. Architect should verify plumbing layout shows vent stacks — not just drains. Second-floor toilets directly above first-floor toilets saves money and problems."

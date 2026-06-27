@@ -1,0 +1,165 @@
+{
+  "code": "Architectural Practice",
+  "section": "Permits & Regulatory Navigation",
+  "source": "PD 1096, RA 386 (Civil Code), LGU Ordinances, PRC-BOA, Industry Practice",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "PR-PERM-P001",
+      "section": "Building Permit",
+      "description": "Complete building permit document checklist — know this cold",
+      "value": "document_checklist",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "architectural": "5 sets signed/sealed: site dev plan, floor plans, elevations, sections, details, door/window schedule, finishes schedule",
+        "structural": "5 sets signed/sealed by Civil/Structural Engineer",
+        "electrical": "5 sets signed/sealed by PEE (Professional Electrical Engineer)",
+        "plumbing_sanitary": "5 sets signed/sealed by Master Plumber or Sanitary Engineer",
+        "mechanical": "if applicable — signed by Professional Mechanical Engineer"
+      },
+      "notes": "Know the exact checklist for your LGU — every city/municipality has slight variations. Visit the Office of the Building Official (OBO) BEFORE starting construction documents to confirm current requirements. Requirements change without notice."
+    },
+    {
+      "id": "PR-PERM-P002",
+      "section": "Building Permit",
+      "description": "Architect's seal and signature — you are legally liable for everything you sign",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "RA 9266 (Architecture Act) Section 35: signing and sealing makes you personally liable. Never seal plans you didn't prepare or supervise. Never lend your seal. PRC can revoke your license. Criminal liability possible under PD 1096 if building fails."
+    },
+    {
+      "id": "PR-PERM-P003",
+      "section": "Building Permit",
+      "description": "Zoning clearance must be obtained BEFORE building permit application",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "From the City/Municipal Planning and Development Office (CPDO/MPDO). Confirms the proposed use is allowed in the zone. This is where projects die silently — if zoning doesn't allow your use, no amount of design will fix it. Check zoning FIRST."
+    },
+    {
+      "id": "PR-PERM-P004",
+      "section": "Building Permit",
+      "description": "Locational clearance vs. zoning clearance — know the difference",
+      "value": "two_separate_clearances",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Zoning clearance = land use conformity. Locational clearance = HLURB/DHSUD for subdivision/condo projects. New architects often confuse them. For simple residential: zoning clearance only. For subdivision/condo/commercial: both."
+    },
+    {
+      "id": "PR-PERM-P005",
+      "section": "Building Permit",
+      "description": "Fire Safety Evaluation Clearance (FSEC) required before building permit",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "From BFP (Bureau of Fire Protection). Submit fire safety plans showing exits, fire ratings, suppression systems. BFP reviews against RA 9514. Without FSEC, OBO cannot issue building permit. Budget 1-3 weeks."
+    },
+    {
+      "id": "PR-PERM-P006",
+      "section": "Building Permit",
+      "description": "Barangay clearance required before building permit",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Often overlooked by new architects. Barangay captain must certify no opposition from neighbors. For residential in quiet areas: routine. For commercial or controversial projects: can delay weeks. Engage the barangay early."
+    },
+    {
+      "id": "PR-PERM-P010",
+      "section": "Environmental",
+      "description": "ECC (Environmental Compliance Certificate) — know when it's required",
+      "value": "project_dependent",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "required": "projects >10,000sqm GFA, near waterways, in ecologically sensitive areas",
+        "exempt": "single residential, small commercial (<5,000sqm in non-sensitive areas)"
+      },
+      "notes": "DENR-EMB issues ECC after Environmental Impact Assessment (EIA). Process takes 3-6 months. If your project needs ECC, start this FIRST — it's the longest lead item. New architects discover this requirement too late."
+    },
+    {
+      "id": "PR-PERM-P011",
+      "section": "Heritage",
+      "description": "National Historical Commission clearance for heritage zones",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "zone": "heritage_conservation"
+      },
+      "notes": "RA 10066 (National Cultural Heritage Act). If project is within a declared heritage zone (Vigan, Intramuros, Silay, etc.) or affects a declared heritage structure, NHCP clearance is required. Facade guidelines, material restrictions, height limits apply."
+    },
+    {
+      "id": "PR-PERM-P012",
+      "section": "Occupancy",
+      "description": "Certificate of Occupancy — building cannot be used without it",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Issued by OBO after final inspection confirms as-built matches approved plans. Fire Safety Inspection Certificate (FSIC) from BFP also required. Many Filipino buildings are occupied without CO — as architect, you must advise against this."
+    },
+    {
+      "id": "PR-PERM-P013",
+      "section": "Occupancy",
+      "description": "Annual Fire Safety Inspection Certificate (FSIC) renewal",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "commercial"
+      ],
+      "notes": "Required annually for commercial occupancy. BFP inspects fire exits, extinguishers, alarms, sprinklers. Advise clients that this is a permanent obligation, not a one-time requirement. Non-compliance = closure order."
+    },
+    {
+      "id": "PR-PERM-P020",
+      "section": "Practical",
+      "description": "Build relationships with LGU personnel — they are your allies, not adversaries",
+      "value": "relationship_building",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "The Building Official, zoning officer, fire marshal — know them by name. Be respectful, professional, and patient. They process hundreds of applications. A known, trusted architect gets smoother processing. Never attempt to bribe — it's illegal and destroys your reputation."
+    },
+    {
+      "id": "PR-PERM-P021",
+      "section": "Practical",
+      "description": "Anti-Red Tape Act (RA 11032) — know your rights as an applicant",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Government offices must process applications within prescribed periods. Building permits: 15-30 working days (varies by LGU). If delayed beyond prescribed period, the Automatic Approval provision may apply. Know the law — politely cite it when needed."
+    },
+    {
+      "id": "PR-PERM-P022",
+      "section": "Practical",
+      "description": "Keep a permit tracking spreadsheet for every project",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Track: application date, requirements submitted, reviewing office, contact person, follow-up dates, status. New architects lose weeks because they don't follow up systematically. Set calendar reminders for every pending permit."
+    }
+  ]
+}

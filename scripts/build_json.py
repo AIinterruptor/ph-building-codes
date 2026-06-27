@@ -22,7 +22,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 SCHEMA_PATH = ROOT / "schemas" / "rule_schema.json"
-SOURCE_DIRS = ["nbcp", "bp344", "ra9514", "fengshui", "tropical", "green", "trends"]
+SOURCE_DIRS = ["nbcp", "bp344", "ra9514", "fengshui", "tropical", "green", "trends", "practice"]
 
 
 def load_yaml(path: Path) -> dict:

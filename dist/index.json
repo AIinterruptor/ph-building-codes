@@ -232,8 +232,49 @@
           "rule_count": 12
         }
       ]
+    },
+    {
+      "directory": "practice",
+      "files": [
+        {
+          "name": "client_relations",
+          "code": "Architectural Practice",
+          "section": "Client Relations & Business Development",
+          "rule_count": 11
+        },
+        {
+          "name": "common_mistakes",
+          "code": "Architectural Practice",
+          "section": "Common Mistakes & Hard Lessons",
+          "rule_count": 15
+        },
+        {
+          "name": "construction_knowledge",
+          "code": "Architectural Practice",
+          "section": "Construction Knowledge & Materials",
+          "rule_count": 14
+        },
+        {
+          "name": "permits_regulatory",
+          "code": "Architectural Practice",
+          "section": "Permits & Regulatory Navigation",
+          "rule_count": 13
+        },
+        {
+          "name": "professional_growth",
+          "code": "Architectural Practice",
+          "section": "Professional Growth & Ethics",
+          "rule_count": 15
+        },
+        {
+          "name": "project_management",
+          "code": "Architectural Practice",
+          "section": "Project Management & Construction Administration",
+          "rule_count": 12
+        }
+      ]
     }
   ],
-  "total_rules": 536,
-  "total_files": 33
+  "total_rules": 616,
+  "total_files": 39
 }

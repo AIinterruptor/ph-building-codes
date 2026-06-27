@@ -14,9 +14,10 @@ Machine-readable YAML/JSON encoding of Philippine building regulations, tropical
 | **Tropical Architecture** | Koenigsberger, ASHRAE, Bay & Ong | Passive cooling, materials, typhoon/flood resilience, elevated design | 62 | ✅ |
 | **Green Building Code** | BERDE, LEED, DOE-PH, RA 9729 | Energy, water, materials, IEQ, site ecology, renewables | 70 | ✅ |
 | **PH Design Trends** | BluPrint, UAP, PHILGBC, Industry 2024-2026 | Neo-vernacular, resilience, smart tech, lifestyle, biophilic | 50 | ✅ |
+| **Architectural Practice** | UAP Doc 201/202, PRC-BOA, Industry Wisdom | Project management, permits, clients, construction, career growth | 80 | ✅ |
 | **Feng Shui** | Classical Form & Compass Schools | Orientation, doors, room layout, five elements, water, landscaping | 150 | ✅ |
 
-**Total: 536 machine-readable rules across 33 files.**
+**Total: 616 machine-readable rules across 39 files.**
 
 ## Repository Structure
 
@@ -52,6 +53,13 @@ ph-building-codes/
 │   ├── resilient_adaptive.yaml  # Climate-adaptive, energy/water independence, seismic
 │   ├── smart_tech.yaml          # Smart home, BIM, 3D printing, prefab, drones
 │   └── lifestyle_spaces.yaml   # WFH, wellness, multi-gen, co-living, compact
+├── practice/                # What Every New Architect Should Know
+│   ├── project_management.yaml  # Fees, contracts, scope, CA, scheduling
+│   ├── permits_regulatory.yaml  # Building permits, clearances, LGU navigation
+│   ├── client_relations.yaml    # Presentations, red flags, business development
+│   ├── construction_knowledge.yaml # Structural, materials, MEP coordination
+│   ├── professional_growth.yaml # CPD, ethics, career strategy, financial mgmt
+│   └── common_mistakes.yaml    # Design, documentation, supervision, business errors
 ├── fengshui/                # Feng Shui — Classical Design Principles
 │   ├── orientation_siting.yaml  # Four Animals, lot shape, elevation
 │   ├── main_door_entry.yaml     # Qi mouth, Lu Ban ruler, door alignment
@@ -119,7 +127,7 @@ This is a community effort to digitize Philippine building codes. Contributions 
 
 Format: `{CODE}-{RULE}-{TYPE}{NUMBER}`
 
-- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui), `TA` (Tropical Architecture), `GBC` (Green Building Code), `TR` (Design Trends)
+- Code: `NBCP`, `BP344`, `FC` (Fire Code), `FS` (Feng Shui), `TA` (Tropical Architecture), `GBC` (Green Building Code), `TR` (Design Trends), `PR` (Practice Knowledge)
 - Rule: Roman numeral or section (e.g., `VIII`, `IRR`, `SITE`, `DOOR`, `ROOM`, `ELEM`, `WATER`, `STAIR`, `SHAPE`, `COMM`, `LAND`, `COOL`, `MAT`, `RAIN`, `ELEV`, `NRG`, `H2O`, `IEQ`, `TMOD`, `RESIL`, `SMART`, `LIFE`)
 - Type: `S` (setback/siting), `H` (height/harvesting), `A` (area), `R` (ratio/room), `D` (dimension/door), `L` (load/landscape), `T` (time/distance/trend), `W` (water), `E` (element/elevated/energy), `C` (circulation), `F` (form), `B` (business), `V` (ventilation), `M` (material), `Q` (quality), `X` (ecology/site)
 - Number: Sequential 3-digit (e.g., `001`)

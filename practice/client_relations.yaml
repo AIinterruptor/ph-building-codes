@@ -1,0 +1,114 @@
+# What Every New Architect Should Know
+# Client Relations, Communication & Business Development
+#
+# School teaches design. Practice teaches people.
+# The soft skills that separate architects who survive from those who thrive.
+
+code: "Architectural Practice"
+section: "Client Relations & Business Development"
+source: "UAP Ethics Code, PRC-BOA, Industry Practice"
+last_verified: "2026-06-27"
+
+rules:
+
+  # ============================================================
+  # CLIENT MANAGEMENT
+  # ============================================================
+
+  - id: "PR-CLIENT-P001"
+    section: "Client Communication"
+    description: "Present three design options at schematic — never just one"
+    value: 3
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      unit_detail: "options"
+    notes: "One option = take it or leave it. Two = binary choice that breeds doubt. Three = you're the expert guiding a decision. Make them distinct (conservative/moderate/bold), not slight variations. Clients feel ownership when they choose."
+
+  - id: "PR-CLIENT-P002"
+    section: "Client Communication"
+    description: "Never present design without a cost implication"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "New architects design in a budget vacuum, then clients get sticker shock at bidding. Attach rough cost estimates (PHP/sqm) to every design option from schematic stage. Current PH rates: economic PHP 15-20K/sqm, mid-range PHP 25-40K/sqm, high-end PHP 50-80K/sqm."
+
+  - id: "PR-CLIENT-P003"
+    section: "Client Communication"
+    description: "Manage expectations with a written project brief signed by both parties"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Before design begins: document budget, program, timeline, design preferences, and non-negotiables. Both parties sign. When the client later says 'I wanted X,' you point to the brief. This prevents 80% of disputes."
+
+  - id: "PR-CLIENT-P004"
+    section: "Client Communication"
+    description: "Limit design revisions — specify number in contract"
+    value: "2_per_phase"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Include in contract: 2 revision rounds per design phase included. Additional revisions billed at hourly rate (PHP 1,500-3,000/hr). Without this, clients will revise forever. Some clients need 10+ rounds — they should pay for it."
+
+  - id: "PR-CLIENT-P005"
+    section: "Client Communication"
+    description: "Use 3D visualization early — Filipino clients respond to visuals, not plans"
+    value: true
+    unit: "boolean"
+    applies_to: ["residential"]
+    notes: "Most residential clients cannot read floor plans. They approve plans they don't understand, then complain during construction. Invest in SketchUp/Lumion/Enscape renders at schematic stage. A PHP 5,000 render prevents a PHP 500,000 change order."
+
+  - id: "PR-CLIENT-P006"
+    section: "Red Flags"
+    description: "Warning signs of a problem client — know when to decline"
+    value: "red_flag_checklist"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      red_flags: "refuses to sign contract, wants to start before permit, asks you to sign plans someone else drew, disputes fee before seeing your work, badmouths previous architect, expects unlimited revisions, pressures for unrealistic timeline"
+    notes: "Experienced architects have learned to say no. A bad client costs you money, reputation, and mental health. It's better to have no project than a project that destroys you. Trust your instincts — if something feels wrong, it is."
+
+  # ============================================================
+  # BUSINESS DEVELOPMENT
+  # ============================================================
+
+  - id: "PR-CLIENT-P010"
+    section: "Business Development"
+    description: "Portfolio is everything — document every project professionally"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Photograph completed projects professionally (hire a photographer, PHP 5-10K per shoot). Before/during/after. Drone shots. Detail shots. Your portfolio wins the next project. Most new architects forget to photograph their work — they regret it for years."
+
+  - id: "PR-CLIENT-P011"
+    section: "Business Development"
+    description: "Referrals are your primary business source — deliver quality, ask for referrals"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "80% of residential architecture clients come from referrals in the Philippines. Your reputation spreads through family networks, church groups, and social circles. One bad project can cost you 20 referrals. Ask satisfied clients to refer you — explicitly."
+
+  - id: "PR-CLIENT-P012"
+    section: "Business Development"
+    description: "Specialize early — generalists struggle, specialists thrive"
+    value: "choose_niche"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      lucrative_niches: "resort/hospitality, healthcare, commercial interiors, sustainable residential, heritage conservation"
+    notes: "The market rewards expertise. 'I design everything' = 'I'm not particularly good at anything.' Pick a building type, climate zone, or design philosophy and become known for it. Experienced architects' biggest regret: not specializing sooner."
+
+  - id: "PR-CLIENT-P013"
+    section: "Business Development"
+    description: "Join UAP and attend chapter events — networking is not optional"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "United Architects of the Philippines chapter meetings, CONEX conventions, BluPrint Design Awards. These events generate work. The architects who complain about 'no clients' are the ones who never leave their desks. Be visible, be helpful, be remembered."
+
+  - id: "PR-CLIENT-P014"
+    section: "Business Development"
+    description: "Online presence — at minimum maintain an Instagram portfolio and Google Business listing"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Filipino clients search 'architect near me' on Google and browse Instagram for design inspiration. A professional Instagram feed costs nothing. Google Business listing = free local SEO. Most new architects skip this and wonder why the phone doesn't ring."

@@ -1,0 +1,192 @@
+{
+  "code": "Architectural Practice",
+  "section": "Professional Growth & Ethics",
+  "source": "RA 9266, PRC-BOA Code of Ethics, UAP, Industry Practice",
+  "last_verified": "2026-06-27",
+  "rules": [
+    {
+      "id": "PR-GROW-P001",
+      "section": "Licensure",
+      "description": "CPD requirement — 45 credit units per 3-year renewal cycle",
+      "value": 45,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "CPD units per 3-year cycle",
+        "breakdown": "formal learning 30%, non-formal 50%, self-directed 20%"
+      },
+      "notes": "PRC Resolution 1032. Don't cram CPD in year 3 — attend events throughout the cycle. UAP chapter events, CONEX, and online seminars count. Keep ALL certificates. PRC audits randomly. Lost certificates = lost credits."
+    },
+    {
+      "id": "PR-GROW-P002",
+      "section": "Licensure",
+      "description": "Professional Identification Card (PIC) renewal — never let it lapse",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Expired PIC = you cannot legally practice, sign plans, or use the title 'Architect.' Renew before expiry. Practice with expired license is a criminal offense under RA 9266. Set a reminder 6 months before expiry."
+    },
+    {
+      "id": "PR-GROW-P003",
+      "section": "Licensure",
+      "description": "Professional liability insurance — increasingly important",
+      "value": "strongly_recommended",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Not yet mandatory in PH but experienced architects carry it. A structural failure or design error can result in civil and criminal liability. Insurance costs PHP 15,000-30,000/year for small practices. Cheap compared to a lawsuit."
+    },
+    {
+      "id": "PR-GROW-P010",
+      "section": "Ethics",
+      "description": "Never accept kickbacks from contractors or suppliers",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "The biggest ethical cancer in PH construction. Contractors offer 5-10% of contract value as 'commission' to the architect for specifying their products or recommending them for the project. This compromises your professional judgment. UAP Code of Ethics prohibits it. Your reputation is worth more."
+    },
+    {
+      "id": "PR-GROW-P011",
+      "section": "Ethics",
+      "description": "Never compete on fee — compete on value",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "When a client says 'the other architect charges 5%,' don't lower your fee. Explain what your fee includes that theirs doesn't. An architect who charges 5% either cuts corners or goes bankrupt. Both are bad for the client. Race-to-the-bottom fees destroy the profession."
+    },
+    {
+      "id": "PR-GROW-P012",
+      "section": "Ethics",
+      "description": "Never badmouth other architects to clients or in public",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "UAP Ethics Code Sec. 4. If asked about a competitor's work, be factual and diplomatic. The PH architecture community is small — word travels. Being known as someone who tears down colleagues destroys trust and opportunities."
+    },
+    {
+      "id": "PR-GROW-P013",
+      "section": "Ethics",
+      "description": "Report unsafe buildings — you have a professional and moral obligation",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "If you see a structurally compromised building, an illegally constructed structure, or a fire hazard — report to the Building Official. PD 1096 Sec. 215 empowers architects to act. Lives are at stake. Don't look away because it's not your project."
+    },
+    {
+      "id": "PR-GROW-P020",
+      "section": "Career",
+      "description": "First 3 years: work for a firm, learn the business before going solo",
+      "value": "3_year_apprenticeship",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Architecture school teaches design. Firms teach you how to run a practice, handle clients, coordinate consultants, process permits, and manage construction. Going solo immediately after licensure usually leads to expensive mistakes. Find a firm that lets you handle projects end-to-end."
+    },
+    {
+      "id": "PR-GROW-P021",
+      "section": "Career",
+      "description": "Build a mentor network — minimum 2-3 experienced architects you can call",
+      "value": 3,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "mentors"
+      },
+      "notes": "When you encounter a situation you've never faced (and you will, weekly), having an experienced architect to call is invaluable. UAP mentorship programs exist. Buy lunch for senior architects. Most are generous with knowledge — you just have to ask."
+    },
+    {
+      "id": "PR-GROW-P022",
+      "section": "Career",
+      "description": "Learn software beyond school requirements — BIM, rendering, project management",
+      "value": "continuous_learning",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "essential": "Revit or ArchiCAD (BIM), SketchUp (quick study), Lumion or Enscape (rendering)",
+        "valuable": "MS Project or Primavera (scheduling), Excel (BOQ/estimates), AutoCAD (still standard in PH)",
+        "emerging": "AI tools (Midjourney, Claude, Forma), parametric design (Grasshopper)"
+      },
+      "notes": "Filipino firms still heavily use AutoCAD. BIM adoption is growing but slow. Being BIM-proficient in a market that's transitioning gives you a massive advantage. Don't wait for your firm to train you — learn independently."
+    },
+    {
+      "id": "PR-GROW-P023",
+      "section": "Career",
+      "description": "Attend at least one international architecture event or study tour",
+      "value": "annual_exposure",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Singapore (BCA GreenMark projects), Japan (attention to detail), Vietnam (tropical modernism boom), Bangkok (megaproject complexity). Seeing how other countries build expands your design vocabulary beyond Filipino conventions. ASEAN architect mobility agreements (APEC Architect) open regional practice."
+    },
+    {
+      "id": "PR-GROW-P024",
+      "section": "Career",
+      "description": "Document your lessons learned — start a professional journal",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "After every project: what went right, what went wrong, what you'd do differently. Include cost data, timeline data, and material performance. In 5 years, this journal is more valuable than any textbook. The architects who improve fastest are the ones who reflect systematically."
+    },
+    {
+      "id": "PR-GROW-P030",
+      "section": "Financial",
+      "description": "Separate personal and professional finances from day one",
+      "value": true,
+      "unit": "boolean",
+      "applies_to": [
+        "all"
+      ],
+      "notes": "Open a business bank account. Track every expense. Issue receipts. File BIR taxes properly (quarterly percentage tax + annual income tax). New architects who commingle funds end up with BIR problems and no idea if their practice is profitable."
+    },
+    {
+      "id": "PR-GROW-P031",
+      "section": "Financial",
+      "description": "Know your hourly rate and track your time",
+      "value": "track_hours",
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "formula": "Monthly target income / (22 days x 8 hrs x 0.65 utilization) = minimum hourly rate",
+        "example": "PHP 80,000/month target = PHP 700/hr minimum"
+      },
+      "notes": "If you don't track time, you can't know if a project was profitable. Most new architects discover they earned less than minimum wage on their first projects. Track time obsessively for your first 2 years — then you'll know how to price accurately."
+    },
+    {
+      "id": "PR-GROW-P032",
+      "section": "Financial",
+      "description": "Build a 6-month emergency fund before going solo",
+      "value": 6,
+      "unit": "text",
+      "applies_to": [
+        "all"
+      ],
+      "conditions": {
+        "unit_detail": "months of operating expenses"
+      },
+      "notes": "Architecture income is lumpy — you get paid at milestones, not monthly. Between projects, income drops to zero. If you can't survive 6 months without income, you'll accept bad projects out of desperation. This undermines everything else."
+    }
+  ]
+}

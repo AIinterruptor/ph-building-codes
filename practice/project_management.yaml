@@ -1,0 +1,140 @@
+# What Every New Architect Should Know
+# Project Management & Construction Administration
+#
+# The gap between school and practice. What licensure exams
+# don't test but clients and contractors expect you to know.
+
+code: "Architectural Practice"
+section: "Project Management & Construction Administration"
+source: "UAP Doc 201/202, PRC-BOA Guidelines, Industry Practice"
+last_verified: "2026-06-27"
+notes: >
+  These are practice knowledge rules — the things experienced
+  architects know by instinct that newly licensed architects
+  learn the hard way. Machine-readable for AI mentoring tools.
+
+rules:
+
+  # ============================================================
+  # CONTRACT & FEE STRUCTURE
+  # ============================================================
+
+  - id: "PR-MGMT-P001"
+    section: "Fees"
+    description: "UAP minimum architectural fee schedule — percentage of project construction cost"
+    value: "tiered_percentage"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      new_construction: "10% for first PHP 5M, 9% for next PHP 5M, sliding scale down to 6% for PHP 50M+"
+      renovation: "add 25-50% to new construction rate"
+      interior_design: "12-15% of fit-out cost"
+    notes: "UAP Doc 202 sets minimum fees. Never go below — it undercuts the profession and guarantees you'll lose money. Experienced architects know: below 8% on a residential project means you're subsidizing the client."
+
+  - id: "PR-MGMT-P002"
+    section: "Fees"
+    description: "Payment milestones — never start detailed design without signed contract and downpayment"
+    value: "milestone_billing"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      typical_split: "20% schematic, 30% design development, 30% construction docs, 10% bidding, 10% construction admin"
+    notes: "The single biggest mistake new architects make: doing work without a signed contract. Get 20% upfront before pencil touches paper. If a client won't sign a contract, they're not a client."
+
+  - id: "PR-MGMT-P003"
+    section: "Contracts"
+    description: "Always use UAP Doc 201 (Owner-Architect Agreement) or equivalent written contract"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Verbal agreements are legally valid in PH but nearly impossible to enforce. UAP Doc 201 covers scope, fees, timeline, ownership of documents, and liability limits. Customize it, don't reinvent it."
+
+  - id: "PR-MGMT-P004"
+    section: "Contracts"
+    description: "Retain copyright of all architectural drawings and documents"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "RA 8293 (IP Code) protects architectural works. Your drawings are yours — the client buys a license to build from them, not ownership. Never surrender copyright. If a client asks to 'own the plans,' negotiate a buyout fee."
+
+  - id: "PR-MGMT-P005"
+    section: "Scope"
+    description: "Define scope of work explicitly — list what's included AND excluded"
+    value: "explicit_scope"
+    unit: "text"
+    applies_to: ["all"]
+    notes: "Scope creep is the #1 profit killer for new architects. If the contract says 'architectural design,' the client will expect structural, MEP, interiors, and landscaping. List every deliverable. List every exclusion. Be specific about revision rounds."
+
+  # ============================================================
+  # CONSTRUCTION ADMINISTRATION
+  # ============================================================
+
+  - id: "PR-MGMT-P010"
+    section: "Construction Admin"
+    description: "Minimum site visit frequency during construction"
+    value: "weekly_minimum"
+    unit: "text"
+    applies_to: ["all"]
+    conditions:
+      critical_phases: "daily during foundation, framing, and MEP rough-in"
+    notes: "Most new architects underestimate construction admin time. Budget 15-20% of your total project hours for CA. Weekly visits minimum, daily during critical phases. Document every visit with photos and a site memo."
+
+  - id: "PR-MGMT-P011"
+    section: "Construction Admin"
+    description: "Always issue written instructions to contractors — never verbal only"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Architect's Site Instructions (ASI) and Change Orders (CO) must be written, dated, and signed. Verbal instructions are denied later. Experienced architects know: if it's not written, it didn't happen. Use a pre-numbered ASI pad."
+
+  - id: "PR-MGMT-P012"
+    section: "Construction Admin"
+    description: "Maintain a daily construction log or require the contractor to"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Weather, workers present, materials delivered, work accomplished, issues encountered. This log is your defense in disputes. Photo-document progress at every visit. Cloud-sync photos immediately."
+
+  - id: "PR-MGMT-P013"
+    section: "Construction Admin"
+    description: "Never approve contractor payment without verifying work accomplished"
+    value: true
+    unit: "boolean"
+    applies_to: ["all"]
+    notes: "Progress billing verification: physically inspect, measure, and compare to contractor's billing statement. Overbilling is common. New architects get pressured to approve quickly — resist. You're liable if you approve unfinished work."
+
+  - id: "PR-MGMT-P014"
+    section: "Construction Admin"
+    description: "Retention money — hold 10% of each progress billing until project completion"
+    value: 10
+    unit: "%"
+    applies_to: ["all"]
+    notes: "Standard PH construction practice. Released after punch list completion and defects liability period (typically 1 year). This is your client's leverage for quality. Some contractors will push to reduce it — advise clients to hold firm."
+
+  # ============================================================
+  # TIMELINE & SCHEDULING
+  # ============================================================
+
+  - id: "PR-MGMT-P020"
+    section: "Scheduling"
+    description: "Realistic design timeline — schematic to construction documents"
+    value: "rule_of_thumb"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      schematic: "2-4 weeks"
+      design_development: "3-6 weeks"
+      construction_documents: "4-8 weeks"
+      permit_processing: "2-8 weeks (LGU dependent)"
+    notes: "New architects always underestimate timelines. Double your initial estimate. Client revisions, consultant coordination, and permit delays are guaranteed. Build buffer into every schedule."
+
+  - id: "PR-MGMT-P021"
+    section: "Scheduling"
+    description: "Construction duration estimate for residential — rough rule of thumb"
+    value: "3_sqm_per_day"
+    unit: "text"
+    applies_to: ["residential"]
+    conditions:
+      formula: "GFA in sqm / 3 = approximate calendar days"
+      example: "150sqm house = ~50 working days = ~3 months"
+    notes: "Very rough but useful for client expectations. Actual depends on complexity, weather, material availability, and contractor capacity. Add 20-30% buffer for PH rainy season (June-November)."
